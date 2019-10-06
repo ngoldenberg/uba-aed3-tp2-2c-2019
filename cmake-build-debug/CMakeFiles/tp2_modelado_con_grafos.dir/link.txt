@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++  -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/tp2_modelado_con_grafos.dir/main.cpp.o  -o tp2_modelado_con_grafos 
