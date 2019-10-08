@@ -32,6 +32,6 @@ target_link_libraries (arbitraje_src LINK_PUBLIC)
 add_executable(arbitraje ${MAIN})
 target_link_libraries(arbitraje LINK_PUBLIC arbitraje_src)
 
-#add_executable(run_test ejemplo/src/1-programacion_dinamica/FibonnachiTopDown.h ejemplo/test/1-programacion_dinamica/FibonnchiTopDownTest.cpp src/ejercicio-1/algoritmos/Prim.cpp src/ejercicio-1/algoritmos/Prim.h test/ejercicio-1/algoritmos/PrimTest.cpp)
-#target_link_libraries(run_test gtest gtest_main)
+add_executable(run_test src/ejercicio-1/algoritmos/Prim.cpp src/ejercicio-1/algoritmos/Prim.h test/ejercicio-1/algoritmos/PrimTest.cpp)
+target_link_libraries(run_test gtest gtest_main)
 
