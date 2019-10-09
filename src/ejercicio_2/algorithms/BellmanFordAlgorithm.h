@@ -9,5 +9,6 @@ class BellmanFordAlgorithm : public Algorithm {
   ~BellmanFordAlgorithm();
   int Solve(int const currencies_quantity, FloatMatrix const &matrix) = 0;
 
+  float GetValueByEdgeNumber(FloatMatrix matrix, int n);
 };
 
