@@ -83,22 +83,9 @@ CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/algoritmos/Segmentation.cpp.s: c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/algoritmos/Segmentation.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/algoritmos/Segmentation.cpp -o CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/algoritmos/Segmentation.cpp.s
 
-CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/Graph.cpp.o: CMakeFiles/ejercicio-1-main.dir/flags.make
-CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/Graph.cpp.o: ../src/ejercicio-1/entities/Graph.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/Graph.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/Graph.cpp.o -c /Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/entities/Graph.cpp
-
-CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/Graph.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/Graph.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/entities/Graph.cpp > CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/Graph.cpp.i
-
-CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/Graph.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/Graph.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/entities/Graph.cpp -o CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/Graph.cpp.s
-
 CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/AdyacencyMatrixGraph.cpp.o: CMakeFiles/ejercicio-1-main.dir/flags.make
 CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/AdyacencyMatrixGraph.cpp.o: ../src/ejercicio-1/entities/AdyacencyMatrixGraph.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/AdyacencyMatrixGraph.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/AdyacencyMatrixGraph.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/AdyacencyMatrixGraph.cpp.o -c /Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/entities/AdyacencyMatrixGraph.cpp
 
 CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/AdyacencyMatrixGraph.cpp.i: cmake_force
@@ -111,7 +98,7 @@ CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/AdyacencyMatrixGraph.cp
 
 CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/TreeGraph.cpp.o: CMakeFiles/ejercicio-1-main.dir/flags.make
 CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/TreeGraph.cpp.o: ../src/ejercicio-1/entities/TreeGraph.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/TreeGraph.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/TreeGraph.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/TreeGraph.cpp.o -c /Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/entities/TreeGraph.cpp
 
 CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/TreeGraph.cpp.i: cmake_force
@@ -122,40 +109,83 @@ CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/TreeGraph.cpp.s: cmake_
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/TreeGraph.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/entities/TreeGraph.cpp -o CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/TreeGraph.cpp.s
 
-CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/BellmanKindOfGraph.cpp.o: CMakeFiles/ejercicio-1-main.dir/flags.make
-CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/BellmanKindOfGraph.cpp.o: ../src/ejercicio-1/entities/BellmanKindOfGraph.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/BellmanKindOfGraph.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/BellmanKindOfGraph.cpp.o -c /Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/entities/BellmanKindOfGraph.cpp
+CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/KruskalKindOfGraph.cpp.o: CMakeFiles/ejercicio-1-main.dir/flags.make
+CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/KruskalKindOfGraph.cpp.o: ../src/ejercicio-1/entities/KruskalKindOfGraph.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/KruskalKindOfGraph.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/KruskalKindOfGraph.cpp.o -c /Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/entities/KruskalKindOfGraph.cpp
 
-CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/BellmanKindOfGraph.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/BellmanKindOfGraph.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/entities/BellmanKindOfGraph.cpp > CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/BellmanKindOfGraph.cpp.i
+CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/KruskalKindOfGraph.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/KruskalKindOfGraph.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/entities/KruskalKindOfGraph.cpp > CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/KruskalKindOfGraph.cpp.i
 
-CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/BellmanKindOfGraph.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/BellmanKindOfGraph.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/entities/BellmanKindOfGraph.cpp -o CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/BellmanKindOfGraph.cpp.s
+CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/KruskalKindOfGraph.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/KruskalKindOfGraph.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/entities/KruskalKindOfGraph.cpp -o CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/KruskalKindOfGraph.cpp.s
+
+CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/algoritmos/BellmanFordAlgorithm.cpp.o: CMakeFiles/ejercicio-1-main.dir/flags.make
+CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/algoritmos/BellmanFordAlgorithm.cpp.o: ../src/ejercicio-1/algoritmos/BellmanFordAlgorithm.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/algoritmos/BellmanFordAlgorithm.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/algoritmos/BellmanFordAlgorithm.cpp.o -c /Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/algoritmos/BellmanFordAlgorithm.cpp
+
+CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/algoritmos/BellmanFordAlgorithm.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/algoritmos/BellmanFordAlgorithm.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/algoritmos/BellmanFordAlgorithm.cpp > CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/algoritmos/BellmanFordAlgorithm.cpp.i
+
+CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/algoritmos/BellmanFordAlgorithm.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/algoritmos/BellmanFordAlgorithm.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/algoritmos/BellmanFordAlgorithm.cpp -o CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/algoritmos/BellmanFordAlgorithm.cpp.s
+
+CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/algoritmos/PrimAlgorithm.cpp.o: CMakeFiles/ejercicio-1-main.dir/flags.make
+CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/algoritmos/PrimAlgorithm.cpp.o: ../src/ejercicio-1/algoritmos/PrimAlgorithm.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/algoritmos/PrimAlgorithm.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/algoritmos/PrimAlgorithm.cpp.o -c /Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/algoritmos/PrimAlgorithm.cpp
+
+CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/algoritmos/PrimAlgorithm.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/algoritmos/PrimAlgorithm.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/algoritmos/PrimAlgorithm.cpp > CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/algoritmos/PrimAlgorithm.cpp.i
+
+CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/algoritmos/PrimAlgorithm.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/algoritmos/PrimAlgorithm.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/algoritmos/PrimAlgorithm.cpp -o CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/algoritmos/PrimAlgorithm.cpp.s
+
+CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/Edge.cpp.o: CMakeFiles/ejercicio-1-main.dir/flags.make
+CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/Edge.cpp.o: ../src/ejercicio-1/entities/Edge.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/Edge.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/Edge.cpp.o -c /Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/entities/Edge.cpp
+
+CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/Edge.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/Edge.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/entities/Edge.cpp > CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/Edge.cpp.i
+
+CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/Edge.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/Edge.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/entities/Edge.cpp -o CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/Edge.cpp.s
 
 # Object files for target ejercicio-1-main
 ejercicio__1__main_OBJECTS = \
 "CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/executables/segmentation-main.cpp.o" \
 "CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/algoritmos/Segmentation.cpp.o" \
-"CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/Graph.cpp.o" \
 "CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/AdyacencyMatrixGraph.cpp.o" \
 "CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/TreeGraph.cpp.o" \
-"CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/BellmanKindOfGraph.cpp.o"
+"CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/KruskalKindOfGraph.cpp.o" \
+"CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/algoritmos/BellmanFordAlgorithm.cpp.o" \
+"CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/algoritmos/PrimAlgorithm.cpp.o" \
+"CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/Edge.cpp.o"
 
 # External object files for target ejercicio-1-main
 ejercicio__1__main_EXTERNAL_OBJECTS =
 
 ejercicio-1-main: CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/executables/segmentation-main.cpp.o
 ejercicio-1-main: CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/algoritmos/Segmentation.cpp.o
-ejercicio-1-main: CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/Graph.cpp.o
 ejercicio-1-main: CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/AdyacencyMatrixGraph.cpp.o
 ejercicio-1-main: CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/TreeGraph.cpp.o
-ejercicio-1-main: CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/BellmanKindOfGraph.cpp.o
+ejercicio-1-main: CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/KruskalKindOfGraph.cpp.o
+ejercicio-1-main: CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/algoritmos/BellmanFordAlgorithm.cpp.o
+ejercicio-1-main: CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/algoritmos/PrimAlgorithm.cpp.o
+ejercicio-1-main: CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/Edge.cpp.o
 ejercicio-1-main: CMakeFiles/ejercicio-1-main.dir/build.make
 ejercicio-1-main: CMakeFiles/ejercicio-1-main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable ejercicio-1-main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable ejercicio-1-main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ejercicio-1-main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

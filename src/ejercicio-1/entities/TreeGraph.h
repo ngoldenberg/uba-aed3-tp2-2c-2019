@@ -6,7 +6,12 @@
 #define TP2_MODELADO_CON_GRAFOS_TREEGRAPH_H
 
 
+#include <vector>
+#include "Edge.h"
+
 class TreeGraph {
+public:
+    std::vector<Edge> getEdges();
 
 };
 

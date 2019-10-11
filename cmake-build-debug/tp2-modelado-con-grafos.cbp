@@ -397,6 +397,26 @@
 		<Unit filename="/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/lib/googletest/googletest/src/gtest_main.cc">
 			<Option target="gtest_main"/>
 		</Unit>
+		<Unit filename="/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/algoritmos/BellmanFordAlgorithm.cpp">
+			<Option target="ejercicio-1-main"/>
+			<Option target="run_test"/>
+		</Unit>
+		<Unit filename="/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/algoritmos/BellmanFordAlgorithm.h">
+			<Option target="ejercicio-1-main"/>
+			<Option target="run_test"/>
+		</Unit>
+		<Unit filename="/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/algoritmos/MSTAlgorithm.h">
+			<Option target="ejercicio-1-main"/>
+			<Option target="run_test"/>
+		</Unit>
+		<Unit filename="/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/algoritmos/PrimAlgorithm.cpp">
+			<Option target="ejercicio-1-main"/>
+			<Option target="run_test"/>
+		</Unit>
+		<Unit filename="/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/algoritmos/PrimAlgorithm.h">
+			<Option target="ejercicio-1-main"/>
+			<Option target="run_test"/>
+		</Unit>
 		<Unit filename="/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/algoritmos/Segmentation.cpp">
 			<Option target="ejercicio-1-main"/>
 			<Option target="run_test"/>
@@ -407,21 +427,29 @@
 		</Unit>
 		<Unit filename="/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/entities/AdyacencyMatrixGraph.cpp">
 			<Option target="ejercicio-1-main"/>
+			<Option target="run_test"/>
 		</Unit>
 		<Unit filename="/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/entities/AdyacencyMatrixGraph.h">
 			<Option target="ejercicio-1-main"/>
+			<Option target="run_test"/>
 		</Unit>
-		<Unit filename="/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/entities/BellmanKindOfGraph.cpp">
+		<Unit filename="/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/entities/Edge.cpp">
 			<Option target="ejercicio-1-main"/>
+			<Option target="run_test"/>
 		</Unit>
-		<Unit filename="/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/entities/BellmanKindOfGraph.h">
-			<Option target="ejercicio-1-main"/>
-		</Unit>
-		<Unit filename="/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/entities/Graph.cpp">
+		<Unit filename="/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/entities/Edge.h">
 			<Option target="ejercicio-1-main"/>
 			<Option target="run_test"/>
 		</Unit>
 		<Unit filename="/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/entities/Graph.h">
+			<Option target="ejercicio-1-main"/>
+			<Option target="run_test"/>
+		</Unit>
+		<Unit filename="/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/entities/KruskalKindOfGraph.cpp">
+			<Option target="ejercicio-1-main"/>
+			<Option target="run_test"/>
+		</Unit>
+		<Unit filename="/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/entities/KruskalKindOfGraph.h">
 			<Option target="ejercicio-1-main"/>
 			<Option target="run_test"/>
 		</Unit>
@@ -433,10 +461,19 @@
 			<Option target="ejercicio-1-main"/>
 			<Option target="run_test"/>
 		</Unit>
+		<Unit filename="/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/entities/Utils.h">
+			<Option target="ejercicio-1-main"/>
+		</Unit>
 		<Unit filename="/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/executables/segmentation-main.cpp">
 			<Option target="ejercicio-1-main"/>
 		</Unit>
-		<Unit filename="/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/test/ejercicio-1/algoritmos/PrimTest.cpp">
+		<Unit filename="/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/test/ejercicio-1/algoritmos/KruskalAlgorithmTest.cpp">
+			<Option target="run_test"/>
+		</Unit>
+		<Unit filename="/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/test/ejercicio-1/entities/AdyacencyMatrixGraphTest.cpp">
+			<Option target="run_test"/>
+		</Unit>
+		<Unit filename="/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/test/ejercicio-1/entities/KruskalKindOfGraphTest.cpp">
 			<Option target="run_test"/>
 		</Unit>
 		<Unit filename="/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/CMakeLists.txt">

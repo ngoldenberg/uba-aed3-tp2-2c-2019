@@ -19,7 +19,7 @@ int main(){
 
     Segmentation segmentation = Segmentation(mstStrategy);
 
-    std::vector<int> outputDots = segmentation.execute(*dots);
+    std::vector<int> outputDots = segmentation.execute(dots);
 
     print(outputDots);
 }

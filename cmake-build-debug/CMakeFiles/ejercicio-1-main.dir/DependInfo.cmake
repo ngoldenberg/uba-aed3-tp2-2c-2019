@@ -4,10 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/algoritmos/BellmanFordAlgorithm.cpp" "/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/cmake-build-debug/CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/algoritmos/BellmanFordAlgorithm.cpp.o"
+  "/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/algoritmos/PrimAlgorithm.cpp" "/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/cmake-build-debug/CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/algoritmos/PrimAlgorithm.cpp.o"
   "/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/algoritmos/Segmentation.cpp" "/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/cmake-build-debug/CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/algoritmos/Segmentation.cpp.o"
   "/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/entities/AdyacencyMatrixGraph.cpp" "/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/cmake-build-debug/CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/AdyacencyMatrixGraph.cpp.o"
-  "/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/entities/BellmanKindOfGraph.cpp" "/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/cmake-build-debug/CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/BellmanKindOfGraph.cpp.o"
-  "/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/entities/Graph.cpp" "/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/cmake-build-debug/CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/Graph.cpp.o"
+  "/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/entities/Edge.cpp" "/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/cmake-build-debug/CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/Edge.cpp.o"
+  "/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/entities/KruskalKindOfGraph.cpp" "/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/cmake-build-debug/CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/KruskalKindOfGraph.cpp.o"
   "/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/entities/TreeGraph.cpp" "/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/cmake-build-debug/CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/TreeGraph.cpp.o"
   "/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/executables/segmentation-main.cpp" "/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/cmake-build-debug/CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/executables/segmentation-main.cpp.o"
   )

@@ -288,19 +288,27 @@ cxxabi.h
 acxx_demangle.h
 -
 
-/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/ejemplo/src/1-programacion_dinamica/FibonnachiTopDown.cpp
-vector
--
-FibonnachiTopDown.h
-/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/ejemplo/src/1-programacion_dinamica/FibonnachiTopDown.h
+/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/algoritmos/BellmanFordAlgorithm.cpp
+BellmanFordAlgorithm.h
+/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/algoritmos/BellmanFordAlgorithm.h
 
-/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/ejemplo/src/1-programacion_dinamica/FibonnachiTopDown.h
+/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/algoritmos/BellmanFordAlgorithm.h
+MSTAlgorithm.h
+/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/algoritmos/MSTAlgorithm.h
 
-/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/ejemplo/test/1-programacion_dinamica/FibonnchiTopDownTest.cpp
-gtest/gtest.h
--
-../../src/1-programacion_dinamica/FibonnachiTopDown.h
-/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/ejemplo/src/1-programacion_dinamica/FibonnachiTopDown.h
+/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/algoritmos/MSTAlgorithm.h
+../entities/TreeGraph.h
+/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/entities/TreeGraph.h
+../entities/Graph.h
+/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/entities/Graph.h
+
+/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/algoritmos/PrimAlgorithm.cpp
+PrimAlgorithm.h
+/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/algoritmos/PrimAlgorithm.h
+
+/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/algoritmos/PrimAlgorithm.h
+MSTAlgorithm.h
+/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/algoritmos/MSTAlgorithm.h
 
 /Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/algoritmos/Segmentation.cpp
 Segmentation.h
@@ -311,8 +319,12 @@ Segmentation.h
 /Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/entities/AdyacencyMatrixGraph.h
 ../entities/TreeGraph.h
 /Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/entities/TreeGraph.h
-../entities/BellmanKindOfGraph.h
-/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/entities/BellmanKindOfGraph.h
+../entities/KruskalKindOfGraph.h
+/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/entities/KruskalKindOfGraph.h
+BellmanFordAlgorithm.h
+/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/algoritmos/BellmanFordAlgorithm.h
+PrimAlgorithm.h
+/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/algoritmos/PrimAlgorithm.h
 
 /Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/algoritmos/Segmentation.h
 vector
@@ -323,28 +335,72 @@ string
 /Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/entities/Graph.h
 ../entities/TreeGraph.h
 /Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/entities/TreeGraph.h
+MSTAlgorithm.h
+/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/algoritmos/MSTAlgorithm.h
+
+/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/entities/AdyacencyMatrixGraph.cpp
+AdyacencyMatrixGraph.h
+/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/entities/AdyacencyMatrixGraph.h
+Utils.h
+/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/entities/Utils.h
+cmath
+-
 
 /Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/entities/AdyacencyMatrixGraph.h
 Graph.h
 /Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/entities/Graph.h
 
-/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/entities/BellmanKindOfGraph.h
-Graph.h
-/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/entities/Graph.h
-
-/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/entities/Graph.cpp
-Graph.h
-/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/entities/Graph.h
+/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/entities/Edge.h
 
 /Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/entities/Graph.h
 vector
 -
+Edge.h
+/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/entities/Edge.h
 
-/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/entities/TreeGraph.cpp
-TreeGraph.h
+/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/entities/KruskalKindOfGraph.cpp
+cmath
+-
+KruskalKindOfGraph.h
+/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/entities/KruskalKindOfGraph.h
+
+/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/entities/KruskalKindOfGraph.h
+Utils.h
+/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/entities/Utils.h
+Graph.h
+/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/entities/Graph.h
+
 /Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/entities/TreeGraph.h
+vector
+-
+Edge.h
+/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/entities/Edge.h
 
-/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/entities/TreeGraph.h
+/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/entities/Utils.h
 
-/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/test/ejercicio-1/algoritmos/PrimTest.cpp
+/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/test/ejercicio-1/algoritmos/KruskalAlgorithmTest.cpp
+gtest/gtest.h
+-
+../../../src/ejercicio-1/algoritmos/MSTAlgorithm.h
+/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/algoritmos/MSTAlgorithm.h
+../../../src/ejercicio-1/algoritmos/BellmanFordAlgorithm.h
+/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/algoritmos/BellmanFordAlgorithm.h
+../../../src/ejercicio-1/entities/KruskalKindOfGraph.h
+/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/entities/KruskalKindOfGraph.h
+
+/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/test/ejercicio-1/entities/AdyacencyMatrixGraphTest.cpp
+gtest/gtest.h
+-
+../../../src/ejercicio-1/entities/Graph.h
+/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/entities/Graph.h
+../../../src/ejercicio-1/entities/AdyacencyMatrixGraph.h
+/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/entities/AdyacencyMatrixGraph.h
+../../../src/ejercicio-1/entities/Utils.h
+/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/entities/Utils.h
+
+/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/test/ejercicio-1/entities/KruskalKindOfGraphTest.cpp
+gtest/gtest.h
+-
+../../../src/ejercicio-1/entities/KruskalKindOfGraph.h
+/Users/crivera/Documents/Facultad/aed3/tp2-modelado-con-grafos/src/ejercicio-1/entities/KruskalKindOfGraph.h
 

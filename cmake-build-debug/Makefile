@@ -288,6 +288,66 @@ ejemplo/test/1-programacion_dinamica/FibonnchiTopDownTest.cpp.s:
 	$(MAKE) -f CMakeFiles/run_test.dir/build.make CMakeFiles/run_test.dir/ejemplo/test/1-programacion_dinamica/FibonnchiTopDownTest.cpp.s
 .PHONY : ejemplo/test/1-programacion_dinamica/FibonnchiTopDownTest.cpp.s
 
+src/ejercicio-1/algoritmos/BellmanFordAlgorithm.o: src/ejercicio-1/algoritmos/BellmanFordAlgorithm.cpp.o
+
+.PHONY : src/ejercicio-1/algoritmos/BellmanFordAlgorithm.o
+
+# target to build an object file
+src/ejercicio-1/algoritmos/BellmanFordAlgorithm.cpp.o:
+	$(MAKE) -f CMakeFiles/ejercicio-1-main.dir/build.make CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/algoritmos/BellmanFordAlgorithm.cpp.o
+	$(MAKE) -f CMakeFiles/run_test.dir/build.make CMakeFiles/run_test.dir/src/ejercicio-1/algoritmos/BellmanFordAlgorithm.cpp.o
+.PHONY : src/ejercicio-1/algoritmos/BellmanFordAlgorithm.cpp.o
+
+src/ejercicio-1/algoritmos/BellmanFordAlgorithm.i: src/ejercicio-1/algoritmos/BellmanFordAlgorithm.cpp.i
+
+.PHONY : src/ejercicio-1/algoritmos/BellmanFordAlgorithm.i
+
+# target to preprocess a source file
+src/ejercicio-1/algoritmos/BellmanFordAlgorithm.cpp.i:
+	$(MAKE) -f CMakeFiles/ejercicio-1-main.dir/build.make CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/algoritmos/BellmanFordAlgorithm.cpp.i
+	$(MAKE) -f CMakeFiles/run_test.dir/build.make CMakeFiles/run_test.dir/src/ejercicio-1/algoritmos/BellmanFordAlgorithm.cpp.i
+.PHONY : src/ejercicio-1/algoritmos/BellmanFordAlgorithm.cpp.i
+
+src/ejercicio-1/algoritmos/BellmanFordAlgorithm.s: src/ejercicio-1/algoritmos/BellmanFordAlgorithm.cpp.s
+
+.PHONY : src/ejercicio-1/algoritmos/BellmanFordAlgorithm.s
+
+# target to generate assembly for a file
+src/ejercicio-1/algoritmos/BellmanFordAlgorithm.cpp.s:
+	$(MAKE) -f CMakeFiles/ejercicio-1-main.dir/build.make CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/algoritmos/BellmanFordAlgorithm.cpp.s
+	$(MAKE) -f CMakeFiles/run_test.dir/build.make CMakeFiles/run_test.dir/src/ejercicio-1/algoritmos/BellmanFordAlgorithm.cpp.s
+.PHONY : src/ejercicio-1/algoritmos/BellmanFordAlgorithm.cpp.s
+
+src/ejercicio-1/algoritmos/PrimAlgorithm.o: src/ejercicio-1/algoritmos/PrimAlgorithm.cpp.o
+
+.PHONY : src/ejercicio-1/algoritmos/PrimAlgorithm.o
+
+# target to build an object file
+src/ejercicio-1/algoritmos/PrimAlgorithm.cpp.o:
+	$(MAKE) -f CMakeFiles/ejercicio-1-main.dir/build.make CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/algoritmos/PrimAlgorithm.cpp.o
+	$(MAKE) -f CMakeFiles/run_test.dir/build.make CMakeFiles/run_test.dir/src/ejercicio-1/algoritmos/PrimAlgorithm.cpp.o
+.PHONY : src/ejercicio-1/algoritmos/PrimAlgorithm.cpp.o
+
+src/ejercicio-1/algoritmos/PrimAlgorithm.i: src/ejercicio-1/algoritmos/PrimAlgorithm.cpp.i
+
+.PHONY : src/ejercicio-1/algoritmos/PrimAlgorithm.i
+
+# target to preprocess a source file
+src/ejercicio-1/algoritmos/PrimAlgorithm.cpp.i:
+	$(MAKE) -f CMakeFiles/ejercicio-1-main.dir/build.make CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/algoritmos/PrimAlgorithm.cpp.i
+	$(MAKE) -f CMakeFiles/run_test.dir/build.make CMakeFiles/run_test.dir/src/ejercicio-1/algoritmos/PrimAlgorithm.cpp.i
+.PHONY : src/ejercicio-1/algoritmos/PrimAlgorithm.cpp.i
+
+src/ejercicio-1/algoritmos/PrimAlgorithm.s: src/ejercicio-1/algoritmos/PrimAlgorithm.cpp.s
+
+.PHONY : src/ejercicio-1/algoritmos/PrimAlgorithm.s
+
+# target to generate assembly for a file
+src/ejercicio-1/algoritmos/PrimAlgorithm.cpp.s:
+	$(MAKE) -f CMakeFiles/ejercicio-1-main.dir/build.make CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/algoritmos/PrimAlgorithm.cpp.s
+	$(MAKE) -f CMakeFiles/run_test.dir/build.make CMakeFiles/run_test.dir/src/ejercicio-1/algoritmos/PrimAlgorithm.cpp.s
+.PHONY : src/ejercicio-1/algoritmos/PrimAlgorithm.cpp.s
+
 src/ejercicio-1/algoritmos/Segmentation.o: src/ejercicio-1/algoritmos/Segmentation.cpp.o
 
 .PHONY : src/ejercicio-1/algoritmos/Segmentation.o
@@ -325,6 +385,7 @@ src/ejercicio-1/entities/AdyacencyMatrixGraph.o: src/ejercicio-1/entities/Adyace
 # target to build an object file
 src/ejercicio-1/entities/AdyacencyMatrixGraph.cpp.o:
 	$(MAKE) -f CMakeFiles/ejercicio-1-main.dir/build.make CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/AdyacencyMatrixGraph.cpp.o
+	$(MAKE) -f CMakeFiles/run_test.dir/build.make CMakeFiles/run_test.dir/src/ejercicio-1/entities/AdyacencyMatrixGraph.cpp.o
 .PHONY : src/ejercicio-1/entities/AdyacencyMatrixGraph.cpp.o
 
 src/ejercicio-1/entities/AdyacencyMatrixGraph.i: src/ejercicio-1/entities/AdyacencyMatrixGraph.cpp.i
@@ -334,6 +395,7 @@ src/ejercicio-1/entities/AdyacencyMatrixGraph.i: src/ejercicio-1/entities/Adyace
 # target to preprocess a source file
 src/ejercicio-1/entities/AdyacencyMatrixGraph.cpp.i:
 	$(MAKE) -f CMakeFiles/ejercicio-1-main.dir/build.make CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/AdyacencyMatrixGraph.cpp.i
+	$(MAKE) -f CMakeFiles/run_test.dir/build.make CMakeFiles/run_test.dir/src/ejercicio-1/entities/AdyacencyMatrixGraph.cpp.i
 .PHONY : src/ejercicio-1/entities/AdyacencyMatrixGraph.cpp.i
 
 src/ejercicio-1/entities/AdyacencyMatrixGraph.s: src/ejercicio-1/entities/AdyacencyMatrixGraph.cpp.s
@@ -343,64 +405,68 @@ src/ejercicio-1/entities/AdyacencyMatrixGraph.s: src/ejercicio-1/entities/Adyace
 # target to generate assembly for a file
 src/ejercicio-1/entities/AdyacencyMatrixGraph.cpp.s:
 	$(MAKE) -f CMakeFiles/ejercicio-1-main.dir/build.make CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/AdyacencyMatrixGraph.cpp.s
+	$(MAKE) -f CMakeFiles/run_test.dir/build.make CMakeFiles/run_test.dir/src/ejercicio-1/entities/AdyacencyMatrixGraph.cpp.s
 .PHONY : src/ejercicio-1/entities/AdyacencyMatrixGraph.cpp.s
 
-src/ejercicio-1/entities/BellmanKindOfGraph.o: src/ejercicio-1/entities/BellmanKindOfGraph.cpp.o
+src/ejercicio-1/entities/Edge.o: src/ejercicio-1/entities/Edge.cpp.o
 
-.PHONY : src/ejercicio-1/entities/BellmanKindOfGraph.o
-
-# target to build an object file
-src/ejercicio-1/entities/BellmanKindOfGraph.cpp.o:
-	$(MAKE) -f CMakeFiles/ejercicio-1-main.dir/build.make CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/BellmanKindOfGraph.cpp.o
-.PHONY : src/ejercicio-1/entities/BellmanKindOfGraph.cpp.o
-
-src/ejercicio-1/entities/BellmanKindOfGraph.i: src/ejercicio-1/entities/BellmanKindOfGraph.cpp.i
-
-.PHONY : src/ejercicio-1/entities/BellmanKindOfGraph.i
-
-# target to preprocess a source file
-src/ejercicio-1/entities/BellmanKindOfGraph.cpp.i:
-	$(MAKE) -f CMakeFiles/ejercicio-1-main.dir/build.make CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/BellmanKindOfGraph.cpp.i
-.PHONY : src/ejercicio-1/entities/BellmanKindOfGraph.cpp.i
-
-src/ejercicio-1/entities/BellmanKindOfGraph.s: src/ejercicio-1/entities/BellmanKindOfGraph.cpp.s
-
-.PHONY : src/ejercicio-1/entities/BellmanKindOfGraph.s
-
-# target to generate assembly for a file
-src/ejercicio-1/entities/BellmanKindOfGraph.cpp.s:
-	$(MAKE) -f CMakeFiles/ejercicio-1-main.dir/build.make CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/BellmanKindOfGraph.cpp.s
-.PHONY : src/ejercicio-1/entities/BellmanKindOfGraph.cpp.s
-
-src/ejercicio-1/entities/Graph.o: src/ejercicio-1/entities/Graph.cpp.o
-
-.PHONY : src/ejercicio-1/entities/Graph.o
+.PHONY : src/ejercicio-1/entities/Edge.o
 
 # target to build an object file
-src/ejercicio-1/entities/Graph.cpp.o:
-	$(MAKE) -f CMakeFiles/ejercicio-1-main.dir/build.make CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/Graph.cpp.o
-	$(MAKE) -f CMakeFiles/run_test.dir/build.make CMakeFiles/run_test.dir/src/ejercicio-1/entities/Graph.cpp.o
-.PHONY : src/ejercicio-1/entities/Graph.cpp.o
+src/ejercicio-1/entities/Edge.cpp.o:
+	$(MAKE) -f CMakeFiles/ejercicio-1-main.dir/build.make CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/Edge.cpp.o
+	$(MAKE) -f CMakeFiles/run_test.dir/build.make CMakeFiles/run_test.dir/src/ejercicio-1/entities/Edge.cpp.o
+.PHONY : src/ejercicio-1/entities/Edge.cpp.o
 
-src/ejercicio-1/entities/Graph.i: src/ejercicio-1/entities/Graph.cpp.i
+src/ejercicio-1/entities/Edge.i: src/ejercicio-1/entities/Edge.cpp.i
 
-.PHONY : src/ejercicio-1/entities/Graph.i
+.PHONY : src/ejercicio-1/entities/Edge.i
 
 # target to preprocess a source file
-src/ejercicio-1/entities/Graph.cpp.i:
-	$(MAKE) -f CMakeFiles/ejercicio-1-main.dir/build.make CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/Graph.cpp.i
-	$(MAKE) -f CMakeFiles/run_test.dir/build.make CMakeFiles/run_test.dir/src/ejercicio-1/entities/Graph.cpp.i
-.PHONY : src/ejercicio-1/entities/Graph.cpp.i
+src/ejercicio-1/entities/Edge.cpp.i:
+	$(MAKE) -f CMakeFiles/ejercicio-1-main.dir/build.make CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/Edge.cpp.i
+	$(MAKE) -f CMakeFiles/run_test.dir/build.make CMakeFiles/run_test.dir/src/ejercicio-1/entities/Edge.cpp.i
+.PHONY : src/ejercicio-1/entities/Edge.cpp.i
 
-src/ejercicio-1/entities/Graph.s: src/ejercicio-1/entities/Graph.cpp.s
+src/ejercicio-1/entities/Edge.s: src/ejercicio-1/entities/Edge.cpp.s
 
-.PHONY : src/ejercicio-1/entities/Graph.s
+.PHONY : src/ejercicio-1/entities/Edge.s
 
 # target to generate assembly for a file
-src/ejercicio-1/entities/Graph.cpp.s:
-	$(MAKE) -f CMakeFiles/ejercicio-1-main.dir/build.make CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/Graph.cpp.s
-	$(MAKE) -f CMakeFiles/run_test.dir/build.make CMakeFiles/run_test.dir/src/ejercicio-1/entities/Graph.cpp.s
-.PHONY : src/ejercicio-1/entities/Graph.cpp.s
+src/ejercicio-1/entities/Edge.cpp.s:
+	$(MAKE) -f CMakeFiles/ejercicio-1-main.dir/build.make CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/Edge.cpp.s
+	$(MAKE) -f CMakeFiles/run_test.dir/build.make CMakeFiles/run_test.dir/src/ejercicio-1/entities/Edge.cpp.s
+.PHONY : src/ejercicio-1/entities/Edge.cpp.s
+
+src/ejercicio-1/entities/KruskalKindOfGraph.o: src/ejercicio-1/entities/KruskalKindOfGraph.cpp.o
+
+.PHONY : src/ejercicio-1/entities/KruskalKindOfGraph.o
+
+# target to build an object file
+src/ejercicio-1/entities/KruskalKindOfGraph.cpp.o:
+	$(MAKE) -f CMakeFiles/ejercicio-1-main.dir/build.make CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/KruskalKindOfGraph.cpp.o
+	$(MAKE) -f CMakeFiles/run_test.dir/build.make CMakeFiles/run_test.dir/src/ejercicio-1/entities/KruskalKindOfGraph.cpp.o
+.PHONY : src/ejercicio-1/entities/KruskalKindOfGraph.cpp.o
+
+src/ejercicio-1/entities/KruskalKindOfGraph.i: src/ejercicio-1/entities/KruskalKindOfGraph.cpp.i
+
+.PHONY : src/ejercicio-1/entities/KruskalKindOfGraph.i
+
+# target to preprocess a source file
+src/ejercicio-1/entities/KruskalKindOfGraph.cpp.i:
+	$(MAKE) -f CMakeFiles/ejercicio-1-main.dir/build.make CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/KruskalKindOfGraph.cpp.i
+	$(MAKE) -f CMakeFiles/run_test.dir/build.make CMakeFiles/run_test.dir/src/ejercicio-1/entities/KruskalKindOfGraph.cpp.i
+.PHONY : src/ejercicio-1/entities/KruskalKindOfGraph.cpp.i
+
+src/ejercicio-1/entities/KruskalKindOfGraph.s: src/ejercicio-1/entities/KruskalKindOfGraph.cpp.s
+
+.PHONY : src/ejercicio-1/entities/KruskalKindOfGraph.s
+
+# target to generate assembly for a file
+src/ejercicio-1/entities/KruskalKindOfGraph.cpp.s:
+	$(MAKE) -f CMakeFiles/ejercicio-1-main.dir/build.make CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/entities/KruskalKindOfGraph.cpp.s
+	$(MAKE) -f CMakeFiles/run_test.dir/build.make CMakeFiles/run_test.dir/src/ejercicio-1/entities/KruskalKindOfGraph.cpp.s
+.PHONY : src/ejercicio-1/entities/KruskalKindOfGraph.cpp.s
 
 src/ejercicio-1/entities/TreeGraph.o: src/ejercicio-1/entities/TreeGraph.cpp.o
 
@@ -459,32 +525,86 @@ src/ejercicio-1/executables/segmentation-main.cpp.s:
 	$(MAKE) -f CMakeFiles/ejercicio-1-main.dir/build.make CMakeFiles/ejercicio-1-main.dir/src/ejercicio-1/executables/segmentation-main.cpp.s
 .PHONY : src/ejercicio-1/executables/segmentation-main.cpp.s
 
-test/ejercicio-1/algoritmos/PrimTest.o: test/ejercicio-1/algoritmos/PrimTest.cpp.o
+test/ejercicio-1/algoritmos/KruskalAlgorithmTest.o: test/ejercicio-1/algoritmos/KruskalAlgorithmTest.cpp.o
 
-.PHONY : test/ejercicio-1/algoritmos/PrimTest.o
+.PHONY : test/ejercicio-1/algoritmos/KruskalAlgorithmTest.o
 
 # target to build an object file
-test/ejercicio-1/algoritmos/PrimTest.cpp.o:
-	$(MAKE) -f CMakeFiles/run_test.dir/build.make CMakeFiles/run_test.dir/test/ejercicio-1/algoritmos/PrimTest.cpp.o
-.PHONY : test/ejercicio-1/algoritmos/PrimTest.cpp.o
+test/ejercicio-1/algoritmos/KruskalAlgorithmTest.cpp.o:
+	$(MAKE) -f CMakeFiles/run_test.dir/build.make CMakeFiles/run_test.dir/test/ejercicio-1/algoritmos/KruskalAlgorithmTest.cpp.o
+.PHONY : test/ejercicio-1/algoritmos/KruskalAlgorithmTest.cpp.o
 
-test/ejercicio-1/algoritmos/PrimTest.i: test/ejercicio-1/algoritmos/PrimTest.cpp.i
+test/ejercicio-1/algoritmos/KruskalAlgorithmTest.i: test/ejercicio-1/algoritmos/KruskalAlgorithmTest.cpp.i
 
-.PHONY : test/ejercicio-1/algoritmos/PrimTest.i
+.PHONY : test/ejercicio-1/algoritmos/KruskalAlgorithmTest.i
 
 # target to preprocess a source file
-test/ejercicio-1/algoritmos/PrimTest.cpp.i:
-	$(MAKE) -f CMakeFiles/run_test.dir/build.make CMakeFiles/run_test.dir/test/ejercicio-1/algoritmos/PrimTest.cpp.i
-.PHONY : test/ejercicio-1/algoritmos/PrimTest.cpp.i
+test/ejercicio-1/algoritmos/KruskalAlgorithmTest.cpp.i:
+	$(MAKE) -f CMakeFiles/run_test.dir/build.make CMakeFiles/run_test.dir/test/ejercicio-1/algoritmos/KruskalAlgorithmTest.cpp.i
+.PHONY : test/ejercicio-1/algoritmos/KruskalAlgorithmTest.cpp.i
 
-test/ejercicio-1/algoritmos/PrimTest.s: test/ejercicio-1/algoritmos/PrimTest.cpp.s
+test/ejercicio-1/algoritmos/KruskalAlgorithmTest.s: test/ejercicio-1/algoritmos/KruskalAlgorithmTest.cpp.s
 
-.PHONY : test/ejercicio-1/algoritmos/PrimTest.s
+.PHONY : test/ejercicio-1/algoritmos/KruskalAlgorithmTest.s
 
 # target to generate assembly for a file
-test/ejercicio-1/algoritmos/PrimTest.cpp.s:
-	$(MAKE) -f CMakeFiles/run_test.dir/build.make CMakeFiles/run_test.dir/test/ejercicio-1/algoritmos/PrimTest.cpp.s
-.PHONY : test/ejercicio-1/algoritmos/PrimTest.cpp.s
+test/ejercicio-1/algoritmos/KruskalAlgorithmTest.cpp.s:
+	$(MAKE) -f CMakeFiles/run_test.dir/build.make CMakeFiles/run_test.dir/test/ejercicio-1/algoritmos/KruskalAlgorithmTest.cpp.s
+.PHONY : test/ejercicio-1/algoritmos/KruskalAlgorithmTest.cpp.s
+
+test/ejercicio-1/entities/AdyacencyMatrixGraphTest.o: test/ejercicio-1/entities/AdyacencyMatrixGraphTest.cpp.o
+
+.PHONY : test/ejercicio-1/entities/AdyacencyMatrixGraphTest.o
+
+# target to build an object file
+test/ejercicio-1/entities/AdyacencyMatrixGraphTest.cpp.o:
+	$(MAKE) -f CMakeFiles/run_test.dir/build.make CMakeFiles/run_test.dir/test/ejercicio-1/entities/AdyacencyMatrixGraphTest.cpp.o
+.PHONY : test/ejercicio-1/entities/AdyacencyMatrixGraphTest.cpp.o
+
+test/ejercicio-1/entities/AdyacencyMatrixGraphTest.i: test/ejercicio-1/entities/AdyacencyMatrixGraphTest.cpp.i
+
+.PHONY : test/ejercicio-1/entities/AdyacencyMatrixGraphTest.i
+
+# target to preprocess a source file
+test/ejercicio-1/entities/AdyacencyMatrixGraphTest.cpp.i:
+	$(MAKE) -f CMakeFiles/run_test.dir/build.make CMakeFiles/run_test.dir/test/ejercicio-1/entities/AdyacencyMatrixGraphTest.cpp.i
+.PHONY : test/ejercicio-1/entities/AdyacencyMatrixGraphTest.cpp.i
+
+test/ejercicio-1/entities/AdyacencyMatrixGraphTest.s: test/ejercicio-1/entities/AdyacencyMatrixGraphTest.cpp.s
+
+.PHONY : test/ejercicio-1/entities/AdyacencyMatrixGraphTest.s
+
+# target to generate assembly for a file
+test/ejercicio-1/entities/AdyacencyMatrixGraphTest.cpp.s:
+	$(MAKE) -f CMakeFiles/run_test.dir/build.make CMakeFiles/run_test.dir/test/ejercicio-1/entities/AdyacencyMatrixGraphTest.cpp.s
+.PHONY : test/ejercicio-1/entities/AdyacencyMatrixGraphTest.cpp.s
+
+test/ejercicio-1/entities/KruskalKindOfGraphTest.o: test/ejercicio-1/entities/KruskalKindOfGraphTest.cpp.o
+
+.PHONY : test/ejercicio-1/entities/KruskalKindOfGraphTest.o
+
+# target to build an object file
+test/ejercicio-1/entities/KruskalKindOfGraphTest.cpp.o:
+	$(MAKE) -f CMakeFiles/run_test.dir/build.make CMakeFiles/run_test.dir/test/ejercicio-1/entities/KruskalKindOfGraphTest.cpp.o
+.PHONY : test/ejercicio-1/entities/KruskalKindOfGraphTest.cpp.o
+
+test/ejercicio-1/entities/KruskalKindOfGraphTest.i: test/ejercicio-1/entities/KruskalKindOfGraphTest.cpp.i
+
+.PHONY : test/ejercicio-1/entities/KruskalKindOfGraphTest.i
+
+# target to preprocess a source file
+test/ejercicio-1/entities/KruskalKindOfGraphTest.cpp.i:
+	$(MAKE) -f CMakeFiles/run_test.dir/build.make CMakeFiles/run_test.dir/test/ejercicio-1/entities/KruskalKindOfGraphTest.cpp.i
+.PHONY : test/ejercicio-1/entities/KruskalKindOfGraphTest.cpp.i
+
+test/ejercicio-1/entities/KruskalKindOfGraphTest.s: test/ejercicio-1/entities/KruskalKindOfGraphTest.cpp.s
+
+.PHONY : test/ejercicio-1/entities/KruskalKindOfGraphTest.s
+
+# target to generate assembly for a file
+test/ejercicio-1/entities/KruskalKindOfGraphTest.cpp.s:
+	$(MAKE) -f CMakeFiles/run_test.dir/build.make CMakeFiles/run_test.dir/test/ejercicio-1/entities/KruskalKindOfGraphTest.cpp.s
+.PHONY : test/ejercicio-1/entities/KruskalKindOfGraphTest.cpp.s
 
 # Help Target
 help:
@@ -510,27 +630,39 @@ help:
 	@echo "... ejemplo/test/1-programacion_dinamica/FibonnchiTopDownTest.o"
 	@echo "... ejemplo/test/1-programacion_dinamica/FibonnchiTopDownTest.i"
 	@echo "... ejemplo/test/1-programacion_dinamica/FibonnchiTopDownTest.s"
+	@echo "... src/ejercicio-1/algoritmos/BellmanFordAlgorithm.o"
+	@echo "... src/ejercicio-1/algoritmos/BellmanFordAlgorithm.i"
+	@echo "... src/ejercicio-1/algoritmos/BellmanFordAlgorithm.s"
+	@echo "... src/ejercicio-1/algoritmos/PrimAlgorithm.o"
+	@echo "... src/ejercicio-1/algoritmos/PrimAlgorithm.i"
+	@echo "... src/ejercicio-1/algoritmos/PrimAlgorithm.s"
 	@echo "... src/ejercicio-1/algoritmos/Segmentation.o"
 	@echo "... src/ejercicio-1/algoritmos/Segmentation.i"
 	@echo "... src/ejercicio-1/algoritmos/Segmentation.s"
 	@echo "... src/ejercicio-1/entities/AdyacencyMatrixGraph.o"
 	@echo "... src/ejercicio-1/entities/AdyacencyMatrixGraph.i"
 	@echo "... src/ejercicio-1/entities/AdyacencyMatrixGraph.s"
-	@echo "... src/ejercicio-1/entities/BellmanKindOfGraph.o"
-	@echo "... src/ejercicio-1/entities/BellmanKindOfGraph.i"
-	@echo "... src/ejercicio-1/entities/BellmanKindOfGraph.s"
-	@echo "... src/ejercicio-1/entities/Graph.o"
-	@echo "... src/ejercicio-1/entities/Graph.i"
-	@echo "... src/ejercicio-1/entities/Graph.s"
+	@echo "... src/ejercicio-1/entities/Edge.o"
+	@echo "... src/ejercicio-1/entities/Edge.i"
+	@echo "... src/ejercicio-1/entities/Edge.s"
+	@echo "... src/ejercicio-1/entities/KruskalKindOfGraph.o"
+	@echo "... src/ejercicio-1/entities/KruskalKindOfGraph.i"
+	@echo "... src/ejercicio-1/entities/KruskalKindOfGraph.s"
 	@echo "... src/ejercicio-1/entities/TreeGraph.o"
 	@echo "... src/ejercicio-1/entities/TreeGraph.i"
 	@echo "... src/ejercicio-1/entities/TreeGraph.s"
 	@echo "... src/ejercicio-1/executables/segmentation-main.o"
 	@echo "... src/ejercicio-1/executables/segmentation-main.i"
 	@echo "... src/ejercicio-1/executables/segmentation-main.s"
-	@echo "... test/ejercicio-1/algoritmos/PrimTest.o"
-	@echo "... test/ejercicio-1/algoritmos/PrimTest.i"
-	@echo "... test/ejercicio-1/algoritmos/PrimTest.s"
+	@echo "... test/ejercicio-1/algoritmos/KruskalAlgorithmTest.o"
+	@echo "... test/ejercicio-1/algoritmos/KruskalAlgorithmTest.i"
+	@echo "... test/ejercicio-1/algoritmos/KruskalAlgorithmTest.s"
+	@echo "... test/ejercicio-1/entities/AdyacencyMatrixGraphTest.o"
+	@echo "... test/ejercicio-1/entities/AdyacencyMatrixGraphTest.i"
+	@echo "... test/ejercicio-1/entities/AdyacencyMatrixGraphTest.s"
+	@echo "... test/ejercicio-1/entities/KruskalKindOfGraphTest.o"
+	@echo "... test/ejercicio-1/entities/KruskalKindOfGraphTest.i"
+	@echo "... test/ejercicio-1/entities/KruskalKindOfGraphTest.s"
 .PHONY : help
 
 

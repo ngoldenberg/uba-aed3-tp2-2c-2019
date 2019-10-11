@@ -10,22 +10,20 @@
 #include <string>
 #include "../entities/Graph.h"
 #include "../entities/TreeGraph.h"
+#include "MSTAlgorithm.h"
 
 class Segmentation {
 public:
     Segmentation(std::string mstAlgorithm);
-    std::vector<int> execute(std::vector<std::pair<int,int>> dots);
+    ~Segmentation();
+    std::vector<int> execute(std::vector<std::pair<int,int>> *dots);
 
 private:
-    std::string mstAlgorithm;
+    std::string mstStrategy;
+    MSTAlgorithm* mstAlgorithm;
 
-    Graph makeGraph(std::vector<std::pair<int, int>> dots);
+    Graph *makeGraph(std::vector<std::pair<int, int>> *dots);
 
-    TreeGraph makeMst(Graph graph);
-
-    TreeGraph primMSTAlgorithm(Graph graph);
-
-    TreeGraph bellmanFordMSTAlgorithm(Graph graph);
 };
 
 

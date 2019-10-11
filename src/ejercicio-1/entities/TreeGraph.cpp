@@ -3,3 +3,7 @@
 //
 
 #include "TreeGraph.h"
+
+std::vector<Edge> TreeGraph::getEdges() {
+    return std::vector<Edge>();
+}

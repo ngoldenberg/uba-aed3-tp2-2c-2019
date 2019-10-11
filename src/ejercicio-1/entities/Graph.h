@@ -7,11 +7,19 @@
 
 
 #include <vector>
+#include "Edge.h"
 
 class Graph {
 public:
-    std::vector<std::pair<int,int>> getEdges();
+    virtual std::vector<Edge> getEdges() =0;
 
+    virtual void addEdge(int from, int to, int weigth) =0;
+
+    virtual bool adyacent(int v1, int v2) =0;
+
+    virtual int getVertex() =0;
+
+    virtual long distance(int v1, int v2) =0;
 };
 
 
