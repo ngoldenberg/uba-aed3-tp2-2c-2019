@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
-    <generated />
+    <generated>
+      <config projectName="tp2-modelado-con-grafos" targetName="gtest" />
+      <config projectName="tp2-modelado-con-grafos" targetName="gmock_main" />
+      <config projectName="tp2-modelado-con-grafos" targetName="gtest_main" />
+      <config projectName="tp2-modelado-con-grafos" targetName="run_test" />
+      <config projectName="tp2-modelado-con-grafos" targetName="gmock" />
+      <config projectName="tp2-modelado-con-grafos" targetName="ejercicio-1-main" />
+    </generated>
   </component>
   <component name="CMakeSettings">
     <configurations>
@@ -9,7 +16,13 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bda7275-e8bf-4ee0-88ab-948d5d887b13" name="Default Changelist" comment="" />
+    <list default="true" id="0bda7275-e8bf-4ee0-88ab-948d5d887b13" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/1-programacion_dinamica/FibonnachiTopDown.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/1-programacion_dinamica/FibonnachiTopDown.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/1-programacion_dinamica/FibonnchiTopDownTest.cpp" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,12 +30,15 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FUSProjectUsageTrigger">
     <session id="765492771">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -50,12 +66,12 @@
           <entry key="gitignore" value="27" />
           <entry key="h" value="913" />
           <entry key="mm" value="4" />
-          <entry key="txt" value="77" />
+          <entry key="txt" value="79" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CMakeLists.txt" value="77" />
+          <entry key="CMakeLists.txt" value="79" />
           <entry key="ObjectiveC" value="4078" />
           <entry key="PLAIN_TEXT" value="27" />
         </counts>
@@ -68,11 +84,11 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/ejercicio-1/entities/AdyacencyMatrixGraphTest.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
+            <state relative-caret-position="600">
               <caret line="40" column="6" selection-start-line="40" selection-start-column="6" selection-end-line="40" selection-end-column="6" />
               <folding>
                 <element signature="e#58#82#0" expanded="true" />
@@ -81,16 +97,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="890" selection-start-line="9" selection-start-column="890" selection-end-line="9" selection-end-column="890" />
+            <state relative-caret-position="150">
+              <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
@@ -101,15 +117,13 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-12" />
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ejercicio-1/entities/Graph.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
+            <state relative-caret-position="300">
               <caret line="20" selection-start-line="20" selection-end-line="20" />
               <folding>
                 <element signature="e#139#156#0" expanded="true" />
@@ -121,7 +135,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ejercicio-1/entities/AdyacencyMatrixGraph.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
+            <state relative-caret-position="810">
               <caret line="54" column="23" selection-start-line="54" selection-start-column="23" selection-end-line="54" selection-end-column="23" />
               <folding>
                 <element signature="e#57#90#0" expanded="true" />
@@ -133,7 +147,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ejercicio-1/entities/AdyacencyMatrixGraph.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
+            <state relative-caret-position="360">
               <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="26" />
             </state>
           </provider>
@@ -151,7 +165,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ejercicio-1/entities/KruskalKindOfGraph.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
+            <state relative-caret-position="945">
               <caret line="63" column="21" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="21" />
               <folding>
                 <element signature="e#57#73#0" expanded="true" />
@@ -163,7 +177,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ejercicio-1/entities/KruskalKindOfGraph.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
+            <state relative-caret-position="405">
               <caret line="27" column="43" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
               <folding>
                 <element signature="e#164#182#0" expanded="true" />
@@ -199,7 +213,6 @@
         <option value="$PROJECT_DIR$/src/ejercicio-1/entities/BellmanKindOfGraph.cpp" />
         <option value="$PROJECT_DIR$/test/ejercicio-1/entities/BellmanKindOfGraphTest.cpp" />
         <option value="$PROJECT_DIR$/test/ejercicio-1/algoritmos/BellmanFordAlgorithmTest.cpp" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/src/ejercicio-1/entities/Edge.cpp" />
         <option value="$PROJECT_DIR$/src/ejercicio-1/entities/Utils.cpp" />
         <option value="$PROJECT_DIR$/test/ejercicio-1/entities/KruskalKindOfGraphTest.cpp" />
@@ -212,6 +225,7 @@
         <option value="$PROJECT_DIR$/src/ejercicio-1/entities/KruskalKindOfGraph.cpp" />
         <option value="$PROJECT_DIR$/test/ejercicio-1/entities/AdyacencyMatrixGraphTest.cpp" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
       </list>
     </option>
   </component>
@@ -222,8 +236,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="203" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="823" />
   </component>
@@ -235,22 +249,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="tp2-modelado-con-grafos" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-            <path>
-              <item name="tp2-modelado-con-grafos" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name=".idea" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -342,6 +340,40 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="tp2-modelado-con-grafos" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="tp2-modelado-con-grafos" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="tp2-modelado-con-grafos" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="tp2-modelado-con-grafos" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="ejercicio-1" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="tp2-modelado-con-grafos" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="ejercicio-1" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="algoritmos" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -371,33 +403,33 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Google Test.AdyacencyMatrixGraphTest">
-    <configuration name="AdyacencyMatrixGraphTest" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="run_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="run_test" TEST_CLASS="AdyacencyMatrixGraphTest" TEST_MODE="SUITE_TEST">
+  <component name="RunManager" selected="Application.run-test">
+    <configuration name="AdyacencyMatrixGraphTest" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tp2-modelado-con-grafos" TARGET_NAME="run_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tp2-modelado-con-grafos" RUN_TARGET_NAME="run_test" TEST_CLASS="AdyacencyMatrixGraphTest" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AdyacencyMatrixGraphTest.ConVector2_DevuelvoGrafoCompleto" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="run_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="run_test" TEST_CLASS="AdyacencyMatrixGraphTest" TEST_METHOD="ConVector2_DevuelvoGrafoCompleto" TEST_MODE="SUITE_TEST">
+    <configuration name="AdyacencyMatrixGraphTest.ConVector2_DevuelvoGrafoCompleto" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tp2-modelado-con-grafos" TARGET_NAME="run_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tp2-modelado-con-grafos" RUN_TARGET_NAME="run_test" TEST_CLASS="AdyacencyMatrixGraphTest" TEST_METHOD="ConVector2_DevuelvoGrafoCompleto" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KruskalKindOfGraphTest.ConTamañoYEjes_DevuelvoGrafo" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="run_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="run_test" TEST_CLASS="KruskalKindOfGraphTest" TEST_METHOD="ConTamañoYEjes_DevuelvoGrafo" TEST_MODE="SUITE_TEST">
+    <configuration name="KruskalKindOfGraphTest.ConTamañoYEjes_DevuelvoGrafo" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tp2-modelado-con-grafos" TARGET_NAME="run_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tp2-modelado-con-grafos" RUN_TARGET_NAME="run_test" TEST_CLASS="KruskalKindOfGraphTest" TEST_METHOD="ConTamañoYEjes_DevuelvoGrafo" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KruskalKindOfGraphTest.ConVector2_DevuelvoGrafoCompleto" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="run_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="run_test" TEST_CLASS="KruskalKindOfGraphTest" TEST_METHOD="ConVector2_DevuelvoGrafoCompleto" TEST_MODE="SUITE_TEST">
+    <configuration name="KruskalKindOfGraphTest.ConVector2_DevuelvoGrafoCompleto" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tp2-modelado-con-grafos" TARGET_NAME="run_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tp2-modelado-con-grafos" RUN_TARGET_NAME="run_test" TEST_CLASS="KruskalKindOfGraphTest" TEST_METHOD="ConVector2_DevuelvoGrafoCompleto" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KruskalKindOfGraphTest.ConVector5_DevuelvoGrafoCompleto" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="run_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="run_test" TEST_CLASS="KruskalKindOfGraphTest" TEST_METHOD="ConVector5_DevuelvoGrafoCompleto" TEST_MODE="SUITE_TEST">
+    <configuration name="KruskalKindOfGraphTest.ConVector5_DevuelvoGrafoCompleto" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tp2-modelado-con-grafos" TARGET_NAME="run_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tp2-modelado-con-grafos" RUN_TARGET_NAME="run_test" TEST_CLASS="KruskalKindOfGraphTest" TEST_METHOD="ConVector5_DevuelvoGrafoCompleto" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Run all" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="run_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="run_test" TEST_MODE="SUITE_TEST">
+    <configuration name="Run all" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tp2-modelado-con-grafos" TARGET_NAME="run_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tp2-modelado-con-grafos" RUN_TARGET_NAME="run_test" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -407,8 +439,44 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ejercicio-1-main" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tp2-modelado-con-grafos" TARGET_NAME="ejercicio-1-main" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tp2-modelado-con-grafos" RUN_TARGET_NAME="ejercicio-1-main">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gmock" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tp2-modelado-con-grafos" TARGET_NAME="gmock" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gmock_main" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tp2-modelado-con-grafos" TARGET_NAME="gmock_main" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gtest" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tp2-modelado-con-grafos" TARGET_NAME="gtest" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gtest_main" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tp2-modelado-con-grafos" TARGET_NAME="gtest_main" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="run-test" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tp2-modelado-con-grafos" TARGET_NAME="run_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tp2-modelado-con-grafos" RUN_TARGET_NAME="run_test">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Build All" />
+      <item itemvalue="Application.ejercicio-1-main" />
+      <item itemvalue="Application.run-test" />
+      <item itemvalue="Application.gmock" />
+      <item itemvalue="Application.gmock_main" />
+      <item itemvalue="Application.gtest" />
+      <item itemvalue="Application.gtest_main" />
       <item itemvalue="Google Test.Run all" />
       <item itemvalue="Google Test.KruskalKindOfGraphTest.ConVector2_DevuelvoGrafoCompleto" />
       <item itemvalue="Google Test.KruskalKindOfGraphTest.ConVector5_DevuelvoGrafoCompleto" />
@@ -436,7 +504,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1570390149044</updated>
-      <workItem from="1570390150742" duration="31000000" />
+      <workItem from="1570390150742" duration="31252000" />
+      <workItem from="1570837649200" duration="271000" />
     </task>
     <servers />
   </component>
@@ -473,20 +542,14 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31000000" />
+    <option name="totallyTimeSpent" value="31523000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="823" extended-state="6" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="CMake" weight="0.32968536" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" weight="0.32968536" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32968536" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32968536" />
@@ -494,10 +557,16 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Messages" order="8" visible="true" weight="0.32968536" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32968536" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="CMake" order="12" weight="0.32968536" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -521,16 +590,8 @@
     <entry file="file://$PROJECT_DIR$/lib/googletest/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ejercicio-1/algoritmos/Prim.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ejercicio-1/algoritmos/Prim.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ejercicio-1/algoritmos/Prim.cpp" />
+    <entry file="file://$PROJECT_DIR$/src/ejercicio-1/algoritmos/Prim.h" />
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -541,12 +602,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ejercicio-1/entities/Graph.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ejercicio-1/algoritmos/MSTAlgorithm.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ejercicio-1/entities/Graph.cpp" />
+    <entry file="file://$PROJECT_DIR$/src/ejercicio-1/algoritmos/MSTAlgorithm.cpp" />
     <entry file="file://$PROJECT_DIR$/src/ejercicio-1/algoritmos/PrimAlgorithm.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -622,16 +679,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ejemplo/test/1-programacion_dinamica/FibonnchiTopDownTest.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
-          <folding>
-            <element signature="e#57#81#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ejemplo/test/1-programacion_dinamica/FibonnchiTopDownTest.cpp" />
     <entry file="file://$PROJECT_DIR$/src/ejercicio-1/entities/Edge.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
@@ -693,63 +741,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ejercicio-1/entities/Utils.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ejercicio-1/entities/Graph.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="e#139#156#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ejercicio-1/entities/AdyacencyMatrixGraph.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ejercicio-1/entities/KruskalKindOfGraph.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="27" column="43" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
-          <folding>
-            <element signature="e#164#182#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ejercicio-1/entities/KruskalKindOfGraph.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="63" column="21" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="21" />
-          <folding>
-            <element signature="e#57#73#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ejercicio-1/entities/AdyacencyMatrixGraph.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="54" column="23" selection-start-line="54" selection-start-column="23" selection-end-line="54" selection-end-column="23" />
-          <folding>
-            <element signature="e#57#90#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/ejercicio-1/entities/AdyacencyMatrixGraphTest.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
+        <state relative-caret-position="600">
           <caret line="40" column="6" selection-start-line="40" selection-start-column="6" selection-end-line="40" selection-end-column="6" />
           <folding>
             <element signature="e#58#82#0" expanded="true" />
@@ -757,22 +751,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ejercicio-1/entities/Graph.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="890" selection-start-line="9" selection-start-column="890" selection-end-line="9" selection-end-column="890" />
+        <state relative-caret-position="300">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="e#139#156#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+    <entry file="file://$PROJECT_DIR$/src/ejercicio-1/entities/AdyacencyMatrixGraph.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-12" />
+        <state relative-caret-position="810">
+          <caret line="54" column="23" selection-start-line="54" selection-start-column="23" selection-end-line="54" selection-end-column="23" />
+          <folding>
+            <element signature="e#57#90#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ejercicio-1/entities/AdyacencyMatrixGraph.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ejercicio-1/entities/Utils.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ejercicio-1/entities/KruskalKindOfGraph.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="63" column="21" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="21" />
+          <folding>
+            <element signature="e#57#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ejercicio-1/entities/KruskalKindOfGraph.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="43" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
+          <folding>
+            <element signature="e#164#182#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
         </state>
       </provider>
     </entry>
