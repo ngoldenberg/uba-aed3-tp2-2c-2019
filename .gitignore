@@ -1,2 +1,25 @@
+# IDE
 .idea/
 .idea/*
+
+
+# Compilation
+bin/
+build/
+
+# CMake
+cmake-build-debug/
+CMakeFiles/
+CMakeCache.txt
+Makefile
+cmake_install.cmake
+knapsack.cbp
+
+# Python
+__pycache__/
+
+# Jupyter
+.ipynb_checkpoints/
+
+CTestTestfile.cmake
+knapsack_test[1]_include.cmake
