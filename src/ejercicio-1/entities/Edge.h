@@ -16,6 +16,8 @@ public:
 
     long getWeith() const;
 
+    bool operator<(const Edge& edge)const;
+
 private:
     int fromVertex;
     int toVertex;

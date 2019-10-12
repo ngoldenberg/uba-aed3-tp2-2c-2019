@@ -8,11 +8,21 @@
 
 #include <vector>
 #include "Edge.h"
+#include "Graph.h"
 
 class TreeGraph {
 public:
-    std::vector<Edge> getEdges();
+    explicit TreeGraph(int vertexSize);
 
+    std::vector<Edge> getEdges();
+    int getVertex();
+    long getWeigth();
+
+    void addEdge(Edge edge);
+
+private:
+    int vertex;
+    std::vector<Edge> edges;
 };
 
 

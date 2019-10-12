@@ -5,5 +5,26 @@
 #include "TreeGraph.h"
 
 std::vector<Edge> TreeGraph::getEdges() {
-    return std::vector<Edge>();
+    return edges;
 }
+
+int TreeGraph::getVertex() {
+    return vertex;
+}
+
+long TreeGraph::getWeigth() {
+    long weigth = 0;
+    for(auto edge : edges){
+        weigth += edge.getWeith();
+    }
+    return weigth;
+}
+
+TreeGraph::TreeGraph(int vertexSize) {
+    vertex = vertexSize;
+}
+
+void TreeGraph::addEdge(Edge edge) {
+    edges.emplace_back(edge);
+}
+

@@ -53,5 +53,6 @@ AdyacencyMatrixGraph::AdyacencyMatrixGraph() {
 }
 
 long AdyacencyMatrixGraph::distance(int v1, int v2) {
+    assert(adyacent(v1,v2));
     return matrix.at(v1).at(v2);
 }

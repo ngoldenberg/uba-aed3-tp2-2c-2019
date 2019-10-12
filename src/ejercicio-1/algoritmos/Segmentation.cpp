@@ -7,8 +7,10 @@
 #include "../entities/AdyacencyMatrixGraph.h"
 #include "../entities/TreeGraph.h"
 #include "../entities/KruskalKindOfGraph.h"
-#include "BellmanFordAlgorithm.h"
+#include "KruskalAlgorithm.h"
 #include "PrimAlgorithm.h"
+#include "estructuras-auxiliares/ArrayDisjoinSet.h"
+#include "estructuras-auxiliares/ArrayCompressedDisjoinSet.h"
 
 std::vector<int> Segmentation::execute(std::vector<std::pair<int, int>> *dots) {
     Graph *graph = makeGraph(dots);
@@ -21,14 +23,16 @@ std::vector<int> Segmentation::execute(std::vector<std::pair<int, int>> *dots) {
 }
 
 Segmentation::Segmentation(std::string mstAlgorithm) {
-    assert(mstAlgorithm == "prim" || mstAlgorithm == "bellman");
+    assert(mstAlgorithm == "prim" || mstAlgorithm == "kruskal" || mstAlgorithm == "kruskal-compressed");
 
     this->mstStrategy = mstAlgorithm;
 
     if (mstAlgorithm == "prim") {
         this->mstAlgorithm = new PrimAlgorithm();
-    } else {
-        this->mstAlgorithm = new BellmanFordAlgorithm();
+    } else if(mstAlgorithm == "kruskal") {
+        this->mstAlgorithm = new KruskalAlgorithm(new ArrayDisjoinSet());
+    }else{
+        this->mstAlgorithm = new KruskalAlgorithm(new ArrayCompressedDisjoinSet());
     }
 }
 

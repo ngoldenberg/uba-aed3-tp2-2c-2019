@@ -5,5 +5,9 @@
 #include "PrimAlgorithm.h"
 
 TreeGraph * PrimAlgorithm::makeMst(Graph *graph) {
-    return new TreeGraph();
+    return new TreeGraph(graph->getVertex());
+}
+
+PrimAlgorithm::~PrimAlgorithm() {
+
 }

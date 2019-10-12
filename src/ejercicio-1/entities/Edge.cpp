@@ -22,3 +22,8 @@ int Edge::getToVertex() const {
 long Edge::getWeith() const {
     return weith;
 }
+
+bool Edge::operator<(const Edge &edge) const {
+    return weith > edge.getWeith();
+    // TODO: Está hecho a propósito al revez. Esto porque en kruskal no implementé un min heap. Si hace falta hablar conmigo(Chris).
+}

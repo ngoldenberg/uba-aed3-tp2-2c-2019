@@ -7,11 +7,16 @@
 
 
 #include "MSTAlgorithm.h"
+#include "estructuras-auxiliares/DisjoinSet.h"
 
-class BellmanFordAlgorithm : public MSTAlgorithm{
+class KruskalAlgorithm : public MSTAlgorithm{
 public:
+    explicit KruskalAlgorithm(DisjoinSet *disjoinSet);
+    ~KruskalAlgorithm();
     TreeGraph * makeMst(Graph *graph);
 
+private:
+    DisjoinSet *disjoinSet;
 };
 
 

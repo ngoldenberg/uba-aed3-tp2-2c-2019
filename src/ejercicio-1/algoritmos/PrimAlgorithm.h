@@ -10,6 +10,7 @@
 
 class PrimAlgorithm : public MSTAlgorithm{
 public:
+    ~PrimAlgorithm();
     TreeGraph * makeMst(Graph *graph) override;
 
 };
