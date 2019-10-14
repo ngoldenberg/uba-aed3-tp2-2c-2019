@@ -6,43 +6,44 @@
 #include "../entities/Graph.h"
 #include "../entities/AdyacencyMatrixGraph.h"
 #include "../entities/TreeGraph.h"
-#include "../entities/BellmanKindOfGraph.h"
+#include "../entities/KruskalKindOfGraph.h"
+#include "KruskalAlgorithm.h"
+#include "PrimAlgorithm.h"
+#include "estructuras-auxiliares/ArrayDisjoinSet.h"
+#include "estructuras-auxiliares/ArrayCompressedDisjoinSet.h"
 
-std::vector<int> Segmentation::execute(std::vector<std::pair<int, int>> dots) {
-    Graph graph = makeGraph(dots);
+std::vector<int> Segmentation::execute(std::vector<std::pair<int, int>> *dots) {
+    Graph *graph = makeGraph(dots);
 
-    TreeGraph mst = makeMst(graph);
+    TreeGraph mst = *mstAlgorithm->makeMst(graph);
 
     //Continuar como dice el paper.
 
-    return std::vector<int>(dots.size(),0);
+    return std::vector<int>(dots->size(),0);
 }
 
 Segmentation::Segmentation(std::string mstAlgorithm) {
-    assert(mstAlgorithm == "prim" || mstAlgorithm == "bellman");
-    this->mstAlgorithm = mstAlgorithm;
-}
+    assert(mstAlgorithm == "prim" || mstAlgorithm == "kruskal" || mstAlgorithm == "kruskal-compressed");
 
-Graph Segmentation::makeGraph(std::vector<std::pair<int, int>> dots) {
-    if(mstAlgorithm == "prim"){
-        return AdyacencyMatrixGraph();
+    this->mstStrategy = mstAlgorithm;
+
+    if (mstAlgorithm == "prim") {
+        this->mstAlgorithm = new PrimAlgorithm();
+    } else if(mstAlgorithm == "kruskal") {
+        this->mstAlgorithm = new KruskalAlgorithm(new ArrayDisjoinSet());
     }else{
-        return BellmanKindOfGraph();
+        this->mstAlgorithm = new KruskalAlgorithm(new ArrayCompressedDisjoinSet());
     }
 }
 
-TreeGraph Segmentation::makeMst(Graph graph) {
-    if(mstAlgorithm == "prim"){
-        return primMSTAlgorithm(graph);
+Graph* Segmentation::makeGraph(std::vector<std::pair<int, int>> *dots) {
+    if(mstStrategy == "prim"){
+        return new AdyacencyMatrixGraph(dots);
     }else{
-        return bellmanFordMSTAlgorithm(graph);
+        return new KruskalKindOfGraph(dots);
     }
 }
 
-TreeGraph Segmentation::primMSTAlgorithm(Graph graph) {
-    return TreeGraph();
-}
-
-TreeGraph Segmentation::bellmanFordMSTAlgorithm(Graph graph) {
-    return TreeGraph();
+Segmentation::~Segmentation() {
+    delete mstAlgorithm;
 }
