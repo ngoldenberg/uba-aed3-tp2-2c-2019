@@ -7,8 +7,11 @@
 
 
 #include <vector>
+#include <list>
 #include "Edge.h"
 #include "Graph.h"
+#define Destino int
+
 
 class TreeGraph {
 public:
@@ -16,12 +19,14 @@ public:
 
     std::vector<Edge> getEdges();
     int getVertex();
-    long getWeigth();
+    Distancia getWeigth();
 
     void addEdge(Edge edge);
+    void deleteEdge(Edge edge);
 
 private:
-    int vertex;
+    std::vector<std::list<std::pair<Destino,Distancia>>> adyacencias;
+
     std::vector<Edge> edges;
 };
 

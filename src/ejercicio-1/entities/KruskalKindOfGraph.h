@@ -18,7 +18,7 @@ public:
 
     KruskalKindOfGraph(std::vector<Dot> *pVector);
 
-    void addEdge(int from, int to, int weigth) ;
+    void addEdge(int from, int to, Distancia weigth) ;
 
     bool adyacent(int v1, int v2) ;
 

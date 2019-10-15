@@ -5,7 +5,7 @@
 #include <algorithm>
 #include "Edge.h"
 
-Edge::Edge(int v1, int v2, long weith) {
+Edge::Edge(int v1, int v2, Distancia weith) {
     this->fromVertex = std::min(v1, v2);
     this->toVertex = std::max(v1, v2);
     this->weith = weith;
@@ -19,7 +19,7 @@ int Edge::getToVertex() const {
     return toVertex;
 }
 
-long Edge::getWeith() const {
+Distancia Edge::getWeith() const {
     return weith;
 }
 

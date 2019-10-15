@@ -38,7 +38,7 @@ std::vector<Edge> AdyacencyMatrixGraph::getEdges() {
     return std::vector<Edge>();
 }
 
-void AdyacencyMatrixGraph::addEdge(int from, int to, int weigth) {}
+void AdyacencyMatrixGraph::addEdge(int from, int to, Distancia weigth) {}
 
 bool AdyacencyMatrixGraph::adyacent(int v1, int v2) {
     return matrix.at(v1).at(v2) != NotDefined;

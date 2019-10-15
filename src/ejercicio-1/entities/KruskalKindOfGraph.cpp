@@ -38,7 +38,7 @@ KruskalKindOfGraph::KruskalKindOfGraph(int size) {
     vertexSize = size;
 }
 
-void KruskalKindOfGraph::addEdge(int from, int to, int weigth) {
+void KruskalKindOfGraph::addEdge(int from, int to, Distancia weigth) {
     edges.emplace_back(Edge(from,to,weigth));
 }
 
