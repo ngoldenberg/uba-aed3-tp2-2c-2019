@@ -24,6 +24,8 @@ public:
     void addEdge(Edge edge);
     void deleteEdge(Edge edge);
 
+    std::list<std::pair<int, long>> * getAdyacents(int vertex);
+
 private:
     std::vector<std::list<std::pair<Destino,Distancia>>> adyacencias;
 

@@ -2,12 +2,12 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
-      <config projectName="tp2-modelado-con-grafos" targetName="gtest" />
-      <config projectName="tp2-modelado-con-grafos" targetName="gmock_main" />
       <config projectName="tp2-modelado-con-grafos" targetName="gtest_main" />
-      <config projectName="tp2-modelado-con-grafos" targetName="run_test" />
-      <config projectName="tp2-modelado-con-grafos" targetName="gmock" />
       <config projectName="tp2-modelado-con-grafos" targetName="ejercicio-1-main" />
+      <config projectName="tp2-modelado-con-grafos" targetName="gtest" />
+      <config projectName="tp2-modelado-con-grafos" targetName="gmock" />
+      <config projectName="tp2-modelado-con-grafos" targetName="run_test" />
+      <config projectName="tp2-modelado-con-grafos" targetName="gmock_main" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -17,19 +17,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0bda7275-e8bf-4ee0-88ab-948d5d887b13" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/test/ejercicio-1/algoritmos/SegmentationTest.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ejercicio-1/algoritmos/Segmentation.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ejercicio-1/algoritmos/Segmentation.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ejercicio-1/algoritmos/Segmentation.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ejercicio-1/algoritmos/Segmentation.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ejercicio-1/entities/AdyacencyMatrixGraph.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ejercicio-1/entities/AdyacencyMatrixGraph.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ejercicio-1/entities/AdyacencyMatrixGraph.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ejercicio-1/entities/AdyacencyMatrixGraph.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ejercicio-1/entities/Edge.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ejercicio-1/entities/Edge.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ejercicio-1/entities/Edge.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ejercicio-1/entities/Edge.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ejercicio-1/entities/Graph.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ejercicio-1/entities/Graph.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ejercicio-1/entities/KruskalKindOfGraph.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ejercicio-1/entities/KruskalKindOfGraph.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ejercicio-1/entities/KruskalKindOfGraph.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ejercicio-1/entities/KruskalKindOfGraph.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ejercicio-1/entities/TreeGraph.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ejercicio-1/entities/TreeGraph.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ejercicio-1/entities/TreeGraph.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ejercicio-1/entities/TreeGraph.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ejercicio-1/executables/segmentation-main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ejercicio-1/executables/segmentation-main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,18 +39,19 @@
     <session id="765492771">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.24" value="1" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="algorithm" value="1" />
-          <entry key="cpp" value="70" />
+          <entry key="cpp" value="72" />
           <entry key="gitignore" value="2" />
-          <entry key="h" value="59" />
+          <entry key="h" value="60" />
           <entry key="list" value="1" />
           <entry key="txt" value="9" />
           <entry key="utility" value="1" />
@@ -65,30 +62,30 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CMakeLists.txt" value="9" />
-          <entry key="ObjectiveC" value="136" />
+          <entry key="ObjectiveC" value="139" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="5853" />
+          <entry key="cpp" value="7209" />
           <entry key="gitignore" value="27" />
-          <entry key="h" value="2260" />
-          <entry key="mm" value="48" />
+          <entry key="h" value="2281" />
+          <entry key="mm" value="58" />
           <entry key="txt" value="83" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CMakeLists.txt" value="83" />
-          <entry key="ObjectiveC" value="8161" />
+          <entry key="ObjectiveC" value="9548" />
           <entry key="PLAIN_TEXT" value="27" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.cidr.testingFrameworks.usages">
         <counts>
-          <entry key="Google Test" value="76" />
+          <entry key="Google Test" value="88" />
         </counts>
       </usages-collector>
     </session>
@@ -96,31 +93,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ejercicio-1/entities/AdyacencyMatrixGraph.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-              <folding>
-                <element signature="e#57#90#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ejercicio-1/entities/AdyacencyMatrixGraph.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ejercicio-1/entities/TreeGraph.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="431">
-              <caret line="41" column="39" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="39" />
+            <state relative-caret-position="160">
+              <caret line="35" column="17" lean-forward="true" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -128,7 +104,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ejercicio-1/executables/segmentation-main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
+            <state relative-caret-position="525">
               <caret line="35" column="50" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
               <folding>
                 <element signature="e#57#75#0" expanded="true" />
@@ -137,11 +113,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ejercicio-1/algoritmos/Segmentation.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+            <state relative-caret-position="307">
+              <caret line="83" column="148" selection-start-line="83" selection-start-column="148" selection-end-line="83" selection-end-column="148" />
               <folding>
                 <element signature="e#57#82#0" expanded="true" />
               </folding>
@@ -149,11 +125,44 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/ejercicio-1/algoritmos/SegmentationTest.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="256">
+              <caret line="68" column="50" selection-start-line="68" selection-start-column="50" selection-end-line="68" selection-end-column="50" />
+              <folding>
+                <element signature="e#58#82#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ejercicio-1/entities/Edge.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ejercicio-1/entities/Edge.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+              <folding>
+                <element signature="e#57#77#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ejercicio-1/algoritmos/Segmentation.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="51" column="94" selection-start-line="51" selection-start-column="94" selection-end-line="51" selection-end-column="94" />
+            <state relative-caret-position="525">
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
               <folding>
                 <element signature="e#153#170#0" expanded="true" />
               </folding>
@@ -164,7 +173,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/ejercicio-1/entities/KruskalKindOfGraphTest.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
+            <state relative-caret-position="1785">
               <caret line="119" column="16" selection-start-line="119" selection-start-column="16" selection-end-line="119" selection-end-column="16" />
               <folding>
                 <element signature="e#57#81#0" expanded="true" />
@@ -176,8 +185,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/ejercicio-1/algoritmos/KruskalAlgorithmTest.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="37" column="10" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
+            <state relative-caret-position="45">
+              <caret line="3" selection-start-line="3" selection-end-line="30" selection-end-column="1" />
               <folding>
                 <element signature="e#56#80#0" expanded="true" />
               </folding>
@@ -186,19 +195,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file:///Library/Developer/CommandLineTools/usr/include/c++/v1/list">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="833" column="4" selection-start-line="833" selection-start-column="4" selection-end-line="833" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ejercicio-1/entities/TreeGraph.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+            <state relative-caret-position="225">
+              <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
               <folding>
                 <element signature="e#147#164#0" expanded="true" />
               </folding>
@@ -245,15 +245,16 @@
         <option value="$PROJECT_DIR$/src/ejercicio-1/algoritmos/PrimAlgorithm.cpp" />
         <option value="$PROJECT_DIR$/src/ejercicio-1/algoritmos/KruskalAlgorithm.cpp" />
         <option value="$PROJECT_DIR$/test/ejercicio-1/algoritmos/KruskalAlgorithmTest.cpp" />
-        <option value="$PROJECT_DIR$/src/ejercicio-1/entities/Edge.h" />
-        <option value="$PROJECT_DIR$/src/ejercicio-1/entities/Edge.cpp" />
         <option value="$PROJECT_DIR$/src/ejercicio-1/entities/KruskalKindOfGraph.cpp" />
         <option value="$PROJECT_DIR$/src/ejercicio-1/entities/AdyacencyMatrixGraph.h" />
         <option value="$PROJECT_DIR$/src/ejercicio-1/executables/segmentation-main.cpp" />
         <option value="$PROJECT_DIR$/src/ejercicio-1/entities/TreeGraph.h" />
-        <option value="$PROJECT_DIR$/src/ejercicio-1/entities/TreeGraph.cpp" />
-        <option value="$PROJECT_DIR$/src/ejercicio-1/algoritmos/Segmentation.cpp" />
         <option value="$PROJECT_DIR$/src/ejercicio-1/algoritmos/Segmentation.h" />
+        <option value="$PROJECT_DIR$/src/ejercicio-1/entities/Edge.h" />
+        <option value="$PROJECT_DIR$/src/ejercicio-1/entities/Edge.cpp" />
+        <option value="$PROJECT_DIR$/src/ejercicio-1/entities/TreeGraph.cpp" />
+        <option value="$PROJECT_DIR$/test/ejercicio-1/algoritmos/SegmentationTest.cpp" />
+        <option value="$PROJECT_DIR$/src/ejercicio-1/algoritmos/Segmentation.cpp" />
       </list>
     </option>
   </component>
@@ -398,14 +399,6 @@
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="ejercicio-1" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="algoritmos" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="estructuras-auxiliares" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="tp2-modelado-con-grafos" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="ejercicio-1" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="entities" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
@@ -481,33 +474,33 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Google Test.KruskalAlgorithmTest.ConGrafoWikipedia_DevuelvoArbol">
-    <configuration name="KruskalAlgorithmTest" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tp2-modelado-con-grafos" TARGET_NAME="run_test" RUN_TARGET_PROJECT_NAME="tp2-modelado-con-grafos" RUN_TARGET_NAME="run_test" TEST_CLASS="KruskalAlgorithmTest" TEST_MODE="SUITE_TEST">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="KruskalAlgorithmTest.ConGrafoSimple_DevuelvoArbol" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tp2-modelado-con-grafos" TARGET_NAME="run_test" RUN_TARGET_PROJECT_NAME="tp2-modelado-con-grafos" RUN_TARGET_NAME="run_test" TEST_CLASS="KruskalAlgorithmTest" TEST_METHOD="ConGrafoSimple_DevuelvoArbol" TEST_MODE="SUITE_TEST">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="KruskalAlgorithmTest.ConGrafoVacio_DevuelvoArbolVacio" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tp2-modelado-con-grafos" TARGET_NAME="run_test" RUN_TARGET_PROJECT_NAME="tp2-modelado-con-grafos" RUN_TARGET_NAME="run_test" TEST_CLASS="KruskalAlgorithmTest" TEST_METHOD="ConGrafoVacio_DevuelvoArbolVacio" TEST_MODE="SUITE_TEST">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="KruskalAlgorithmTest.ConGrafoWikipedia_DevuelvoArbol" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tp2-modelado-con-grafos" TARGET_NAME="run_test" RUN_TARGET_PROJECT_NAME="tp2-modelado-con-grafos" RUN_TARGET_NAME="run_test" TEST_CLASS="KruskalAlgorithmTest" TEST_METHOD="ConGrafoWikipedia_DevuelvoArbol" TEST_MODE="SUITE_TEST">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="KruskalKindOfGraphTest.ordenarEjes2" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tp2-modelado-con-grafos" TARGET_NAME="run_test" RUN_TARGET_PROJECT_NAME="tp2-modelado-con-grafos" RUN_TARGET_NAME="run_test" TEST_CLASS="KruskalKindOfGraphTest" TEST_METHOD="ordenarEjes2" TEST_MODE="SUITE_TEST">
+  <component name="RunManager" selected="Google Test.SegmentationTest.getSubTree_test3">
+    <configuration name="KruskalAlgorithmTest.ConGrafoWikipedia_DevuelvoArbol" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tp2-modelado-con-grafos" TARGET_NAME="run_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tp2-modelado-con-grafos" RUN_TARGET_NAME="run_test" TEST_CLASS="KruskalAlgorithmTest" TEST_METHOD="ConGrafoWikipedia_DevuelvoArbol" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="Run all" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tp2-modelado-con-grafos" TARGET_NAME="run_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tp2-modelado-con-grafos" RUN_TARGET_NAME="run_test" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SegmentationTest.ConGrafoVacio_DevuelvoArbolVacio" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tp2-modelado-con-grafos" TARGET_NAME="run_test" RUN_TARGET_PROJECT_NAME="tp2-modelado-con-grafos" RUN_TARGET_NAME="run_test" TEST_CLASS="SegmentationTest" TEST_METHOD="ConGrafoVacio_DevuelvoArbolVacio" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SegmentationTest.getSubTree_test1" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tp2-modelado-con-grafos" TARGET_NAME="run_test" RUN_TARGET_PROJECT_NAME="tp2-modelado-con-grafos" RUN_TARGET_NAME="run_test" TEST_CLASS="SegmentationTest" TEST_METHOD="getSubTree_test1" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SegmentationTest.getSubTree_test2" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tp2-modelado-con-grafos" TARGET_NAME="run_test" RUN_TARGET_PROJECT_NAME="tp2-modelado-con-grafos" RUN_TARGET_NAME="run_test" TEST_CLASS="SegmentationTest" TEST_METHOD="getSubTree_test2" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SegmentationTest.getSubTree_test3" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tp2-modelado-con-grafos" TARGET_NAME="run_test" RUN_TARGET_PROJECT_NAME="tp2-modelado-con-grafos" RUN_TARGET_NAME="run_test" TEST_CLASS="SegmentationTest" TEST_METHOD="getSubTree_test3" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -556,19 +549,19 @@
       <item itemvalue="Application.gtest" />
       <item itemvalue="Application.gtest_main" />
       <item itemvalue="Google Test.Run all" />
-      <item itemvalue="Google Test.KruskalKindOfGraphTest.ordenarEjes2" />
-      <item itemvalue="Google Test.KruskalAlgorithmTest.ConGrafoVacio_DevuelvoArbolVacio" />
-      <item itemvalue="Google Test.KruskalAlgorithmTest.ConGrafoSimple_DevuelvoArbol" />
       <item itemvalue="Google Test.KruskalAlgorithmTest.ConGrafoWikipedia_DevuelvoArbol" />
-      <item itemvalue="Google Test.KruskalAlgorithmTest" />
+      <item itemvalue="Google Test.SegmentationTest.ConGrafoVacio_DevuelvoArbolVacio" />
+      <item itemvalue="Google Test.SegmentationTest.getSubTree_test1" />
+      <item itemvalue="Google Test.SegmentationTest.getSubTree_test2" />
+      <item itemvalue="Google Test.SegmentationTest.getSubTree_test3" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Google Test.SegmentationTest.getSubTree_test3" />
+        <item itemvalue="Google Test.SegmentationTest.getSubTree_test2" />
+        <item itemvalue="Google Test.SegmentationTest.getSubTree_test1" />
+        <item itemvalue="Google Test.SegmentationTest.ConGrafoVacio_DevuelvoArbolVacio" />
         <item itemvalue="Google Test.KruskalAlgorithmTest.ConGrafoWikipedia_DevuelvoArbol" />
-        <item itemvalue="Google Test.KruskalAlgorithmTest.ConGrafoSimple_DevuelvoArbol" />
-        <item itemvalue="Google Test.KruskalAlgorithmTest" />
-        <item itemvalue="Google Test.KruskalAlgorithmTest.ConGrafoVacio_DevuelvoArbolVacio" />
-        <item itemvalue="Google Test.KruskalKindOfGraphTest.ordenarEjes2" />
       </list>
     </recent_temporary>
   </component>
@@ -583,62 +576,63 @@
       <option name="presentableId" value="Default" />
       <updated>1570390149044</updated>
       <workItem from="1570390150742" duration="31252000" />
-      <workItem from="1570837649200" duration="21715000" />
+      <workItem from="1570837649200" duration="29627000" />
+      <workItem from="1571248030422" duration="2832000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="KruskalAlgorithmTest_ConGrafoSimple_DevuelvoArbol - 2019.10.12 at 03h 07m 40s.xml">
-      <configuration name="KruskalAlgorithmTest.ConGrafoSimple_DevuelvoArbol" configurationId="CMakeGoogleTestRunConfigurationType" />
+    <history-entry file="SegmentationTest_ConGrafoVacio_DevuelvoArbolVacio - 2019.10.15 at 22h 47m 11s.xml">
+      <configuration name="SegmentationTest.ConGrafoVacio_DevuelvoArbolVacio" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="KruskalAlgorithmTest_ConGrafoSimple_DevuelvoArbol - 2019.10.12 at 03h 07m 43s.xml">
-      <configuration name="KruskalAlgorithmTest.ConGrafoSimple_DevuelvoArbol" configurationId="CMakeGoogleTestRunConfigurationType" />
+    <history-entry file="SegmentationTest_getSubTree_test1 - 2019.10.16 at 18h 17m 33s.xml">
+      <configuration name="SegmentationTest.getSubTree_test1" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="KruskalAlgorithmTest_ConGrafoWikipedia_DevuelvoArbol - 2019.10.12 at 03h 17m 25s.xml">
-      <configuration name="KruskalAlgorithmTest.ConGrafoWikipedia_DevuelvoArbol" configurationId="CMakeGoogleTestRunConfigurationType" />
+    <history-entry file="SegmentationTest_getSubTree_test1 - 2019.10.16 at 18h 19m 17s.xml">
+      <configuration name="SegmentationTest.getSubTree_test1" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="KruskalAlgorithmTest_ConGrafoWikipedia_DevuelvoArbol - 2019.10.12 at 03h 18m 01s.xml">
-      <configuration name="KruskalAlgorithmTest.ConGrafoWikipedia_DevuelvoArbol" configurationId="CMakeGoogleTestRunConfigurationType" />
+    <history-entry file="SegmentationTest_getSubTree_test1 - 2019.10.16 at 18h 21m 05s.xml">
+      <configuration name="SegmentationTest.getSubTree_test1" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="KruskalAlgorithmTest - 2019.10.14 at 16h 05m 37s.xml">
-      <configuration name="KruskalAlgorithmTest" configurationId="CMakeGoogleTestRunConfigurationType" />
+    <history-entry file="SegmentationTest_getSubTree_test1 - 2019.10.16 at 18h 21m 13s.xml">
+      <configuration name="SegmentationTest.getSubTree_test1" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="KruskalAlgorithmTest_ConGrafoSimple_DevuelvoArbol - 2019.10.14 at 16h 05m 56s.xml">
-      <configuration name="KruskalAlgorithmTest.ConGrafoSimple_DevuelvoArbol" configurationId="CMakeGoogleTestRunConfigurationType" />
+    <history-entry file="SegmentationTest_getSubTree_test1 - 2019.10.16 at 18h 26m 20s.xml">
+      <configuration name="SegmentationTest.getSubTree_test1" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="KruskalAlgorithmTest_ConGrafoWikipedia_DevuelvoArbol - 2019.10.14 at 16h 06m 26s.xml">
-      <configuration name="KruskalAlgorithmTest.ConGrafoWikipedia_DevuelvoArbol" configurationId="CMakeGoogleTestRunConfigurationType" />
+    <history-entry file="SegmentationTest_getSubTree_test1 - 2019.10.16 at 18h 27m 24s.xml">
+      <configuration name="SegmentationTest.getSubTree_test1" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="KruskalAlgorithmTest_ConGrafoWikipedia_DevuelvoArbol - 2019.10.14 at 16h 07m 26s.xml">
-      <configuration name="KruskalAlgorithmTest.ConGrafoWikipedia_DevuelvoArbol" configurationId="CMakeGoogleTestRunConfigurationType" />
+    <history-entry file="SegmentationTest_getSubTree_test2 - 2019.10.16 at 18h 35m 54s.xml">
+      <configuration name="SegmentationTest.getSubTree_test2" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="KruskalAlgorithmTest_ConGrafoWikipedia_DevuelvoArbol - 2019.10.14 at 16h 07m 54s.xml">
-      <configuration name="KruskalAlgorithmTest.ConGrafoWikipedia_DevuelvoArbol" configurationId="CMakeGoogleTestRunConfigurationType" />
+    <history-entry file="SegmentationTest_getSubTree_test3 - 2019.10.16 at 18h 44m 35s.xml">
+      <configuration name="SegmentationTest.getSubTree_test3" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="KruskalAlgorithmTest_ConGrafoWikipedia_DevuelvoArbol - 2019.10.14 at 16h 08m 26s.xml">
-      <configuration name="KruskalAlgorithmTest.ConGrafoWikipedia_DevuelvoArbol" configurationId="CMakeGoogleTestRunConfigurationType" />
+    <history-entry file="SegmentationTest_getSubTree_test3 - 2019.10.16 at 18h 53m 41s.xml">
+      <configuration name="SegmentationTest.getSubTree_test3" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52967000" />
+    <option name="totallyTimeSpent" value="63711000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="823" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25679544" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.4350205" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3994528" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4350205" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.48153216" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.32953367" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.24974093" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.32831737" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.24897401" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="CMake" order="12" weight="0.32968536" />
@@ -667,11 +661,26 @@
           <line>8</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/ejercicio-1/algoritmos/Segmentation.cpp</url>
+          <line>63</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
+      <expression>
+        <expression-string>!vertexToVisit.empty()</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>depthI &lt; depth</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>disjoinSet-&gt;find(edge.getFromVertex()</expression-string>
         <language-id>ObjectiveC</language-id>
@@ -747,9 +756,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ejercicio-1/algoritmos/estructuras-auxiliares/DisjoinSet.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ejercicio-1/algoritmos/estructuras-auxiliares/DisjoinSet.cpp" />
     <entry file="file://$PROJECT_DIR$/src/ejercicio-1/algoritmos/estructuras-auxiliares/ArrayCompressedDisjoinSet.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -761,9 +768,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="331">
           <caret line="27" column="34" lean-forward="true" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
-          <folding>
-            <element signature="e#58#82#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -820,9 +824,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="178">
           <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-          <folding>
-            <element signature="e#169#194#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -844,9 +845,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
-          <folding>
-            <element signature="e#151#185#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -864,30 +862,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ejercicio-1/entities/Edge.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ejercicio-1/entities/Edge.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
-          <folding>
-            <element signature="e#57#77#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ejercicio-1/entities/Graph.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-          <folding>
-            <element signature="e#139#156#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -895,9 +873,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="56">
           <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-          <folding>
-            <element signature="e#164#182#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -905,9 +880,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
           <caret line="40" column="28" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
-          <folding>
-            <element signature="e#57#73#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -922,9 +894,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-          <folding>
-            <element signature="e#57#90#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -935,9 +904,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ejercicio-1/executables/segmentation-main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="50" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
+          <folding>
+            <element signature="e#57#75#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ejercicio-1/entities/Edge.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ejercicio-1/entities/Edge.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+          <folding>
+            <element signature="e#57#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ejercicio-1/algoritmos/Segmentation.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="e#153#170#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/ejercicio-1/entities/KruskalKindOfGraphTest.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
+        <state relative-caret-position="1785">
           <caret line="119" column="16" selection-start-line="119" selection-start-column="16" selection-end-line="119" selection-end-column="16" />
           <folding>
             <element signature="e#57#81#0" expanded="true" />
@@ -947,57 +953,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/ejercicio-1/algoritmos/KruskalAlgorithmTest.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="37" column="10" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="30" selection-end-column="1" />
           <folding>
             <element signature="e#56#80#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ejercicio-1/entities/TreeGraph.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="41" column="39" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ejercicio-1/entities/TreeGraph.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+        <state relative-caret-position="225">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
           <folding>
             <element signature="e#147#164#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ejercicio-1/executables/segmentation-main.cpp">
+    <entry file="file://$PROJECT_DIR$/src/ejercicio-1/entities/TreeGraph.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="35" column="50" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
+        <state relative-caret-position="160">
+          <caret line="35" column="17" lean-forward="true" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/ejercicio-1/algoritmos/SegmentationTest.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="68" column="50" selection-start-line="68" selection-start-column="50" selection-end-line="68" selection-end-column="50" />
           <folding>
-            <element signature="e#57#75#0" expanded="true" />
+            <element signature="e#58#82#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ejercicio-1/algoritmos/Segmentation.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+        <state relative-caret-position="307">
+          <caret line="83" column="148" selection-start-line="83" selection-start-column="148" selection-end-line="83" selection-end-column="148" />
           <folding>
             <element signature="e#57#82#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ejercicio-1/algoritmos/Segmentation.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="51" column="94" selection-start-line="51" selection-start-column="94" selection-end-line="51" selection-end-column="94" />
-          <folding>
-            <element signature="e#153#170#0" expanded="true" />
           </folding>
         </state>
       </provider>

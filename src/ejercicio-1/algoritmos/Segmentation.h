@@ -15,17 +15,10 @@
 class Segmentation {
 public:
     Segmentation(std::string mstAlgorithm);
+
     ~Segmentation();
+
     std::vector<int> execute(std::vector<std::pair<int, int>> *dots, double depth, double sigmaT, double fT);
-
-private:
-    std::string mstStrategy;
-    MSTAlgorithm* mstAlgorithm;
-
-    /*
-     * Inicializo el grafo que voy a utilizar a partir de una lista de puntos (coordenadas en x e y).
-     */
-    Graph *makeGraph(std::vector<std::pair<int, int>> *dots);
 
     /*
      * @params:
@@ -40,18 +33,30 @@ private:
      *
      * @ modifica a graph.
      */
-    std::vector<Edge> getSubTree(int fromVertex, TreeGraph graph, double depth, int excludeVertex);
+    std::vector<Edge> * getSubTree(int fromVertex, TreeGraph *graph, double depth, int excludeVertex);
+
+    /*
+     * Inicializo el grafo que voy a utilizar a partir de una lista de puntos (coordenadas en x e y).
+     */
+    Graph *makeGraph(std::vector<std::pair<int, int>> *dots);
+
 
     /*
      * Responde si edge es "inconsistente" según los principios del paper.
      */
-    bool isInconsistent(Edge edge, std::vector<Edge> leftSubTree, std::vector<Edge> rigthSubTree, double sigmaT, double fT);
+    bool isInconsistent(Edge edge, std::vector<Edge> *leftSubTree, std::vector<Edge> *rigthSubTree, double sigmaT,
+                        double fT);
 
     /*
      * modifica a segments.
      * separa a los nodos adyacentes al extremo del toVertex del edge en una nueva componente.
      */
     void splitSegments(std::vector<int> segments, TreeGraph tree, Edge edge, int nextSegmentNumber);
+
+private:
+    std::string mstStrategy;
+    MSTAlgorithm* mstAlgorithm;
+
     };
 
 

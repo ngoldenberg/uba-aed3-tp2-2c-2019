@@ -11,6 +11,7 @@
 #include "PrimAlgorithm.h"
 #include "estructuras-auxiliares/ArrayDisjoinSet.h"
 #include "estructuras-auxiliares/ArrayCompressedDisjoinSet.h"
+#include <queue>
 
 Segmentation::Segmentation(std::string mstAlgorithm) {
     assert(mstAlgorithm == "prim" || mstAlgorithm == "kruskal" || mstAlgorithm == "kruskal-compressed");
@@ -47,8 +48,8 @@ std::vector<int> Segmentation::execute(std::vector<std::pair<int, int>> *dots, d
     int nextSegmentNumber = 2;
 
     for(Edge edge : mst.getEdges()){
-        std::vector<Edge> leftSubTree = getSubTree(edge.getFromVertex(), mst, depth, edge.getToVertex());
-        std::vector<Edge> rigthSubTree = getSubTree(edge.getToVertex(), mst, depth, edge.getFromVertex());
+        std::vector<Edge> *leftSubTree = getSubTree(edge.getFromVertex(), &mst, depth, edge.getToVertex());
+        std::vector<Edge> *rigthSubTree = getSubTree(edge.getToVertex(), &mst, depth, edge.getFromVertex());
 
         if( isInconsistent(edge, leftSubTree, rigthSubTree, sigmaT, fT) ){
             mst.deleteEdge(edge);
@@ -59,16 +60,39 @@ std::vector<int> Segmentation::execute(std::vector<std::pair<int, int>> *dots, d
     return segments;
 }
 
+std::vector<Edge> * Segmentation::getSubTree(int fromVertex, TreeGraph *graph, double depth, int excludeVertex) {
+    auto *edges = new std::vector<Edge>();
+
+    std::vector<bool> seen = std::vector<bool>(graph->getVertex(),false);
+    seen.at(excludeVertex) = true;
+
+    std::queue<int> vertexToVisit;
+    vertexToVisit.push(fromVertex);
+
+    int depthI = 0;
+    int vertex;
+    while( depthI < depth && !vertexToVisit.empty()){
+        vertex = vertexToVisit.back(); vertexToVisit.pop();
+
+        for(std::pair<int, long> edgeI : *graph->getAdyacents(vertex)){
+            if( !seen.at(edgeI.first) ){
+                edges->push_back(Edge(vertex,edgeI.first,edgeI.second));
+                vertexToVisit.push(edgeI.first);
+            }
+        }
+        seen.at(vertex) = true;
+        depthI++; // este depthI está mal que se actualice en cada iteración. Tengo que encontrar otra forma de averiguar como resolver los niveles.
+    }
+    return edges;
+}
+
+bool
+Segmentation::isInconsistent(Edge edge, std::vector<Edge> *leftSubTree, std::vector<Edge> *rigthSubTree, double sigmaT,
+                             double fT) {
+    return false;
+}
+
 void Segmentation::splitSegments(std::vector<int> segments, TreeGraph tree, Edge edge, int nextSegmentNumber){
 
 }
 
-std::vector<Edge> Segmentation::getSubTree(int fromVertex, TreeGraph graph, double depth, int excludeVertex) {
-    return std::vector<Edge>();
-}
-
-bool
-Segmentation::isInconsistent(Edge edge, std::vector<Edge> leftSubTree, std::vector<Edge> rigthSubTree, double sigmaT,
-                             double fT) {
-    return false;
-}

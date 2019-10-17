@@ -20,6 +20,8 @@ public:
 
     bool operator<(const Edge& edge)const;
 
+    bool operator==(Edge edge)const;
+
 private:
     int fromVertex;
     int toVertex;

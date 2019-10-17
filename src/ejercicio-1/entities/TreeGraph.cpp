@@ -43,4 +43,8 @@ void TreeGraph::deleteEdge(Edge edge) {
 
 }
 
+std::list<std::pair<int, long>> * TreeGraph::getAdyacents(int vertex) {
+    return &adyacencias.at(vertex);
+}
+
 

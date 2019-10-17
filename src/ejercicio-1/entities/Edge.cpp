@@ -27,3 +27,7 @@ bool Edge::operator<(const Edge &edge) const {
     return weith > edge.getWeith();
     // TODO: Está hecho a propósito al revez. Esto porque en kruskal no implementé un min heap. Si hace falta hablar conmigo(Chris).
 }
+
+bool Edge::operator==(Edge edge) const {
+    return this->toVertex == edge.getToVertex() && this->fromVertex == edge.getFromVertex() && this->weith == edge.getWeith();
+}
