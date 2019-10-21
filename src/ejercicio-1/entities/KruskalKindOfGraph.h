@@ -18,7 +18,7 @@ public:
 
     KruskalKindOfGraph(std::vector<Dot> *pVector);
 
-    void addEdge(int from, int to, int weigth) ;
+    void addEdge(int from, int to, Distancia weigth) ;
 
     bool adyacent(int v1, int v2) ;
 
@@ -33,7 +33,7 @@ private:
 
     bool areEquivalent(int xi, int xj, int yi, int yj) const;
 
-    long getDistanceBetweenPoints(int xi, int xj, int yi, int yj) const;
+    double getDistanceBetweenPoints(int xi, int xj, int yi, int yj) const;
 };
 
 

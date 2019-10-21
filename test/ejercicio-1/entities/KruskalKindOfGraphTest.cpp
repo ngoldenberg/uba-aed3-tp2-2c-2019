@@ -42,7 +42,7 @@ TEST_F(KruskalKindOfGraphTest, ConVector3_DevuelvoGrafoCompleto){
 
     ASSERT_EQ(3, graph->getEdges().size());
     ASSERT_EQ(1, graph->getEdges().at(0).getWeight());
-    ASSERT_EQ(3, graph->getEdges().at(1).getWeight());
+    ASSERT_EQ(3, round(graph->getEdges().at(1).getWeight()));
     ASSERT_EQ(3, graph->getEdges().at(2).getWeight());
 
     ASSERT_EQ(3, graph->getVertex());
@@ -93,7 +93,7 @@ TEST_F(KruskalKindOfGraphTest, ConVector5_DevuelvoGrafoCompleto){
     ASSERT_TRUE(graph->adyacent(4,3));
 }
 
-TEST_F(KruskalKindOfGraphTest, ConTamañoYEjes_DevuelvoGrafo){
+TEST_F(KruskalKindOfGraphTest, ConTamanoYEjes_DevuelvoGrafo){
     graph = new KruskalKindOfGraph(3);
 
     graph->addEdge(0,1,5);
