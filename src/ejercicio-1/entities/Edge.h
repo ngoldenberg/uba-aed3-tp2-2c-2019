@@ -8,20 +8,20 @@
 
 class Edge {
 public:
-    Edge(int v1, int v2, long weith);
+    Edge(int v1, int v2, long weight);
 
     int getFromVertex() const;
 
     int getToVertex() const;
 
-    long getWeith() const;
+    long getWeight() const;
 
     bool operator<(const Edge& edge)const;
 
 private:
     int fromVertex;
     int toVertex;
-    long weith;
+    long weight;
 
 };
 

@@ -5,6 +5,7 @@
 #include "AdyacencyMatrixGraph.h"
 #include "Utils.h"
 #include <cmath>
+#include "assert.h"
 
 AdyacencyMatrixGraph::AdyacencyMatrixGraph(std::vector<Dot> *dots) {
     for(int iter = 0; iter < dots->size(); iter ++){

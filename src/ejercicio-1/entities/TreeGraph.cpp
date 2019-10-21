@@ -12,10 +12,10 @@ int TreeGraph::getVertex() {
     return vertex;
 }
 
-long TreeGraph::getWeigth() {
+long TreeGraph::getWeight() {
     long weigth = 0;
     for(auto edge : edges){
-        weigth += edge.getWeith();
+        weigth += edge.getWeight();
     }
     return weigth;
 }

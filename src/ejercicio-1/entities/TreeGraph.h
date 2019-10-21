@@ -16,7 +16,7 @@ public:
 
     std::vector<Edge> getEdges();
     int getVertex();
-    long getWeigth();
+    long getWeight();
 
     void addEdge(Edge edge);
 

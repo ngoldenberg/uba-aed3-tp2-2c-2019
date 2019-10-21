@@ -8,7 +8,7 @@
 Edge::Edge(int v1, int v2, long weith) {
     this->fromVertex = std::min(v1, v2);
     this->toVertex = std::max(v1, v2);
-    this->weith = weith;
+    this->weight = weight;
 }
 
 int Edge::getFromVertex() const {
@@ -19,11 +19,11 @@ int Edge::getToVertex() const {
     return toVertex;
 }
 
-long Edge::getWeith() const {
-    return weith;
+long Edge::getWeight() const {
+    return weight;
 }
 
 bool Edge::operator<(const Edge &edge) const {
-    return weith > edge.getWeith();
+    return weight > edge.getWeight();
     // TODO: Está hecho a propósito al revez. Esto porque en kruskal no implementé un min heap. Si hace falta hablar conmigo(Chris).
 }

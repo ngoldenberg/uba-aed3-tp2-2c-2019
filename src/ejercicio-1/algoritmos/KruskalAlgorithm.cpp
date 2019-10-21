@@ -3,6 +3,7 @@
 //
 
 #include "KruskalAlgorithm.h"
+#include <algorithm>
 
 TreeGraph * KruskalAlgorithm::makeMst(Graph *graph) {
 

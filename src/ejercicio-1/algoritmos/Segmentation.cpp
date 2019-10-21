@@ -11,6 +11,8 @@
 #include "PrimAlgorithm.h"
 #include "estructuras-auxiliares/ArrayDisjoinSet.h"
 #include "estructuras-auxiliares/ArrayCompressedDisjoinSet.h"
+#include <assert.h>
+
 
 std::vector<int> Segmentation::execute(std::vector<std::pair<int, int>> *dots) {
     Graph *graph = makeGraph(dots);

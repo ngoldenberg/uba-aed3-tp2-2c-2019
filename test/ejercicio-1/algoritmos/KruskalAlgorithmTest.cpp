@@ -38,7 +38,7 @@ TEST_F(KruskalAlgorithmTest, ConGrafoSimple_DevuelvoArbol){
     TreeGraph treeGraph = *(algorithm->makeMst(graph));
 
     ASSERT_EQ(2, treeGraph.getEdges().size());
-    ASSERT_EQ(12, treeGraph.getWeigth());
+    ASSERT_EQ(12, treeGraph.getWeight());
 }
 
 TEST_F(KruskalAlgorithmTest, ConGrafoWikipedia_DevuelvoArbol){
@@ -58,5 +58,5 @@ TEST_F(KruskalAlgorithmTest, ConGrafoWikipedia_DevuelvoArbol){
     TreeGraph treeGraph = *(algorithm->makeMst(graph));
 
     ASSERT_EQ(6, treeGraph.getEdges().size());
-    ASSERT_EQ(39, treeGraph.getWeigth());
+    ASSERT_EQ(39, treeGraph.getWeight());
 }
