@@ -30,7 +30,7 @@ private:
     std::vector<std::vector<Distancia>> matrix;
     bool areEquivalent(int xi, int xj, int yi, int yj) const;
 
-    long getDistanceBetweenPoints(int xi, int xj, int yi, int yj) const;
+    Distancia getDistanceBetweenPoints(int xi, int xj, int yi, int yj) const;
 };
 
 

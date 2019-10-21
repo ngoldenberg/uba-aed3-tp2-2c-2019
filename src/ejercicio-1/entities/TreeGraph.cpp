@@ -40,11 +40,16 @@ void TreeGraph::addEdge(Edge edge) {
 }
 
 void TreeGraph::deleteEdge(Edge edge) {
+    adyacencias.at(edge.getFromVertex()).remove(std::make_pair(edge.getToVertex(),edge.getWeith()));
+    adyacencias.at(edge.getToVertex()).remove(std::make_pair(edge.getFromVertex(),edge.getWeith()));
 
+    //TODO: debería de eliminar el eje de la lista de edges. Pero por ahora no la vuelvo a usar luego del comienzo del algoritmo de Segmentación.
 }
 
-std::list<std::pair<int, long>> * TreeGraph::getAdyacents(int vertex) {
+std::list<std::pair<int, Distancia>> * TreeGraph::getAdyacents(int vertex) {
     return &adyacencias.at(vertex);
 }
+
+TreeGraph::~TreeGraph() = default;
 
 

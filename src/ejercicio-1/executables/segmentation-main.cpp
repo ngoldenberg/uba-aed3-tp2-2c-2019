@@ -22,7 +22,7 @@ int main(){
 
     std::string mstStrategy;
     std::cin >> mstStrategy;
-    double depth;
+    int depth;
     std::cin >> depth;
     double sigmaT;
     std::cin >> sigmaT;

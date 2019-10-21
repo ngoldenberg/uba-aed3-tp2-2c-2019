@@ -4,6 +4,6 @@
 
 #define Dot std::pair<int,int>
 
-#define Distancia long
+#define Distancia double
 
 #define NotDefined -1

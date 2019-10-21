@@ -17,6 +17,8 @@ class TreeGraph {
 public:
     explicit TreeGraph(int vertexSize);
 
+    ~TreeGraph();
+
     std::vector<Edge> getEdges();
     int getVertex();
     Distancia getWeigth();
@@ -24,7 +26,7 @@ public:
     void addEdge(Edge edge);
     void deleteEdge(Edge edge);
 
-    std::list<std::pair<int, long>> * getAdyacents(int vertex);
+    std::list<std::pair<int, Distancia>> * getAdyacents(int vertex);
 
 private:
     std::vector<std::list<std::pair<Destino,Distancia>>> adyacencias;

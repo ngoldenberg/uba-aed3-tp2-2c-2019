@@ -8,7 +8,7 @@
 
 AdyacencyMatrixGraph::AdyacencyMatrixGraph(std::vector<Dot> *dots) {
     for(int iter = 0; iter < dots->size(); iter ++){
-        matrix.emplace_back(std::vector<long>(dots->size(), NotDefined));
+        matrix.emplace_back(std::vector<Distancia>(dots->size(), NotDefined));
     }
 
     for(int i = 0; i < dots->size(); i++){
@@ -25,9 +25,8 @@ AdyacencyMatrixGraph::AdyacencyMatrixGraph(std::vector<Dot> *dots) {
     }
 }
 
-long AdyacencyMatrixGraph::getDistanceBetweenPoints(int xi, int xj, int yi, int yj) const {
-    return lround(sqrt(pow(xi - xj, 2) + pow(yi - yj, 2)));
-    // TODO: PUEDE QUE SEA INNECESARIO TENER EL REDONDEO.
+double AdyacencyMatrixGraph::getDistanceBetweenPoints(int xi, int xj, int yi, int yj) const {
+    return sqrt(pow(xi - xj, 2) + pow(yi - yj, 2));
 }
 
 bool AdyacencyMatrixGraph::areEquivalent(int xi, int xj, int yi, int yj) const {

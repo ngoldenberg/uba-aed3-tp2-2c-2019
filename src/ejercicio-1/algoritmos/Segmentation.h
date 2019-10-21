@@ -18,7 +18,7 @@ public:
 
     ~Segmentation();
 
-    std::vector<int> execute(std::vector<std::pair<int, int>> *dots, double depth, double sigmaT, double fT);
+    std::vector<int> execute(std::vector<std::pair<int, int>> *dots, int depth, double sigmaT, double fT);
 
     /*
      * @params:
@@ -48,14 +48,20 @@ public:
                         double fT);
 
     /*
-     * modifica a segments.
-     * separa a los nodos adyacentes al extremo del toVertex del edge en una nueva componente.
+     * modifica a @segments.
+     * separa a los nodos adyacentes a @beginVertex en una nueva componente con el indice @nextSegmentNumber
+     * excluyendo a @nextSegmentNumber (el extremo del edge original) sobre el grafo @forest.
      */
-    void splitSegments(std::vector<int> segments, TreeGraph tree, Edge edge, int nextSegmentNumber);
+    void
+    splitSegments(std::vector<int> *segments, TreeGraph *forest, int nextSegmentNumber, int beginVertex, int excludeVertex);
 
 private:
     std::string mstStrategy;
     MSTAlgorithm* mstAlgorithm;
+
+    std::list<int>* getVertexOfSubTree(TreeGraph *forest, int beginVertex, int excludeVertex);
+    double mean(std::vector<Edge> *edges);
+    bool isInconsistent(double subTreeMean, Distancia W, double sigmaT, double fT);
 
     };
 

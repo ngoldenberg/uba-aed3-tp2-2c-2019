@@ -10,7 +10,7 @@
 
 class Edge {
 public:
-    Edge(int v1, int v2, long weith);
+    Edge(int v1, int v2, Distancia weith);
 
     int getFromVertex() const;
 

@@ -33,7 +33,7 @@ private:
 
     bool areEquivalent(int xi, int xj, int yi, int yj) const;
 
-    long getDistanceBetweenPoints(int xi, int xj, int yi, int yj) const;
+    double getDistanceBetweenPoints(int xi, int xj, int yi, int yj) const;
 };
 
 

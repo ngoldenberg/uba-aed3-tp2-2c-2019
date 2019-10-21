@@ -21,8 +21,8 @@ KruskalKindOfGraph::KruskalKindOfGraph(std::vector<Dot> *dots) {
     }
 }
 
-long KruskalKindOfGraph::getDistanceBetweenPoints(int xi, int xj, int yi, int yj) const {
-    return lround(sqrt(pow(xi - xj, 2) + pow(yi - yj, 2)));
+double KruskalKindOfGraph::getDistanceBetweenPoints(int xi, int xj, int yi, int yj) const {
+    return sqrt(pow(xi - xj, 2) + pow(yi - yj, 2));
     // TODO: PUEDE QUE SEA INNECESARIO TENER EL REDONDEO.
 }
 
