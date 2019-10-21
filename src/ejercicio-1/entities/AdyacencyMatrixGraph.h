@@ -16,7 +16,7 @@ public:
 
     explicit AdyacencyMatrixGraph(std::vector<std::pair<int, int>> *pVector);
 
-    void addEdge(int from, int to, int weigth) override;
+    void addEdge(int from, int to, Distancia weigth) override;
 
     bool adyacent(int v1, int v2);
 
@@ -27,10 +27,10 @@ public:
 
 
 private:
-    std::vector<std::vector<long>> matrix;
+    std::vector<std::vector<Distancia>> matrix;
     bool areEquivalent(int xi, int xj, int yi, int yj) const;
 
-    long getDistanceBetweenPoints(int xi, int xj, int yi, int yj) const;
+    Distancia getDistanceBetweenPoints(int xi, int xj, int yi, int yj) const;
 };
 
 

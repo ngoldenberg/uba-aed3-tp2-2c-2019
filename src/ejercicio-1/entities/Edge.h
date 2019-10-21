@@ -6,22 +6,26 @@
 #define TP2_MODELADO_CON_GRAFOS_EDGE_H
 
 
+#include "Utils.h"
+
 class Edge {
 public:
-    Edge(int v1, int v2, long weith);
+    Edge(int v1, int v2, Distancia weith);
 
     int getFromVertex() const;
 
     int getToVertex() const;
 
-    long getWeith() const;
+    Distancia getWeith() const;
 
     bool operator<(const Edge& edge)const;
+
+    bool operator==(Edge edge)const;
 
 private:
     int fromVertex;
     int toVertex;
-    long weith;
+    Distancia weith;
 
 };
 
