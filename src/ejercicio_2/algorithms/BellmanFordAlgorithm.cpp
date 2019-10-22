@@ -5,7 +5,7 @@ vector<int> BellmanFordAlgorithm::Solve(int const currencies_quantity, const Flo
   for(int i = 0; i < currencies_quantity; i++) {
     for(int j = 0; i < currencies_quantity; i++) {
       if (j != i && matrix[i][j] > 1 && matrix[j][i] > 1) {
-        return vector<int>(GetEdgeNumberByAxis(matrix, i, j), GetEdgeNumberByAxis(matrix, j, i));
+        return vector<int>{GetEdgeNumberByAxis(matrix, i, j), GetEdgeNumberByAxis(matrix, j, i)};
       }
     }
   }
