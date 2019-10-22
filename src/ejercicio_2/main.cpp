@@ -14,20 +14,21 @@
 using namespace std::chrono;
 
 int main() {
-
   ArbitrationInput input = ArbitrationInput::FromStreamParse(cin);
 
   // TODO: if Bellman-Ford or Floyd-Warshal -> algorithm
-
   BellmanFordAlgorithm bfa;
 
-  cout << bfa->CycleExists(input.GetCurrenciesQuantity(), input.GetMultipliersMatrix(), 1) << endl;
-
-  // Cantidad de divisas diferentes: input.GetCurrenciesQuantity()
-  // Matriz c: input.GetMultipliersMatrix()
-
-  // Podemos hacer cout de nuesto input directamente por si necesitamos debuggear
-  cout << input << endl;
+  try {
+    vector<int> cycle = bfa.Solve(input.GetCurrenciesQuantity(), input.GetMultipliersMatrix());
+    cout << "SI ";
+    for (int &vertex : cycle)
+    {
+      cout << vertex << " ";
+    }
+  } catch(logic_error) {
+    cout << "NO" << endl;
+  }
 
 
   return 0;

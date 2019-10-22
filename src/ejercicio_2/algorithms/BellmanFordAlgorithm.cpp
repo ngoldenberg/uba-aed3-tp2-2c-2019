@@ -1,122 +1,124 @@
 #include "BellmanFordAlgorithm.h"
+#include "../config/constants.h"
 
-int BellmanFordAlgorithm::Solve(int const currencies_quantity, const FloatMatrix &matrix) {
-  return 0;
+vector<int> BellmanFordAlgorithm::Solve(int const currencies_quantity, const FloatMatrix &matrix) {
+  return this->GetCycle(currencies_quantity, matrix, 1);
 }
 
 tuple<int, int, float> BellmanFordAlgorithm::GetEdgeByNumber(FloatMatrix matrix, int n) {
   int v = matrix[0].size();
   int row = (int) n / v;
-  int column = n - row * v - 1;
+  int column = n - row * v;
   if (row == column) return {row, column, 0};
 
   return {row, column, matrix[row][column]};
 }
 
-bool BellmanFordAlgorithm::CycleExists(int const currencies_quantity,
-                                       const FloatMatrix &matrix,
-                                       int src_vertex) {
-  int vertices = currencies_quantity;
-  int edges = vertices ^2;
+AdjList BellmanFordAlgorithm::GetAdjacencyList(const FloatMatrix matrix) {
+  int edges = matrix[0].size() * (matrix[0].size() - 1);
+  AdjList adj_list(matrix[0].size() + 1);
 
-  int dist[currencies_quantity];
-
-  // Step 1: Initialize distances from src to all other vertices
-  // as INFINITE
-  for (int i = 0; i < vertices; i++)
-    dist[i] = INT_MAX;
-  dist[src_vertex] = 0;
-
-  // Step 2: Relax all edges |V| - 1 times. A simple shortest
-  // path from src to any other vertex can have at-most |V| - 1
-  // edges
-  for (int i = 1; i <= vertices - 1; i++) {
-    for (int j = 0; j < edges; j++) {
-      tuple<int, int, float> edge = GetEdgeByNumber(matrix, j + 1);
-      if (get<2>(edge) != 0) {
-        continue;
-      }
-
-      int src = get<0>(edge) + 1;
-      int dest = get<1>(edge) + 1;
-      float mult = get<2>(edge);
-      if (dist[src] != INT_MAX && dist[src] + mult < dist[dest])
-        dist[dest] = dist[src] + mult;
-    }
-  }
-
-  // Step 3: check for negative-weight cycles.  The above step
-  // guarantees shortest distances if graph doesn't contain
-  // negative weight cycle.  If we get a shorter path, then there
-  // is a cycle.
-  for (int i = 0; i < edges; i++) {
-    tuple<int, int, float> edge = GetEdgeByNumber(matrix, i + 1);
-    if (get<2>(edge) != 0) {
+  for (int j = 1; j < matrix[0].size() * matrix[0].size(); j++) {
+    tuple<int, int, float> edge = GetEdgeByNumber(matrix, j);
+    if (get<2>(edge) == 0) {
       continue;
     }
+//  TODO: Check +1 usage
+    pair<int, float> pr = {get<1>(edge) + 1, get<2>(edge)};
+    adj_list[get<0>(edge) + 1].push_back(pr);
+  }
 
-    int src = get<0>(edge) + 1;
-    int dest = get<1>(edge) + 1;
-    float mult = get<2>(edge);
+  return adj_list;
+}
 
-    if (dist[src] != INT_MAX && dist[src] + mult < dist[dest]) {
-      printf("Graph contains negative weight cycle");
-      throw logic_error("Negative cycle detected"); // If negative cycle is detected, simply return
+vector<int> BellmanFordAlgorithm::GetCycle(int const currencies_quantity,
+                                           const FloatMatrix &matrix,
+                                           int src_vertex) {
+  int vertices = currencies_quantity;
+  int edges = vertices * (vertices - 1);
+
+  AdjList adj_list = this->GetAdjacencyList(matrix);
+  vector<pair<float, int>> shortest_distances(vertices + 1);
+  // shortest_distances is a vector of pairs
+  // pair.first -> the shortest distance from start vertex
+  // pair.second -> parent vertex in the shortest path
+
+  list < pair < int, float > > ::iterator
+  traverse;
+  int i, j;
+
+  // Initialisation
+  for (i = 0; i <= vertices; ++i) {
+    shortest_distances[i].first = INT_MIN;
+    shortest_distances[i].second = -1;
+  }
+
+  // Setting distance to source = 0
+  shortest_distances[src_vertex].first = 1;
+  shortest_distances[src_vertex].second = 0;
+
+  // The Algorithm that computes Shortest Distances
+  for (i = 1; i <= vertices - 1; ++i) {    // Runs 'vertices - 1' times = O(|V|)
+    for (j = 1; j <= vertices; ++j) {    // Runs as many times as the edges = O(|E|)
+      // The code ahead basically explores the whole of Adjacency List,
+      // covering one edge once, so the runtime of the code in this
+      // block is O(|E|)
+
+      traverse = adj_list[j].begin();
+
+      while (traverse != adj_list[j].end()) {
+
+        if (shortest_distances[j].first == INT_MIN) {
+          // Important...!
+          //traverse = traverse->next;
+          ++traverse;
+          continue;
+        }
+
+        // Checking for Relaxation
+        if ((*traverse).second * shortest_distances[j].first >
+            shortest_distances[(*traverse).first].first) {
+          // Relaxation
+          shortest_distances[(*traverse).first].first = (*traverse).second
+              * shortest_distances[j].first;
+          shortest_distances[(*traverse).first].second = j;
+        }
+
+        ++traverse;
+      }
     }
   }
 
+  // Checking for Negative Cycles
+  for (j = 1; j <= vertices; ++j) {
+    traverse = adj_list[j].begin();
+    while (traverse != adj_list[j].end()) {
+      // Checking for further relaxation
+      if ((*traverse).second * shortest_distances[j].first >
+          shortest_distances[(*traverse).first].first) {
+        // Negative Cycle found as further relaxation is possible
+        vector<int> negative_cycle;
+        this->GetNegativeCycle(shortest_distances, shortest_distances[j].second, j, negative_cycle);
+        return negative_cycle;
+      }
+
+      ++traverse;
+    }
+  }
+  throw logic_error("No negative cycle detected");
 }
 
-
-void printArr(int dist[], int n)
-{
-  printf("Vertex   Distance from Source\n");
-  for (int i = 0; i < n; ++i)
-    printf("%d \t\t %d\n", i, dist[i]);
+void BellmanFordAlgorithm::GetNegativeCycle(vector<pair<float, int>> shortest_distances,
+                                            int vertex,
+                                            int start_vertex, vector<int> &cycle) {
+  if (vertex == start_vertex) {
+    cycle.push_back(vertex);
+  } else if (shortest_distances[vertex].second == 0) {
+    cycle.push_back(vertex);
+    GetNegativeCycle(shortest_distances, start_vertex, start_vertex, cycle);
+  } else {
+    cycle.push_back(vertex);
+    GetNegativeCycle(shortest_distances, shortest_distances[vertex].second, start_vertex, cycle);
+  }
 }
 
-//// The main function that finds shortest distances from src to
-//// all other vertices using Bellman-Ford algorithm.  The function
-//// also detects negative weight cycle
-//void BellmanFord(struct Graph *graph, int src) {
-//  int V = graph->V;
-//  int E = graph->E;
-//  int dist[V];
-//
-//  // Step 1: Initialize distances from src to all other vertices
-//  // as INFINITE
-//  for (int i = 0; i < V; i++)
-//    dist[i] = INT_MAX;
-//  dist[src] = 0;
-//
-//  // Step 2: Relax all edges |V| - 1 times. A simple shortest
-//  // path from src to any other vertex can have at-most |V| - 1
-//  // edges
-//  for (int i = 1; i <= V - 1; i++) {
-//    for (int j = 0; j < E; j++) {
-//      int u = graph->edge[j].src;
-//      int v = graph->edge[j].dest;
-//      int weight = graph->edge[j].weight;
-//      if (dist[u] != INT_MAX && dist[u] + weight < dist[v])
-//        dist[v] = dist[u] + weight;
-//    }
-//  }
-//
-//  // Step 3: check for negative-weight cycles.  The above step
-//  // guarantees shortest distances if graph doesn't contain
-//  // negative weight cycle.  If we get a shorter path, then there
-//  // is a cycle.
-//  for (int i = 0; i < E; i++) {
-//    int u = graph->edge[i].src;
-//    int v = graph->edge[i].dest;
-//    int weight = graph->edge[i].weight;
-//    if (dist[u] != INT_MAX && dist[u] + weight < dist[v]) {
-//      printf("Graph contains negative weight cycle");
-//      return; // If negative cycle is detected, simply return
-//    }
-//  }
-//
-//  printArr(dist, V);
-//
-//  return;
-//}
