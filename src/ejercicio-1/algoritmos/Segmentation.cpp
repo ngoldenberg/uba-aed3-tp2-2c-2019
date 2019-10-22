@@ -14,6 +14,8 @@
 #include <assert.h>
 #include <queue>
 #include <stack>
+#include <cmath>
+
 
 Segmentation::Segmentation(std::string mstAlgorithm) {
     assert(mstAlgorithm == "prim" || mstAlgorithm == "kruskal" || mstAlgorithm == "kruskal-compressed");
@@ -93,10 +95,12 @@ bool
 Segmentation::isInconsistent(Edge edge, std::vector<Edge> *leftSubTree, std::vector<Edge> *rigthSubTree, double sigmaT,
                              double fT) {
     double leftMean = mean(leftSubTree);
-    double rigthMean = mean(rigthSubTree);
+    double leftDesviation = desviation(leftSubTree, leftMean);
+    double rightMean = mean(rigthSubTree);
+    double rightDesviation = desviation(rigthSubTree, rightMean);
     Distancia W = edge.getWeight();
 
-    return isInconsistent(leftMean,W,sigmaT,fT) || isInconsistent(rigthMean,W,sigmaT,fT);
+    return isInconsistent(leftMean,W,sigmaT*leftDesviation,fT) || isInconsistent(rightMean,W,sigmaT*rightDesviation,fT);
 
 
 }
@@ -149,6 +153,15 @@ double Segmentation::mean(std::vector<Edge> *edges) {
 }
 
 bool Segmentation::isInconsistent(double subTreeMean, Distancia W, double sigmaT, double fT) {
-    return (W > subTreeMean + 2 * sigmaT) && (W / subTreeMean > fT);
+    return (W > subTreeMean + sigmaT) && (W / subTreeMean > fT);
+}
+
+double Segmentation::desviation(std::vector<Edge> *tree, double mean) {
+    double sigma_cuadrado = 0;
+    for (auto edge : *tree){
+        sigma_cuadrado += pow(edge.getWeight() - mean,2);
+    }
+    sigma_cuadrado = sigma_cuadrado / tree->size();
+    return sqrt(sigma_cuadrado);
 }
 
