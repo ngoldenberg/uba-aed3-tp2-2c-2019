@@ -39,56 +39,66 @@ int main()
 
 bool floydWarshall (Grafo G, uint n)
 {
-	double dist[n][n];
+	double dist[n][n][n];
+	double path[n][n][n] = {0};
   
 
     for (uint i = 0; i < n; i++)  
     {
         for (uint j = 0; j < n; j++)  
         {   
-        	dist[i][j] = log(G[i][j]); 
-        	cout<<dist[i][j]<<"     "; 
+            dist[i][j][0] = log(G[i][j]); 
+        	cout<<dist[i][j][0]<<"     "; 
+        	path[i][j][0] = i;
         }
         cout<<endl;
     }
     cout << endl; 
 
-    for (uint k = 0; k < n; k++)  
-    {  
-        // Pick all vertices as source one by one  
-        for (uint i = 0; i < n; i++)  
+    for (int s = 1; s < n; ++s)
+    {
+     
+        for (uint k = 0; k < n; k++)  
         {  
-            // Pick all vertices as destination for the  
-            // above picked source 
-           /*if(dist[i][k] + dist[k][i] < 0)
-            {	cout << dist[i][k] + dist[k][i] <<endl; 
-            	return false;
-            }*/
-            for (uint j = 0; j < n; j++)  
+            for (uint i = 0; i < n; i++)  
             {  
-                // If vertex k is on the shortest path from  
-                // i to j, then update the value of dist[i][j]  
-               /* double d = dist[i][k] + dist[k][j];
-                if (dist[i][j] > d){ 
-                    dist[i][j] = d;
-
-                    } */
-            	dist[i][j] = max(dist[i][j], dist[i][k] + dist[k][j]);
-            }  
+            
+                for (uint j = 0; j < n; j++)  
+                {  
+            
+                    double d = dist[i][k][s-1] + dist[k][j][0];
+                    if (dist[i][j][s] < d){ 
+               		   dist[i][j][s] = d;
+               		   path[i][j][s] = k; 
+                    } 
+           
+                }  
+            }
+           /* cout << "k: " << k <<endl;
+            for (uint i = 0; i < n; i++)  
+   		   { 
+        	   for (uint j = 0; j < n; j++)  
+        	   {  
+        		  cout<<path[i][j][s]<<"     ";  
+        	   }  
+        	   cout<<endl;  
+    	   }
+    	   cout << endl;*/    
         }
-        cout << "k: " << k <<endl;
-        for (uint i = 0; i < n; i++)  
-   		{ 
-        	for (uint j = 0; j < n; j++)  
-        	{  
-        		cout<<dist[i][j]<<"     ";  
-        	}  
-        	cout<<endl;  
-    	}
-    	cout << endl;    
+    }
+    
+    for (int s = 0; s < n; ++s)
+    {
+        cout << "s: " << s << endl; 
+        for (int i = 0; i < n; ++i)
+        {
+            for (int j = 0; j < n; ++j)
+            {
+                cout << "("<< dist[i][j][s] << ", "<< path[i][j][s] << ") ";
+            }
+            cout << endl;
+        }
     }
 
-    
-
-    return dist[0][0] > 0;    
+    return dist[0][0][2] > 0;    
 }
