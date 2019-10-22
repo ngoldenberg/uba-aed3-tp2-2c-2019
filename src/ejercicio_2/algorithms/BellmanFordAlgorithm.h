@@ -16,6 +16,7 @@ class BellmanFordAlgorithm : public Algorithm {
   void GetNegativeCycle(vector<pair<float, int>> shortest_distances,
                         int vertex,
                         int start_vertex, vector<int> &cycle);
+  int GetEdgeNumberByAxis(FloatMatrix const &matrix, int r, int c);
 
  public:
   BellmanFordAlgorithm() {};

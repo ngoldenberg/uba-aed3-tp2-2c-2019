@@ -2,6 +2,14 @@
 #include "../config/constants.h"
 
 vector<int> BellmanFordAlgorithm::Solve(int const currencies_quantity, const FloatMatrix &matrix) {
+  for(int i = 0; i < currencies_quantity; i++) {
+    for(int j = 0; i < currencies_quantity; i++) {
+      if (j != i && matrix[i][j] > 1 && matrix[j][i] > 1) {
+        return vector<int>(GetEdgeNumberByAxis(matrix, i, j), GetEdgeNumberByAxis(matrix, j, i));
+      }
+    }
+  }
+
   return this->GetCycle(currencies_quantity, matrix, 1);
 }
 
@@ -12,6 +20,13 @@ tuple<int, int, float> BellmanFordAlgorithm::GetEdgeByNumber(FloatMatrix matrix,
   if (row == column) return {row, column, 0};
 
   return {row, column, matrix[row][column]};
+}
+
+int BellmanFordAlgorithm::GetEdgeNumberByAxis(const FloatMatrix &matrix, int r, int c) {
+  if (r == c) return 0;
+
+  int v = matrix[0].size();
+  return r * (v-1) + c;
 }
 
 AdjList BellmanFordAlgorithm::GetAdjacencyList(const FloatMatrix matrix) {
