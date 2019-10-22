@@ -12,6 +12,8 @@ class AdyacencyMatrixGraph : public Graph {
 public:
     AdyacencyMatrixGraph();
 
+    AdyacencyMatrixGraph(int size);
+
     std::vector<Edge> getEdges() override;
 
     explicit AdyacencyMatrixGraph(std::vector<std::pair<int, int>> *pVector);

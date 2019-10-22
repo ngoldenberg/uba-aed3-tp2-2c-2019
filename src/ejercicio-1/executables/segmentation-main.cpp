@@ -40,20 +40,20 @@ int main(){
 
 void print(std::vector<int> dots) {
     for(int dot : dots){
-        std::cout << dot;
+        std::cout << dot << std::endl;
     }
 }
 
 std::vector<std::pair<int, int>> * input(){
-    std::vector<std::pair<int,int>> dots;
+    auto dots = new std::vector<std::pair<int,int>>();
     int size;
     std::cin >> size;
 
     int x, y;
     for(int iter = 0; iter < size; iter ++){
         std::cin >> x >> y;
-        dots.emplace_back(x,y);
+        dots->emplace_back(x,y);
     }
 
-    return &dots;
+    return dots;
 }

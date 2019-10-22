@@ -63,7 +63,8 @@ private:
     double mean(std::vector<Edge> *edges);
     bool isInconsistent(double subTreeMean, Distancia W, double sigmaT, double fT);
 
-    };
+    double desviation(std::vector<Edge> *tree, double mean);
+};
 
 
 #endif //TP2_MODELADO_CON_GRAFOS_SEGMENTATION_H

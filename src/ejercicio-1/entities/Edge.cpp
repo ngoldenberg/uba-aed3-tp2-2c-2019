@@ -5,10 +5,10 @@
 #include <algorithm>
 #include "Edge.h"
 
-Edge::Edge(int v1, int v2, Distancia weith) {
+Edge::Edge(int v1, int v2, Distancia weight) {
     this->fromVertex = std::min(v1, v2);
     this->toVertex = std::max(v1, v2);
-    this->weith = weith;
+    this->weight = weight;
 }
 
 int Edge::getFromVertex() const {
@@ -19,15 +19,15 @@ int Edge::getToVertex() const {
     return toVertex;
 }
 
-Distancia Edge::getWeith() const {
-    return weith;
+Distancia Edge::getWeight() const {
+    return weight;
 }
 
 bool Edge::operator<(const Edge &edge) const {
-    return weith > edge.getWeith();
+    return weight > edge.getWeight();
     // TODO: Está hecho a propósito al revez. Esto porque en kruskal no implementé un min heap. Si hace falta hablar conmigo(Chris).
 }
 
 bool Edge::operator==(Edge edge) const {
-    return this->toVertex == edge.getToVertex() && this->fromVertex == edge.getFromVertex() && this->weith == edge.getWeith();
+    return this->toVertex == edge.getToVertex() && this->fromVertex == edge.getFromVertex() && this->weight == edge.getWeight();
 }

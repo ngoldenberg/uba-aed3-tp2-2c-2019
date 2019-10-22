@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
       <config projectName="tp2-modelado-con-grafos" targetName="gtest_main" />
       <config projectName="tp2-modelado-con-grafos" targetName="ejercicio-1-main" />
@@ -17,6 +17,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0bda7275-e8bf-4ee0-88ab-948d5d887b13" name="Default Changelist" comment="">
+<<<<<<< HEAD
+      <change afterPath="$PROJECT_DIR$/test/ejercicio-1/algoritmos/PrimAlgorithmTest.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ejercicio-1/algoritmos/KruskalAlgorithm.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ejercicio-1/algoritmos/KruskalAlgorithm.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ejercicio-1/algoritmos/PrimAlgorithm.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ejercicio-1/algoritmos/PrimAlgorithm.cpp" afterDir="false" />
+=======
+>>>>>>> 70a4a69a1bcab258c97e15d89c4be93d23179d72
       <change beforePath="$PROJECT_DIR$/src/ejercicio-1/algoritmos/Segmentation.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ejercicio-1/algoritmos/Segmentation.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ejercicio-1/algoritmos/Segmentation.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ejercicio-1/algoritmos/Segmentation.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ejercicio-1/entities/AdyacencyMatrixGraph.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ejercicio-1/entities/AdyacencyMatrixGraph.cpp" afterDir="false" />
@@ -30,13 +38,16 @@
       <change beforePath="$PROJECT_DIR$/src/ejercicio-1/executables/segmentation-main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ejercicio-1/executables/segmentation-main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/ejercicio-1/algoritmos/SegmentationTest.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/ejercicio-1/algoritmos/SegmentationTest.cpp" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+=======
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FUSProjectUsageTrigger">
     <session id="765492771">
@@ -206,10 +217,19 @@
         </entry>
       </file>
     </leaf>
+>>>>>>> 70a4a69a1bcab258c97e15d89c4be93d23179d72
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+<<<<<<< HEAD
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
+  <component name="ProjectId" id="1SJN7r94YrX0gIrgrELrrR6qxQ1" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+=======
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -428,11 +448,19 @@
       </pane>
     </panes>
   </component>
+>>>>>>> 70a4a69a1bcab258c97e15d89c4be93d23179d72
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -455,35 +483,62 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
+  <component name="RunManager" selected="Google Test.KruskalAlgorithmTest.ConGrafoSimple_DevuelvoArbol">
+    <configuration name="KruskalAlgorithmTest.ConGrafoSimple_DevuelvoArbol" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tp2-modelado-con-grafos" TARGET_NAME="run_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tp2-modelado-con-grafos" RUN_TARGET_NAME="run_test" TEST_CLASS="KruskalAlgorithmTest" TEST_METHOD="ConGrafoSimple_DevuelvoArbol" TEST_MODE="SUITE_TEST">
+=======
   <component name="RunManager" selected="Google Test.SegmentationTest.segmentation_test1">
     <configuration name="Run all" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tp2-modelado-con-grafos" TARGET_NAME="run_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tp2-modelado-con-grafos" RUN_TARGET_NAME="run_test" TEST_MODE="SUITE_TEST">
+>>>>>>> 70a4a69a1bcab258c97e15d89c4be93d23179d72
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
+    <configuration name="KruskalAlgorithmTest.ConGrafoVacio_DevuelvoArbolVacio" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tp2-modelado-con-grafos" TARGET_NAME="run_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tp2-modelado-con-grafos" RUN_TARGET_NAME="run_test" TEST_CLASS="KruskalAlgorithmTest" TEST_METHOD="ConGrafoVacio_DevuelvoArbolVacio" TEST_MODE="SUITE_TEST">
+=======
     <configuration name="SegmentationTest.getSubTree_test1" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tp2-modelado-con-grafos" TARGET_NAME="run_test" RUN_TARGET_PROJECT_NAME="tp2-modelado-con-grafos" RUN_TARGET_NAME="run_test" TEST_CLASS="SegmentationTest" TEST_METHOD="getSubTree_test1" TEST_MODE="SUITE_TEST">
+>>>>>>> 70a4a69a1bcab258c97e15d89c4be93d23179d72
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
+    <configuration name="KruskalKindOfGraphTest.ordenarEjes" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tp2-modelado-con-grafos" TARGET_NAME="run_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tp2-modelado-con-grafos" RUN_TARGET_NAME="run_test" TEST_CLASS="KruskalKindOfGraphTest" TEST_METHOD="ordenarEjes" TEST_MODE="SUITE_TEST">
+=======
     <configuration name="SegmentationTest.getSubTree_test2" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tp2-modelado-con-grafos" TARGET_NAME="run_test" RUN_TARGET_PROJECT_NAME="tp2-modelado-con-grafos" RUN_TARGET_NAME="run_test" TEST_CLASS="SegmentationTest" TEST_METHOD="getSubTree_test2" TEST_MODE="SUITE_TEST">
+>>>>>>> 70a4a69a1bcab258c97e15d89c4be93d23179d72
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
+    <configuration name="KruskalKindOfGraphTest.ordenarEjes1" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tp2-modelado-con-grafos" TARGET_NAME="run_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tp2-modelado-con-grafos" RUN_TARGET_NAME="run_test" TEST_CLASS="KruskalKindOfGraphTest" TEST_METHOD="ordenarEjes1" TEST_MODE="SUITE_TEST">
+=======
     <configuration name="SegmentationTest.getSubTree_test3" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tp2-modelado-con-grafos" TARGET_NAME="run_test" RUN_TARGET_PROJECT_NAME="tp2-modelado-con-grafos" RUN_TARGET_NAME="run_test" TEST_CLASS="SegmentationTest" TEST_METHOD="getSubTree_test3" TEST_MODE="SUITE_TEST">
+>>>>>>> 70a4a69a1bcab258c97e15d89c4be93d23179d72
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
+    <configuration name="KruskalKindOfGraphTest.ordenarEjes2" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tp2-modelado-con-grafos" TARGET_NAME="run_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tp2-modelado-con-grafos" RUN_TARGET_NAME="run_test" TEST_CLASS="KruskalKindOfGraphTest" TEST_METHOD="ordenarEjes2" TEST_MODE="SUITE_TEST">
+=======
     <configuration name="SegmentationTest.segmentation_test1" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tp2-modelado-con-grafos" TARGET_NAME="run_test" RUN_TARGET_PROJECT_NAME="tp2-modelado-con-grafos" RUN_TARGET_NAME="run_test" TEST_CLASS="SegmentationTest" TEST_METHOD="segmentation_test1" TEST_MODE="SUITE_TEST">
+>>>>>>> 70a4a69a1bcab258c97e15d89c4be93d23179d72
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="SegmentationTest.splitSegments_test1" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tp2-modelado-con-grafos" TARGET_NAME="run_test" RUN_TARGET_PROJECT_NAME="tp2-modelado-con-grafos" RUN_TARGET_NAME="run_test" TEST_CLASS="SegmentationTest" TEST_METHOD="splitSegments_test1" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
@@ -522,13 +577,13 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Build All" />
-      <item itemvalue="Application.ejercicio-1-main" />
-      <item itemvalue="Application.run-test" />
-      <item itemvalue="Application.gmock" />
-      <item itemvalue="Application.gmock_main" />
-      <item itemvalue="Application.gtest" />
-      <item itemvalue="Application.gtest_main" />
+      <item itemvalue="CMake Application.Build All" />
+      <item itemvalue="CMake Application.run-test" />
+      <item itemvalue="CMake Application.ejercicio-1-main" />
+      <item itemvalue="CMake Application.gmock" />
+      <item itemvalue="CMake Application.gmock_main" />
+      <item itemvalue="CMake Application.gtest" />
+      <item itemvalue="CMake Application.gtest_main" />
       <item itemvalue="Google Test.Run all" />
       <item itemvalue="Google Test.SegmentationTest.getSubTree_test1" />
       <item itemvalue="Google Test.SegmentationTest.getSubTree_test2" />
@@ -557,6 +612,23 @@
       <option name="presentableId" value="Default" />
       <updated>1570390149044</updated>
       <workItem from="1570390150742" duration="31252000" />
+<<<<<<< HEAD
+      <workItem from="1570837649200" duration="11198000" />
+      <workItem from="1571014345693" duration="1543000" />
+      <workItem from="1571186869577" duration="214000" />
+      <workItem from="1571187100218" duration="41000" />
+      <workItem from="1571277579698" duration="611000" />
+      <workItem from="1571278213306" duration="167000" />
+      <workItem from="1571278443254" duration="1410000" />
+      <workItem from="1571339006241" duration="3281000" />
+      <workItem from="1571357163511" duration="599000" />
+      <workItem from="1571428892935" duration="3316000" />
+      <workItem from="1571445206256" duration="1415000" />
+      <workItem from="1571522242775" duration="1542000" />
+    </task>
+    <servers />
+  </component>
+=======
       <workItem from="1570837649200" duration="29627000" />
       <workItem from="1571248030422" duration="14393000" />
     </task>
@@ -623,11 +695,22 @@
       <window_info anchor="right" id="Database" order="3" />
     </layout>
   </component>
+>>>>>>> 70a4a69a1bcab258c97e15d89c4be93d23179d72
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -638,6 +721,11 @@
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+<<<<<<< HEAD
+          <url>file://$PROJECT_DIR$/src/ejercicio-1/algoritmos/KruskalAlgorithm.cpp</url>
+          <line>9</line>
+          <option name="timeStamp" value="6" />
+=======
           <url>file://$PROJECT_DIR$/src/ejercicio-1/algoritmos/Segmentation.cpp</url>
           <line>114</line>
           <option name="timeStamp" value="8" />
@@ -651,6 +739,7 @@
           <url>file://$PROJECT_DIR$/src/ejercicio-1/algoritmos/Segmentation.cpp</url>
           <line>47</line>
           <option name="timeStamp" value="10" />
+>>>>>>> 70a4a69a1bcab258c97e15d89c4be93d23179d72
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -696,6 +785,8 @@
       </expression>
     </expressions>
   </component>
+<<<<<<< HEAD
+=======
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/lib/googletest/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor" />
@@ -1014,4 +1105,5 @@
       </provider>
     </entry>
   </component>
+>>>>>>> 70a4a69a1bcab258c97e15d89c4be93d23179d72
 </project>

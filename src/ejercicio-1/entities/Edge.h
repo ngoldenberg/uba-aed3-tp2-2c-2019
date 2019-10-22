@@ -10,13 +10,13 @@
 
 class Edge {
 public:
-    Edge(int v1, int v2, Distancia weith);
+    Edge(int v1, int v2, Distancia weight);
 
     int getFromVertex() const;
 
     int getToVertex() const;
 
-    Distancia getWeith() const;
+    Distancia getWeight() const;
 
     bool operator<(const Edge& edge)const;
 
@@ -25,7 +25,7 @@ public:
 private:
     int fromVertex;
     int toVertex;
-    Distancia weith;
+    Distancia weight;
 
 };
 

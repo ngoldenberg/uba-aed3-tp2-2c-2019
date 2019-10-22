@@ -25,7 +25,7 @@ TEST_F(KruskalKindOfGraphTest, ConVector2_DevuelvoGrafoCompleto){
 
 
     ASSERT_EQ(1, graph->getEdges().size());
-    ASSERT_EQ(2, graph->getEdges().at(0).getWeith());
+    ASSERT_EQ(2, graph->getEdges().at(0).getWeight());
 
     ASSERT_EQ(2, graph->getVertex());
     ASSERT_TRUE(graph->adyacent(0,1));
@@ -41,9 +41,9 @@ TEST_F(KruskalKindOfGraphTest, ConVector3_DevuelvoGrafoCompleto){
     graph = new KruskalKindOfGraph(&dots);
 
     ASSERT_EQ(3, graph->getEdges().size());
-    ASSERT_EQ(1, graph->getEdges().at(0).getWeith());
-    ASSERT_EQ(3, graph->getEdges().at(1).getWeith());
-    ASSERT_EQ(3, graph->getEdges().at(2).getWeith());
+    ASSERT_EQ(1, graph->getEdges().at(0).getWeight());
+    ASSERT_EQ(3, round(graph->getEdges().at(1).getWeight()));
+    ASSERT_EQ(3, graph->getEdges().at(2).getWeight());
 
     ASSERT_EQ(3, graph->getVertex());
     ASSERT_TRUE(graph->adyacent(0,1));
@@ -93,7 +93,7 @@ TEST_F(KruskalKindOfGraphTest, ConVector5_DevuelvoGrafoCompleto){
     ASSERT_TRUE(graph->adyacent(4,3));
 }
 
-TEST_F(KruskalKindOfGraphTest, ConTamañoYEjes_DevuelvoGrafo){
+TEST_F(KruskalKindOfGraphTest, ConTamanoYEjes_DevuelvoGrafo){
     graph = new KruskalKindOfGraph(3);
 
     graph->addEdge(0,1,5);
@@ -117,9 +117,9 @@ TEST_F(KruskalKindOfGraphTest, ordenarEjes1){
 
     sort(edges.begin(), edges.end());
 
-    ASSERT_EQ(10, edges.at(0).getWeith());
-    ASSERT_EQ(7, edges.at(1).getWeith());
-    ASSERT_EQ(5, edges.at(2).getWeith());
+    ASSERT_EQ(10, edges.at(0).getWeight());
+    ASSERT_EQ(7, edges.at(1).getWeight());
+    ASSERT_EQ(5, edges.at(2).getWeight());
 }
 
 TEST_F(KruskalKindOfGraphTest, ordenarEjes2){
@@ -133,9 +133,9 @@ TEST_F(KruskalKindOfGraphTest, ordenarEjes2){
 
     sort(edges.begin(), edges.end());
 
-    ASSERT_EQ(10, edges.at(0).getWeith());
-    ASSERT_EQ(7, edges.at(1).getWeith());
-    ASSERT_EQ(5, edges.at(2).getWeith());
-    ASSERT_EQ(3, edges.at(3).getWeith());
-    ASSERT_EQ(1, edges.at(4).getWeith());
+    ASSERT_EQ(10, edges.at(0).getWeight());
+    ASSERT_EQ(7, edges.at(1).getWeight());
+    ASSERT_EQ(5, edges.at(2).getWeight());
+    ASSERT_EQ(3, edges.at(3).getWeight());
+    ASSERT_EQ(1, edges.at(4).getWeight());
 }

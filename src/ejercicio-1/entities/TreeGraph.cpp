@@ -2,6 +2,7 @@
 // Created by Christian nahuel Rivera on 7/10/19.
 //
 
+#include <assert.h>
 #include "TreeGraph.h"
 
 std::vector<Edge> TreeGraph::getEdges() {
@@ -12,14 +13,14 @@ int TreeGraph::getVertex() {
     return adyacencias.size();
 }
 
-Distancia TreeGraph::getWeigth() {
-    Distancia weigth = 0;
+Distancia TreeGraph::getWeight(){
+    Distancia weight = 0;
 
     for(auto edge : edges){
-        weigth+= edge.getWeith();
+        weight+= edge.getWeight();
     }
 
-    return weigth;
+    return weight;
 }
 
 TreeGraph::TreeGraph(int vertexSize) {
@@ -33,15 +34,15 @@ TreeGraph::TreeGraph(int vertexSize) {
 }
 
 void TreeGraph::addEdge(Edge edge) {
-    adyacencias.at(edge.getFromVertex()).emplace_back(std::make_pair(edge.getToVertex(), edge.getWeith()));
-    adyacencias.at(edge.getToVertex()).emplace_back(std::make_pair(edge.getFromVertex(), edge.getWeith()));
+    adyacencias.at(edge.getFromVertex()).emplace_back(std::make_pair(edge.getToVertex(), edge.getWeight()));
+    adyacencias.at(edge.getToVertex()).emplace_back(std::make_pair(edge.getFromVertex(), edge.getWeight()));
 
     edges.emplace_back(edge);
 }
 
 void TreeGraph::deleteEdge(Edge edge) {
-    adyacencias.at(edge.getFromVertex()).remove(std::make_pair(edge.getToVertex(),edge.getWeith()));
-    adyacencias.at(edge.getToVertex()).remove(std::make_pair(edge.getFromVertex(),edge.getWeith()));
+    adyacencias.at(edge.getFromVertex()).remove(std::make_pair(edge.getToVertex(),edge.getWeight()));
+    adyacencias.at(edge.getToVertex()).remove(std::make_pair(edge.getFromVertex(),edge.getWeight()));
 
     //TODO: debería de eliminar el eje de la lista de edges. Pero por ahora no la vuelvo a usar luego del comienzo del algoritmo de Segmentación.
 }

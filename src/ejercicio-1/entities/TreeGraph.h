@@ -21,7 +21,7 @@ public:
 
     std::vector<Edge> getEdges();
     int getVertex();
-    Distancia getWeigth();
+    Distancia getWeight();
 
     void addEdge(Edge edge);
     void deleteEdge(Edge edge);

@@ -5,6 +5,7 @@
 #include "AdyacencyMatrixGraph.h"
 #include "Utils.h"
 #include <cmath>
+#include "assert.h"
 
 AdyacencyMatrixGraph::AdyacencyMatrixGraph(std::vector<Dot> *dots) {
     for(int iter = 0; iter < dots->size(); iter ++){
@@ -47,11 +48,16 @@ int AdyacencyMatrixGraph::getVertex() {
     return matrix.size();
 }
 
-AdyacencyMatrixGraph::AdyacencyMatrixGraph() {
-
+AdyacencyMatrixGraph::AdyacencyMatrixGraph(int size) {
+    for(int iter = 0; iter < size; iter ++){
+        matrix.emplace_back(std::vector<Distancia>(size, NotDefined));
+    }
 }
 
 long AdyacencyMatrixGraph::distance(int v1, int v2) {
     assert(adyacent(v1,v2));
     return matrix.at(v1).at(v2);
+}
+
+AdyacencyMatrixGraph::AdyacencyMatrixGraph() {
 }

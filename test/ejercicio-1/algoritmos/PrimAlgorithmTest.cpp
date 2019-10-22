@@ -1,28 +1,29 @@
 //
-// Created by Christian nahuel Rivera on 6/10/19.
+// Created by andisici on 19/10/19.
 //
+
 #include <gtest/gtest.h>
 #include "../../../src/ejercicio-1/algoritmos/MSTAlgorithm.h"
-#include "../../../src/ejercicio-1/algoritmos/KruskalAlgorithm.h"
-#include "../../../src/ejercicio-1/entities/KruskalKindOfGraph.h"
+#include "../../../src/ejercicio-1/algoritmos/PrimAlgorithm.h"
+#include "../../../src/ejercicio-1/entities/AdyacencyMatrixGraph.h"
 #include "../../../src/ejercicio-1/algoritmos/estructuras-auxiliares/ArrayDisjoinSet.h"
 #include "../../../src/ejercicio-1/algoritmos/estructuras-auxiliares/ArrayCompressedDisjoinSet.h"
 
-struct KruskalAlgorithmTest : testing::Test{
+struct PrimAlgorithmTest : testing::Test{
     MSTAlgorithm *algorithm;
 
-    KruskalAlgorithmTest(){
-        algorithm = new KruskalAlgorithm(new ArrayDisjoinSet());
-        //algorithm = new KruskalAlgorithm(new ArrayCompressedDisjoinSet());
+    PrimAlgorithmTest(){
+        algorithm = new PrimAlgorithm();
+        //algorithm = new PrimAlgorithm(new ArrayCompressedDisjoinSet());
     }
 
-    ~KruskalAlgorithmTest(){
+    ~PrimAlgorithmTest(){
         delete algorithm;
     }
 };
 
-TEST_F(KruskalAlgorithmTest, ConGrafoVacio_DevuelvoArbolVacio){
-    Graph* graph = new KruskalKindOfGraph(0);
+TEST_F(PrimAlgorithmTest, ConGrafoVacio_DevuelvoArbolVacio){
+    Graph* graph = new AdyacencyMatrixGraph(0);
 
     TreeGraph treeGraph = *(algorithm->makeMst(graph));
 
@@ -30,8 +31,9 @@ TEST_F(KruskalAlgorithmTest, ConGrafoVacio_DevuelvoArbolVacio){
     ASSERT_EQ(0, treeGraph.getVertex());
 }
 
-TEST_F(KruskalAlgorithmTest, ConGrafoSimple_DevuelvoArbol){
-    Graph* graph = new KruskalKindOfGraph(3);
+TEST_F(PrimAlgorithmTest, ConGrafoSimple_DevuelvoArbol){
+    Graph* graph = new AdyacencyMatrixGraph(3);
+    
     graph->addEdge(1,0,5);
     graph->addEdge(2,0,7);
 
@@ -41,8 +43,8 @@ TEST_F(KruskalAlgorithmTest, ConGrafoSimple_DevuelvoArbol){
     ASSERT_EQ(12, treeGraph.getWeight());
 }
 
-TEST_F(KruskalAlgorithmTest, ConGrafoWikipedia_DevuelvoArbol){
-    Graph* graph = new KruskalKindOfGraph(7);
+TEST_F(PrimAlgorithmTest, ConGrafoWikipedia_DevuelvoArbol){
+    Graph* graph = new AdyacencyMatrixGraph(7);
     graph->addEdge(0,1,7);
     graph->addEdge(3,0,5);
     graph->addEdge(1,2,8);
