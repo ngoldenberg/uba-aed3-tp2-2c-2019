@@ -6,6 +6,6 @@ class Algorithm {
  public:
   Algorithm() {}
   virtual ~Algorithm() {}
-  virtual int Solve(int const currencies_quantity, FloatMatrix const &matrix) = 0;
+  virtual vector<int> Solve(int const currencies_quantity, FloatMatrix const &matrix) = 0;
 };
 
