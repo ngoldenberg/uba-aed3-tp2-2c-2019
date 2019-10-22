@@ -2,7 +2,8 @@
 #include <cmath>
 #include <iostream>
 #include <vector>
-#include <math.h>       
+#include <math.h> 
+#include <string>      
 
 using namespace std;
 
@@ -87,6 +88,23 @@ bool floydWarshall (Grafo G, uint n)
         }
     }
     
+    int s, arb = -1;
+    for (s; s < n; ++s)
+    {
+        for (int i = 0; i < n; ++i)
+        {
+            if(dist[i][i][s] > 0)
+            {
+                arb = i;
+            }
+            break;
+        }
+        if (arb != -1)
+        {
+            break;
+        }
+    }
+
     for (int s = 0; s < n; ++s)
     {
         cout << "s: " << s << endl; 
@@ -100,5 +118,10 @@ bool floydWarshall (Grafo G, uint n)
         }
     }
 
-    return dist[0][0][2] > 0;    
+    if(arb != -1)
+    {
+        vector<double> p;
+    }
+
+    return "NO";    
 }
