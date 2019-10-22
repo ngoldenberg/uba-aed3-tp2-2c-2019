@@ -35,3 +35,28 @@ TEST(BellmanFord, 3_n_matrix) {
     ASSERT_EQ(cycle[i], expected_cycle[i]);
   }
 }
+
+TEST(BellmanFord, all_1_matrix) {
+  std::ifstream input_file_stream("samples/ejercicio_2_-3_int_matrix__all_1.txt", ios::in);
+  ArbitrationInput input = ArbitrationInput::FromStreamParse(input_file_stream);
+  BellmanFordAlgorithm bfa;
+
+  vector<int> cycle;
+  try {
+    cycle = bfa.Solve(input.GetCurrenciesQuantity(), input.GetMultipliersMatrix());
+  } catch(logic_error) {
+    ASSERT_EQ(cycle.size(), 0);
+  }
+}
+
+TEST(BellmanFord, complex_samplex_1) {
+  std::ifstream input_file_stream("samples/ejercicio_2_sample_1.txt", ios::in);
+  ArbitrationInput input = ArbitrationInput::FromStreamParse(input_file_stream);
+  BellmanFordAlgorithm bfa;
+  vector<int> cycle = bfa.Solve(input.GetCurrenciesQuantity(), input.GetMultipliersMatrix());
+
+  vector<int> expected_cycle = {17, 4};
+  for (int i = 0; i < cycle.size(); i++) {
+    ASSERT_EQ(cycle[i], expected_cycle[i]);
+  }
+}

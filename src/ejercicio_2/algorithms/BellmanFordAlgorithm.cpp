@@ -26,6 +26,10 @@ int BellmanFordAlgorithm::GetEdgeNumberByAxis(const FloatMatrix &matrix, int r, 
   if (r == c) return 0;
 
   int v = matrix[0].size();
+
+  if (c < r) {
+    return r * (v-1) + c + 1;
+  }
   return r * (v-1) + c;
 }
 
@@ -38,7 +42,7 @@ AdjList BellmanFordAlgorithm::GetAdjacencyList(const FloatMatrix matrix) {
     if (get<2>(edge) == 0) {
       continue;
     }
-//  TODO: Check +1 usage
+    // TODO: Check +1 usage
     pair<int, float> pr = {get<1>(edge) + 1, get<2>(edge)};
     adj_list[get<0>(edge) + 1].push_back(pr);
   }
