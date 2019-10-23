@@ -35,6 +35,15 @@ rm -rf build/
 _(se puede evitar `-C build` estar dentro de `build/`)_
 
 ## Run & Usage
+### Arbitraje
+Utilizar una variable de entorno para seleccionar el algoritmo deseado.
+* `FLOYD=true`: Seleccionara Floyd
+* `FLOYD=false`: Seleccionara BellmanFord
+Ejemplo: `cat samples/ejercicio_2_-2_int_cycle.txt | FLOYD=true ./bin/arbitraje`
+
+#### Tests
+Correr tests de Arbitraje: `./bin/arbitraje_test`
+
 ### Example
 Un archivo de texto o cualquier tipo de input debe ser enviado como input de nuestro programa.
 
