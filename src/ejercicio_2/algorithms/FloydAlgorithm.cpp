@@ -1,6 +1,5 @@
 #include "FloydAlgorithm.h"
 
-
 vector<int> FloydAlgorithm::Solve(int const n, FloatMatrix const &matrix) {
   double dist[n][n] = {0};
   int pred[n][n];
@@ -33,7 +32,7 @@ vector<int> FloydAlgorithm::Solve(int const n, FloatMatrix const &matrix) {
   for (int i = 0; i < n; i++) {
     for (int j = 0; j < n; j++) {
       if (i == pred[0][j])
-        cycle.push_back(matrix[i][j]);
+        cycle.push_back(matrix[i][j] + 1);
     }
   }
 
