@@ -16,5 +16,8 @@ class FloydAlgorithm : public Algorithm {
   FloydAlgorithm() {};
   ~FloydAlgorithm() {};
   vector<int> Solve(int const currencies_quantity, FloatMatrix const &matrix) override;
+
+ private:
+  int GetEdgeNumberByAxis(const FloatMatrix &matrix, int r, int c);
 };
 
