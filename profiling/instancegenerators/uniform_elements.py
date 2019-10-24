@@ -1,25 +1,18 @@
-from numpy.random import RandomState
-from .program_input import ProgramInput, Order
+from .program_input import AlgorithmInput
 
 
-def generate_unifrom_elements(n, W, weight_deviation, weight_spread, next_weight, next_profit):
+def generate_uniform_elements(n, multiplier_deviation, gain_spread_percentage, next_multiplier):
+    def m():
+        return next_multiplier(0, (1 * multiplier_deviation))
 
-    w_dev = weight_deviation*W
-    w_spread = weight_spread*W
+    matrix = [[0 for x in range(n)] for y in range(n)]
+    for i in range(n):
+        for j in range(i, n):
+            if j == i:
+                matrix[i][j] = 1.00
+                continue
+            multiplier = float("{0:.2f}".format(m()))
+            matrix[i][j] = multiplier
+            matrix[j][i] = float("{0:.2f}".format(1 / multiplier / 100 * gain_spread_percentage))
 
-    weights_range_start = W - w_dev
-    weights_range_end = weights_range_start + w_spread
-
-    weights_range = (weights_range_start, weights_range_end)
-
-    def w():
-        return max(next_weight(weights_range[0], weights_range[1]), 1)
-
-    def p():
-        return next_profit(1, n + 1)
-
-    return str(ProgramInput(
-        [Order(w(), p()) for item in range(0, n)],
-        W
-    ))
-
+    return str(AlgorithmInput(n, matrix))

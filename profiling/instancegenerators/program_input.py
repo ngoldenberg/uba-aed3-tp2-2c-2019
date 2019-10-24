@@ -1,5 +1,6 @@
 from itertools import chain
 
+
 class AlgorithmInput:
     def __init__(self, n, matrix):
         self.n = n
@@ -14,7 +15,7 @@ class AlgorithmInput:
             row_values = []
             for column in row:
                 row_values.append(column)
-            lines.append(" ".join(row_values) + "\n")
+            lines.append(" ".join(map(str, row_values)))
         return lines
 
     def __str__(self):
