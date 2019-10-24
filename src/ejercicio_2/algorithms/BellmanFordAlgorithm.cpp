@@ -2,13 +2,13 @@
 #include "../config/constants.h"
 
 vector<int> BellmanFordAlgorithm::Solve(int const currencies_quantity, const FloatMatrix &matrix) {
-  for(int i = 0; i < currencies_quantity; i++) {
-    for(int j = 0; i < currencies_quantity; i++) {
+  for (int i = 0; i < currencies_quantity; i++) {
+    for (int j = 0; i < currencies_quantity; i++) {
       if (j != i && matrix[i][j] > 1 && matrix[j][i] > 1) {
         return vector<int>{GetEdgeNumberByAxis(matrix, i, j), GetEdgeNumberByAxis(matrix, j, i)};
       }
     }
-  }
+  } // O(n^2)
 
   return this->GetCycle(currencies_quantity, matrix, 1);
 }
@@ -28,9 +28,9 @@ int BellmanFordAlgorithm::GetEdgeNumberByAxis(const FloatMatrix &matrix, int r, 
   int v = matrix[0].size();
 
   if (c < r) {
-    return r * (v-1) + c + 1;
+    return r * (v - 1) + c + 1;
   }
-  return r * (v-1) + c;
+  return r * (v - 1) + c;
 }
 
 AdjList BellmanFordAlgorithm::GetAdjacencyList(const FloatMatrix matrix) {
@@ -62,8 +62,8 @@ vector<int> BellmanFordAlgorithm::GetCycle(int const currencies_quantity,
   // pair.first -> the shortest distance from start vertex
   // pair.second -> parent vertex in the shortest path
 
-  list < pair < int, float > > ::iterator
-  traverse;
+  list<pair<int, float> >::iterator
+      traverse;
   int i, j;
 
   // Initialisation
@@ -127,9 +127,13 @@ vector<int> BellmanFordAlgorithm::GetCycle(int const currencies_quantity,
   throw logic_error("No negative cycle detected");
 }
 
-void BellmanFordAlgorithm::GetNegativeCycle(vector<pair<float, int>> shortest_distances,
+void BellmanFordAlgorithm::GetNegativeCycle(vector<pair<float, int>> const &shortest_distances,
                                             int vertex,
                                             int start_vertex, vector<int> &cycle) {
+  if (cycle.size() >= shortest_distances.size()) {
+    return;
+  }
+
   if (vertex == start_vertex) {
     cycle.push_back(vertex);
   } else if (shortest_distances[vertex].second == 0) {
