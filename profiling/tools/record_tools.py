@@ -1,5 +1,6 @@
 from .profiler import profile_instance
 
+
 def generate_dimensions(dimension_generators, current_dim):
     head_generator = dimension_generators[0]
 

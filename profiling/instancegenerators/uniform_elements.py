@@ -3,7 +3,7 @@ from .program_input import AlgorithmInput
 
 def generate_uniform_elements(n, multiplier_deviation, gain_spread_percentage, next_multiplier):
     def m():
-        return next_multiplier(0, (1 * multiplier_deviation))
+        return next_multiplier(0.01, (1 * multiplier_deviation))
 
     matrix = [[0 for x in range(n)] for y in range(n)]
     for i in range(n):
