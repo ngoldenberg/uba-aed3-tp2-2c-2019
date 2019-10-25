@@ -37,8 +37,10 @@ _(se puede evitar `-C build` estar dentro de `build/`)_
 ## Run & Usage
 ### Arbitraje
 Utilizar una variable de entorno para seleccionar el algoritmo deseado.
-* `FLOYD=true`: Seleccionara Floyd
-* `FLOYD=false`: Seleccionara BellmanFord
+* `FLOYD=true`: Seleccionara Floyd.
+* `FLOYD=false`: Seleccionara BellmanFord.
+* `TIME=true`: Ademas de la solucion, devolvera el tiempo de ejecucion en una segunda linea.
+
 Ejemplo: `cat samples/ejercicio_2_-2_int_cycle.txt | FLOYD=true ./bin/arbitraje`
 
 #### Tests
