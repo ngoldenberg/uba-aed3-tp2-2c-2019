@@ -26,6 +26,15 @@ int main() {
     is_floyd = *floyd_env != '0' && *floyd_env != 'f' && *floyd_env != 'F';
   }
 
+  bool display_time = false;
+  const char *time_env = getenv("TIME");
+
+  if (time_env != nullptr) {
+    display_time = *time_env != '0' && *time_env != 'f' && *time_env != 'F';
+  }
+
+
+  auto t1 = high_resolution_clock::now();
   try {
     vector<int> cycle;
     if (is_floyd) {
@@ -37,9 +46,16 @@ int main() {
     for (int &vertex : cycle) {
       cout << vertex << " ";
     }
+    cout << endl;
   } catch (logic_error) {
     cout << "NO" << endl;
   }
 
+
+  if (display_time) {
+    auto t2 = high_resolution_clock::now();
+    duration<double, std::milli> time_span = t2 - t1;
+    cout << time_span.count() << endl;
+  }
   return 0;
 }

@@ -26,7 +26,7 @@ list(REMOVE_ITEM SOURCE_FILES ${MAIN})
 
 add_library(arbitraje_src ${SOURCE_FILES})
 
-target_link_libraries (arbitraje_src LINK_PUBLIC)
+target_link_libraries (arbitraje_src)
 
 # ====== MAIN =======
 include(GoogleTest)
@@ -43,6 +43,7 @@ add_executable(arbitraje_test ${TEST_FILES})
 target_include_directories(arbitraje_test PUBLIC ${TEST_DIR})
 target_link_libraries(arbitraje_test LINK_PUBLIC arbitraje_src gtest gmock)
 
+gtest_discover_tests(arbitraje_test)
 
 #add_executable(run_test src/ejercicio-1/algoritmos/Prim.cpp src/ejercicio-1/algoritmos/Prim.h test/ejercicio-1/algoritmos/PrimTest.cpp)
 #target_link_libraries(run_test gtest gtest_main)

@@ -13,7 +13,7 @@ class BellmanFordAlgorithm : public Algorithm {
   vector<int> GetCycle(int const currencies_quantity,
                        const FloatMatrix &matrix,
                        int src_vertex);
-  void GetNegativeCycle(vector<pair<float, int>> shortest_distances,
+  void GetNegativeCycle(vector<pair<float, int>> const &shortest_distances,
                         int vertex,
                         int start_vertex, vector<int> &cycle);
   int GetEdgeNumberByAxis(FloatMatrix const &matrix, int r, int c);
