@@ -34,6 +34,26 @@ rm -rf build/
 - Clean: `make -C build clean`
 _(se puede evitar `-C build` estar dentro de `build/`)_
 
+## Run & Usage
+### Arbitraje
+Utilizar una variable de entorno para seleccionar el algoritmo deseado.
+* `FLOYD=true`: Seleccionara Floyd.
+* `FLOYD=false`: Seleccionara BellmanFord.
+* `TIME=true`: Ademas de la solucion, devolvera el tiempo de ejecucion en una segunda linea.
+
+Ejemplo: `cat samples/ejercicio_2_-2_int_cycle.txt | FLOYD=true ./bin/arbitraje`
+
+#### Tests
+Correr tests de Arbitraje: `./bin/arbitraje_test`
+
+### Example
+Un archivo de texto o cualquier tipo de input debe ser enviado como input de nuestro programa.
+
+Ejemplo:
+```bash
+cat samples/ejercicio_2_sample_1.txt | ./bin/arbitraje
+```
+
 ## Tests
 Test sampled where added under `samples`, a brief description of each:
 
