@@ -3,7 +3,6 @@
 //
 
 #include "PrimAlgorithm.h"
-#include <bits/stdc++.h>
 #include <algorithm>
 
 bool estanTodosVisitados(std::vector<bool>* visitado) {

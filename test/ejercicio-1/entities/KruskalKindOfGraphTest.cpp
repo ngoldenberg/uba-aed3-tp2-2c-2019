@@ -43,7 +43,7 @@ TEST_F(KruskalKindOfGraphTest, ConVector3_DevuelvoGrafoCompleto){
 
     ASSERT_EQ(3, graph->getEdges().size());
     ASSERT_EQ(1, graph->getEdges().at(0).getWeight());
-    ASSERT_EQ(3, std::round(graph->getEdges().at(1).getWeight()));
+    ASSERT_EQ(3, round(graph->getEdges().at(1).getWeight()));
     ASSERT_EQ(3, graph->getEdges().at(2).getWeight());
 
     ASSERT_EQ(3, graph->getVertex());

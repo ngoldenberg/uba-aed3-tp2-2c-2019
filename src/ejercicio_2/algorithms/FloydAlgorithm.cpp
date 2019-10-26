@@ -1,7 +1,10 @@
 #include "FloydAlgorithm.h"
 
 vector<int> FloydAlgorithm::Solve(int const n, FloatMatrix const &matrix) {
-  double dist[n][n] = {0};
+  std::vector<std::vector<double>> dist;
+  for(int iter = 0; iter < n; iter ++){
+    dist.push_back(std::vector<double>(n));
+  }
   int pred[n][n];
   memset(pred, 0, sizeof(pred));
 
