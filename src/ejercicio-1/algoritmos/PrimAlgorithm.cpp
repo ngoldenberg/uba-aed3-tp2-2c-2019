@@ -3,8 +3,8 @@
 //
 
 #include "PrimAlgorithm.h"
-#include <bits/stdc++.h>
 #include <algorithm>
+#include <climits>
 
 bool estanTodosVisitados(std::vector<bool>* visitado) {
     for (auto v : *visitado) {

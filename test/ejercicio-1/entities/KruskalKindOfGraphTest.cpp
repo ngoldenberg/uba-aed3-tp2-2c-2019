@@ -3,6 +3,7 @@
 //
 
 #include <gtest/gtest.h>
+#include <math.h>
 #include "../../../src/ejercicio-1/entities/KruskalKindOfGraph.h"
 
 struct KruskalKindOfGraphTest : testing::Test{
