@@ -100,7 +100,7 @@ Segmentation::isInconsistent(Edge edge, std::vector<Edge> *leftSubTree, std::vec
     double rightDesviation = desviation(rigthSubTree, rightMean);
     Distancia W = edge.getWeight();
 
-    return isInconsistent(leftMean,W,sigmaT*leftDesviation,fT) || isInconsistent(rightMean,W,sigmaT*rightDesviation,fT);
+    return isInconsistent(leftMean,W,sigmaT*leftDesviation,fT) and isInconsistent(rightMean,W,sigmaT*rightDesviation,fT);
 
 
 }
