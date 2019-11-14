@@ -95,12 +95,13 @@ bool
 Segmentation::isInconsistent(Edge edge, std::vector<Edge> *leftSubTree, std::vector<Edge> *rigthSubTree, double sigmaT,
                              double fT) {
     double leftMean = mean(leftSubTree);
-    double leftDesviation = desviation(leftSubTree, leftMean);
+    double leftDeviation = desviation(leftSubTree, leftMean);
     double rightMean = mean(rigthSubTree);
-    double rightDesviation = desviation(rigthSubTree, rightMean);
+    double rightDeviation = desviation(rigthSubTree, rightMean);
     Distancia W = edge.getWeight();
 
-    return isInconsistent(leftMean,W,sigmaT*leftDesviation,fT) || isInconsistent(rightMean,W,sigmaT*rightDesviation,fT);
+    return isInconsistent(leftMean, W, fT, sigmaT, leftDeviation) ||
+           isInconsistent(rightMean, W, fT, sigmaT, rightDeviation);
 
 
 }
@@ -152,8 +153,8 @@ double Segmentation::mean(std::vector<Edge> *edges) {
     return sum / edges->size();
 }
 
-bool Segmentation::isInconsistent(double subTreeMean, Distancia W, double sigmaT, double fT) {
-    return (W > subTreeMean + sigmaT) && (W / subTreeMean > fT);
+bool Segmentation::isInconsistent(double subTreeMean, Distancia W, double fT, double sigmaT, double standardDeviation) {
+    return (std::abs(W - subTreeMean) >  sigmaT * standardDeviation) && (W / subTreeMean > fT);
 }
 
 double Segmentation::desviation(std::vector<Edge> *tree, double mean) {

@@ -36,6 +36,7 @@ int main(){
     std::vector<int> outputDots = segmentation.execute(dots, depth, sigmaT, fT);
 
     print(outputDots);
+    return 0;
 }
 
 void print(std::vector<int> dots) {

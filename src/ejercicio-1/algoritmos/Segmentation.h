@@ -61,7 +61,7 @@ private:
 
     std::list<int>* getVertexOfSubTree(TreeGraph *forest, int beginVertex, int excludeVertex);
     double mean(std::vector<Edge> *edges);
-    bool isInconsistent(double subTreeMean, Distancia W, double sigmaT, double fT);
+    bool isInconsistent(double subTreeMean, Distancia W, double fT, double sigmaT, double standardDeviation);
 
     double desviation(std::vector<Edge> *tree, double mean);
 };
