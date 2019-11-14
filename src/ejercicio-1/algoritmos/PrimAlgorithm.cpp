@@ -4,6 +4,7 @@
 
 #include "PrimAlgorithm.h"
 #include <algorithm>
+#include <climits>
 
 bool estanTodosVisitados(std::vector<bool>* visitado) {
     for (auto v : *visitado) {
@@ -13,16 +14,32 @@ bool estanTodosVisitados(std::vector<bool>* visitado) {
 }
 
 int nodoDeMenorDistanciaNovisitadoAun(std::vector<int> distancia, std::vector<bool> visitado){
-    while (true) {
-        //int minIndex = std::min_element(distancia.begin(), distancia.end() - distancia.begin());
-        auto minIndex = std::min_element(distancia.begin(), distancia.end());
-        if (!visitado[minIndex - distancia.begin()]) return distancia[minIndex - distancia.begin()];
-        distancia.erase(minIndex);
+//    while (true) {
+//        //int minIndex = std::min_element(distancia.begin(), distancia.end() - distancia.begin());
+//        auto minIndex = std::min_element(distancia.begin(), distancia.end());
+////        auto test = distancia.begin();
+//        if (!visitado[minIndex - distancia.begin()]) return minIndex - distancia.begin();
+//        distancia[minIndex-distancia.begin()] = INT_MAX;
+//    }
+    int min;
+    for (int j = 0; j < visitado.size(); ++j) {
+        if (!visitado[j]) {
+            min = j;
+            break;
+        }
     }
+
+    for (int i = 0; i < distancia.size(); ++i) {
+        if (!visitado[i]) {
+            if (distancia[i] < distancia[min]) min = i;
+        }
+    }
+    return min;
 }
 
 
-TreeGraph * PrimAlgorithm::makeMst(Graph *graph) {
+TreeGraph * PrimAlgorithm::makeMst(Graph *graph){
+    if (!graph->getVertex()) return new TreeGraph(graph->getVertex());
     std::vector<bool> visitado(graph->getVertex(), false);
     std::vector<int> distancia(graph->getVertex(), INT_MAX);
     std::vector<int> padre(graph->getVertex(), -1);
@@ -38,7 +55,7 @@ TreeGraph * PrimAlgorithm::makeMst(Graph *graph) {
         int v = nodoDeMenorDistanciaNovisitadoAun(distancia, visitado);
         visitado[v] = true;
         for (int w=0; w<graph->getVertex(); w++){
-            if (graph->adyacent(v,w)) {
+            if (graph->adyacent(v,w) and !visitado[w]) {
                 if (distancia[w] > graph->distance(v,w)){
                     distancia[w] = graph->distance(v,w);
                     padre[w] = v;
@@ -47,7 +64,7 @@ TreeGraph * PrimAlgorithm::makeMst(Graph *graph) {
         }
     }
     TreeGraph* tree = new TreeGraph(graph->getVertex());
-    for (int i=0; i<graph->getVertex(); i++) {
+    for (int i=1; i<graph->getVertex(); i++) {
         tree->addEdge(Edge(i,padre[i],graph->distance(i, padre[i])));
     }
 

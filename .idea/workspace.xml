@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="false">
+    <generated>
+      <config projectName="tp2-modelado-con-grafos" targetName="gtest_main" />
+      <config projectName="tp2-modelado-con-grafos" targetName="ejercicio-1-main" />
+      <config projectName="tp2-modelado-con-grafos" targetName="gtest" />
+      <config projectName="tp2-modelado-con-grafos" targetName="gmock" />
+      <config projectName="tp2-modelado-con-grafos" targetName="run_test" />
+      <config projectName="tp2-modelado-con-grafos" targetName="gmock_main" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0bda7275-e8bf-4ee0-88ab-948d5d887b13" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/experimentacion/Untitled1.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/experimentacion/boceto informe.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/experimentacion/grafConTextMarkers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/experimentacion/graficar_resultados(b).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/experimentacion/k-3-2-1.3-100 .png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/experimentacion/kc-3-10-10-100 .png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/experimentacion/kc-3-2-1.3-100 .png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/experimentacion/kc-3-2-1.3-5000 .png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/experimentacion/kc-3-2-15-5000 .png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/experimentacion/kc-3-2-2-5000 .png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/experimentacion/kc-3-2-25-5000 .png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/experimentacion/kc-3-2-3-5000 .png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/experimentacion/kc-3-2-5-5000 .png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/experimentacion/kc-3-2-50-5000 .png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/experimentacion/kc-3-2-7-5000 .png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/experimentacion/kc-3-2-80-5000 .png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/experimentacion/kc-3-2-9-5000 .png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/experimentacion/kc-5-5-5-5000 .png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/experimentacion/kc-74-4-5000 .png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/experimentacion/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experimentacion/entrada-100.txt" beforeDir="false" afterPath="$PROJECT_DIR$/experimentacion/entrada-100.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experimentacion/entrada-5000.txt" beforeDir="false" afterPath="$PROJECT_DIR$/experimentacion/entrada-5000.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experimentacion/graficar_resultados.py" beforeDir="false" afterPath="$PROJECT_DIR$/experimentacion/graficar_resultados.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experimentacion/salida.txt" beforeDir="false" afterPath="$PROJECT_DIR$/experimentacion/salida.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ejercicio-1/algoritmos/PrimAlgorithm.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ejercicio-1/algoritmos/PrimAlgorithm.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ejercicio-1/algoritmos/Segmentation.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ejercicio-1/algoritmos/Segmentation.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ejercicio-1/entities/AdyacencyMatrixGraph.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ejercicio-1/entities/AdyacencyMatrixGraph.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ejercicio-1/algoritmos/PrimAlgorithmTest.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/ejercicio-1/algoritmos/PrimAlgorithmTest.cpp" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="FUSProjectUsageTrigger">
+    <session id="765492771">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="cpp" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="ObjectiveC" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="cpp" value="13" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="ObjectiveC" value="13" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ejercicio-1/algoritmos/Segmentation.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-632">
+              <caret line="102" column="66" selection-start-line="102" selection-start-column="66" selection-end-line="102" selection-end-column="66" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/ejercicio-1/algoritmos/Segmentation.cpp" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="823" />
+  </component>
+  <component name="ProjectId" id="1SJN7r94YrX0gIrgrELrrR6qxQ1" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="tp2-modelado-con-grafos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tp2-modelado-con-grafos" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/ejercicio-1/entities" />
+      <recent name="$PROJECT_DIR$/ejemplo" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Build All">
+    <configuration name="KruskalAlgorithmTest.ConGrafoWikipedia_DevuelvoArbol" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tp2-modelado-con-grafos" TARGET_NAME="run_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tp2-modelado-con-grafos" RUN_TARGET_NAME="run_test" TEST_CLASS="KruskalAlgorithmTest" TEST_METHOD="ConGrafoWikipedia_DevuelvoArbol" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PrimAlgorithmTest" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tp2-modelado-con-grafos" TARGET_NAME="run_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tp2-modelado-con-grafos" RUN_TARGET_NAME="run_test" TEST_CLASS="PrimAlgorithmTest" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PrimAlgorithmTest.ConGrafoVacio_DevuelvoArbolVacio" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tp2-modelado-con-grafos" TARGET_NAME="run_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tp2-modelado-con-grafos" RUN_TARGET_NAME="run_test" TEST_CLASS="PrimAlgorithmTest" TEST_METHOD="ConGrafoVacio_DevuelvoArbolVacio" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PrimAlgorithmTest.ConGrafoWikipedia_DevuelvoArbol" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tp2-modelado-con-grafos" TARGET_NAME="run_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tp2-modelado-con-grafos" RUN_TARGET_NAME="run_test" TEST_CLASS="PrimAlgorithmTest" TEST_METHOD="ConGrafoWikipedia_DevuelvoArbol" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PrimAlgorithmTest.ConGrafoWikipedia_DevuelvoArbol2" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tp2-modelado-con-grafos" TARGET_NAME="run_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tp2-modelado-con-grafos" RUN_TARGET_NAME="run_test" TEST_CLASS="PrimAlgorithmTest" TEST_METHOD="ConGrafoWikipedia_DevuelvoArbol2" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="arbitraje" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tp2-modelado-con-grafos" TARGET_NAME="arbitraje" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tp2-modelado-con-grafos" RUN_TARGET_NAME="arbitraje">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="arbitraje_src" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tp2-modelado-con-grafos" TARGET_NAME="arbitraje_src" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="arbitraje_test" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tp2-modelado-con-grafos" TARGET_NAME="arbitraje_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tp2-modelado-con-grafos" RUN_TARGET_NAME="arbitraje_test">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ejercicio-1-main" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tp2-modelado-con-grafos" TARGET_NAME="ejercicio-1-main" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tp2-modelado-con-grafos" RUN_TARGET_NAME="ejercicio-1-main">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gmock" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tp2-modelado-con-grafos" TARGET_NAME="gmock" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gmock_main" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tp2-modelado-con-grafos" TARGET_NAME="gmock_main" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gtest" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tp2-modelado-con-grafos" TARGET_NAME="gtest" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gtest_main" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tp2-modelado-con-grafos" TARGET_NAME="gtest_main" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="run-test" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tp2-modelado-con-grafos" TARGET_NAME="run_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tp2-modelado-con-grafos" RUN_TARGET_NAME="run_test">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Build All" />
+      <item itemvalue="Application.arbitraje" />
+      <item itemvalue="Application.arbitraje_src" />
+      <item itemvalue="Application.arbitraje_test" />
+      <item itemvalue="Application.ejercicio-1-main" />
+      <item itemvalue="Application.gmock" />
+      <item itemvalue="Application.gmock_main" />
+      <item itemvalue="Application.gtest" />
+      <item itemvalue="Application.gtest_main" />
+      <item itemvalue="Application.run-test" />
+      <item itemvalue="Google Test.PrimAlgorithmTest" />
+      <item itemvalue="Google Test.PrimAlgorithmTest.ConGrafoVacio_DevuelvoArbolVacio" />
+      <item itemvalue="Google Test.PrimAlgorithmTest.ConGrafoWikipedia_DevuelvoArbol" />
+      <item itemvalue="Google Test.KruskalAlgorithmTest.ConGrafoWikipedia_DevuelvoArbol" />
+      <item itemvalue="Google Test.PrimAlgorithmTest.ConGrafoWikipedia_DevuelvoArbol2" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Google Test.PrimAlgorithmTest" />
+        <item itemvalue="Google Test.PrimAlgorithmTest.ConGrafoWikipedia_DevuelvoArbol" />
+        <item itemvalue="Google Test.PrimAlgorithmTest.ConGrafoWikipedia_DevuelvoArbol2" />
+        <item itemvalue="Google Test.PrimAlgorithmTest.ConGrafoVacio_DevuelvoArbolVacio" />
+        <item itemvalue="Google Test.KruskalAlgorithmTest.ConGrafoWikipedia_DevuelvoArbol" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0bda7275-e8bf-4ee0-88ab-948d5d887b13" name="Default Changelist" comment="" />
+      <created>1570390149044</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1570390149044</updated>
+      <workItem from="1570390150742" duration="31252000" />
+      <workItem from="1570837649200" duration="11198000" />
+      <workItem from="1571014345693" duration="1543000" />
+      <workItem from="1571186869577" duration="214000" />
+      <workItem from="1571187100218" duration="41000" />
+      <workItem from="1571277579698" duration="611000" />
+      <workItem from="1571278213306" duration="167000" />
+      <workItem from="1571278443254" duration="1410000" />
+      <workItem from="1571339006241" duration="3281000" />
+      <workItem from="1571357163511" duration="599000" />
+      <workItem from="1571428892935" duration="3316000" />
+      <workItem from="1571445206256" duration="1415000" />
+      <workItem from="1571522242775" duration="1542000" />
+      <workItem from="1572043373625" duration="4815000" />
+      <workItem from="1572128070944" duration="818000" />
+      <workItem from="1572467997364" duration="944000" />
+      <workItem from="1572549945834" duration="538000" />
+      <workItem from="1572634218393" duration="1222000" />
+      <workItem from="1572651978234" duration="940000" />
+      <workItem from="1572653300474" duration="2049000" />
+      <workItem from="1572900933297" duration="2211000" />
+      <workItem from="1573325234225" duration="6732000" />
+      <workItem from="1573761970967" duration="865000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="865000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1440" height="823" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info active="true" anchor="bottom" id="Messages" visible="true" weight="0.32968536" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="CMake" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/test/ejercicio-1/entities/KruskalKindOfGraphTest.cpp</url>
+          <line>64</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/ejercicio-1/algoritmos/KruskalAlgorithm.cpp</url>
+          <line>9</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/test/ejercicio-1/algoritmos/PrimAlgorithmTest.cpp</url>
+          <line>39</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/test/ejercicio-1/algoritmos/KruskalAlgorithmTest.cpp</url>
+          <line>58</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/ejercicio-1/algoritmos/PrimAlgorithm.cpp</url>
+          <line>64</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/ejercicio-1/algoritmos/PrimAlgorithm.cpp</url>
+          <line>68</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/ejercicio-1/algoritmos/PrimAlgorithm.cpp</url>
+          <line>72</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/ejercicio-1/algoritmos/PrimAlgorithm.cpp</url>
+          <line>75</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/ejercicio-1/algoritmos/PrimAlgorithm.cpp</url>
+          <line>70</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="CMakeGoogleTestRunConfigurationType">
+        <watch expression="visitado[4]" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/ejercicio-1/algoritmos/Segmentation.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-632">
+          <caret line="102" column="66" selection-start-line="102" selection-start-column="66" selection-end-line="102" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
