@@ -1,5 +1,7 @@
 # IDE
 .idea/
+.idea/*
+
 
 # Compilation
 bin/
@@ -7,6 +9,7 @@ build/
 
 # CMake
 cmake-build-debug/
+cmake-build-debug/*
 CMakeFiles/
 CMakeCache.txt
 Makefile
