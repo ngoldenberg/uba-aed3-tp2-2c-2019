@@ -158,20 +158,16 @@ double Segmentation::mean(std::vector<Edge> *edges) {
 }
 
 bool Segmentation::isInconsistent(double subTreeMean, Distancia W, double fT, double sigmaT, double standardDeviation) {
-    /*
      if(getPoda() == "ambos"){
         return (W >  (sigmaT * standardDeviation + subTreeMean )) && (W / subTreeMean > fT);
 
     } else if(getPoda() == "ft"){
-        //return (W / subTreeMean > fT);
-        return false;
+        return (W / subTreeMean > fT);
 
     } else{
         return W >  (sigmaT * standardDeviation +subTreeMean);
 
     }
-     */
-    return true;
 }
 
 double Segmentation::desviation(std::vector<Edge> *tree, double mean) {
