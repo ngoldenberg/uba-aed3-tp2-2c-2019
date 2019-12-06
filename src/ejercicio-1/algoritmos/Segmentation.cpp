@@ -17,8 +17,9 @@
 #include <cmath>
 
 
-Segmentation::Segmentation(std::string mstAlgorithm) {
+Segmentation::Segmentation(std::string mstAlgorithm, std::string poda) {
     assert(mstAlgorithm == "prim" || mstAlgorithm == "kruskal" || mstAlgorithm == "kruskal-compressed");
+    assert(poda == "ambas" || poda == "ft" || poda == "sigmat");
 
     this->mstStrategy = mstAlgorithm;
 
@@ -29,6 +30,9 @@ Segmentation::Segmentation(std::string mstAlgorithm) {
     }else{
         this->mstAlgorithm = new KruskalAlgorithm(new ArrayCompressedDisjoinSet());
     }
+
+
+    this->poda = poda;
 }
 
 Graph* Segmentation::makeGraph(std::vector<std::pair<int, int>> *dots) {
@@ -154,7 +158,20 @@ double Segmentation::mean(std::vector<Edge> *edges) {
 }
 
 bool Segmentation::isInconsistent(double subTreeMean, Distancia W, double fT, double sigmaT, double standardDeviation) {
-    return (std::abs(W - subTreeMean) >  sigmaT * standardDeviation) && (W / subTreeMean > fT);
+    /*
+     if(getPoda() == "ambos"){
+        return (W >  (sigmaT * standardDeviation + subTreeMean )) && (W / subTreeMean > fT);
+
+    } else if(getPoda() == "ft"){
+        //return (W / subTreeMean > fT);
+        return false;
+
+    } else{
+        return W >  (sigmaT * standardDeviation +subTreeMean);
+
+    }
+     */
+    return true;
 }
 
 double Segmentation::desviation(std::vector<Edge> *tree, double mean) {
@@ -164,5 +181,13 @@ double Segmentation::desviation(std::vector<Edge> *tree, double mean) {
     }
     sigma_cuadrado = sigma_cuadrado / tree->size();
     return sqrt(sigma_cuadrado);
+}
+
+const std::string &Segmentation::getPoda() const {
+    return poda;
+}
+
+void Segmentation::setPoda(const std::string &poda) {
+    Segmentation::poda = poda;
 }
 

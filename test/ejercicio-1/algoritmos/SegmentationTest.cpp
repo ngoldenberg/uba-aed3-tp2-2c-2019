@@ -11,7 +11,7 @@ struct SegmentationTest : testing::Test{
     Segmentation *segmentation;
 
     SegmentationTest(){
-        segmentation = new Segmentation("kruskal-compressed");
+        segmentation = new Segmentation("kruskal-compressed", std::string());
     }
 
     ~SegmentationTest(){

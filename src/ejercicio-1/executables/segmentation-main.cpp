@@ -22,6 +22,7 @@ int main(){
 
     std::string mstStrategy;
     std::cin >> mstStrategy;
+
     int depth;
     std::cin >> depth;
     double sigmaT;
@@ -29,9 +30,11 @@ int main(){
     double fT;
     std::cin >> fT;
 
+    std::string poda = "ft";
+
     std::vector<std::pair<int,int>>* dots = input();
 
-    Segmentation segmentation = Segmentation(mstStrategy);
+    Segmentation segmentation = Segmentation(mstStrategy, poda);
 
     std::vector<int> outputDots = segmentation.execute(dots, depth, sigmaT, fT);
 

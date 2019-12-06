@@ -14,7 +14,7 @@
 
 class Segmentation {
 public:
-    Segmentation(std::string mstAlgorithm);
+    Segmentation(std::string mstAlgorithm, std::string poda);
 
     ~Segmentation();
 
@@ -57,7 +57,15 @@ public:
 
 private:
     std::string mstStrategy;
+    std::string poda;
+public:
+    const std::string &getPoda() const;
+
+    void setPoda(const std::string &poda);
+
+private:
     MSTAlgorithm* mstAlgorithm;
+
 
     std::list<int>* getVertexOfSubTree(TreeGraph *forest, int beginVertex, int excludeVertex);
     double mean(std::vector<Edge> *edges);
