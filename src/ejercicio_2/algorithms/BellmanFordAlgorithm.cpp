@@ -17,9 +17,9 @@ tuple<int, int, float> BellmanFordAlgorithm::GetEdgeByNumber(FloatMatrix matrix,
   int v = matrix[0].size();
   int row = (int) n / v;
   int column = n - row * v;
-  if (row == column) return {row, column, 0};
+  if (row == column) return std::make_tuple(row, column, 0);
 
-  return {row, column, matrix[row][column]};
+  return std::make_tuple(row, column, matrix[row][column]);
 }
 
 int BellmanFordAlgorithm::GetEdgeNumberByAxis(const FloatMatrix &matrix, int r, int c) {
