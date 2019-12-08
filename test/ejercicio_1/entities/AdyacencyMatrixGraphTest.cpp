@@ -3,9 +3,9 @@
 //
 
 #include <gtest/gtest.h>
-#include "../../../src/ejercicio-1/entities/Graph.h"
-#include "../../../src/ejercicio-1/entities/AdyacencyMatrixGraph.h"
-#include "../../../src/ejercicio-1/entities/Utils.h"
+#include "ejercicio_1/entities/Graph.h"
+#include "ejercicio_1/entities/AdyacencyMatrixGraph.h"
+#include "ejercicio_1/entities/Utils.h"
 
 struct AdyacencyMatrixGraphTest : testing::Test{
     Graph *graph;

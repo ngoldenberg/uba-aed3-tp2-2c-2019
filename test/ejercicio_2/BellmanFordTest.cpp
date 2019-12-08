@@ -3,8 +3,8 @@
 #include <string>
 #include <vector>
 
-#include "algorithms/BellmanFordAlgorithm.h"
-#include "parsing/arbitration_input.h"
+#include "ejercicio_2/algorithms/BellmanFordAlgorithm.h"
+#include "ejercicio_2/parsing/arbitration_input.h"
 
 using ::testing::Contains;
 using ::testing::AllOf;

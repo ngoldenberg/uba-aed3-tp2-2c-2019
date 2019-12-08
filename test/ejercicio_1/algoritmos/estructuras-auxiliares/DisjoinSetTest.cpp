@@ -3,8 +3,8 @@
 //
 
 #include <gtest/gtest.h>
-#include "../../../../src/ejercicio-1/algoritmos/estructuras-auxiliares/DisjoinSet.h"
-#include "../../../../src/ejercicio-1/algoritmos/estructuras-auxiliares/ArrayDisjoinSet.h"
+#include "ejercicio_1/algoritmos/estructuras-auxiliares/DisjoinSet.h"
+#include "ejercicio_1/algoritmos/estructuras-auxiliares/ArrayDisjoinSet.h"
 
 struct DisSetTest : testing::Test{
     DisjoinSet *disjoinSet;

@@ -3,7 +3,7 @@
 //
 
 #include <gtest/gtest.h>
-#include "../../../src/ejercicio-1/algoritmos/Segmentation.h"
+#include "ejercicio_1/algoritmos/Segmentation.h"
 
 bool containsEdge(std::vector<Edge> edges, Edge edge);
 

@@ -4,7 +4,7 @@
 
 #include <gtest/gtest.h>
 #include <math.h>
-#include "../../../src/ejercicio-1/entities/KruskalKindOfGraph.h"
+#include "ejercicio_1/entities/KruskalKindOfGraph.h"
 
 struct KruskalKindOfGraphTest : testing::Test{
     Graph *graph;
