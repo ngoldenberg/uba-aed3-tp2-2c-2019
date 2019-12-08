@@ -2,20 +2,17 @@
 .idea/
 .idea/*
 
-
 # Compilation
 bin/
 build/
 
 # CMake
 cmake-build-debug/
-cmake-build-debug/*
 CMakeFiles/
 CMakeCache.txt
 Makefile
 cmake_install.cmake
 knapsack.cbp
-experimentacion/ejercicio-1/instancias/corridas/
 
 # Python
 __pycache__/
@@ -25,5 +22,4 @@ __pycache__/
 
 CTestTestfile.cmake
 knapsack_test[1]_include.cmake
-
 experimentacion/ejercicio-1/instancias/corridas/

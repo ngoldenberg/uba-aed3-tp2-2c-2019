@@ -187,3 +187,11 @@ void Segmentation::setPoda(const std::string &poda) {
     Segmentation::poda = poda;
 }
 
+const std::string &Segmentation::getMstStrategy() const {
+    return mstStrategy;
+}
+
+void Segmentation::setMstStrategy(const std::string &mstStrategy) {
+    Segmentation::mstStrategy = mstStrategy;
+}
+

@@ -39,7 +39,7 @@ int nodoDeMenorDistanciaNovisitadoAun(std::vector<int> distancia, std::vector<bo
 
 
 TreeGraph * PrimAlgorithm::makeMst(Graph *graph){
-    if (!graph->getVertex()) return new TreeGraph(graph->getVertex());
+    if ( 0 == graph->getVertex() ) return new TreeGraph(graph->getVertex());
     std::vector<bool> visitado(graph->getVertex(), false);
     std::vector<int> distancia(graph->getVertex(), INT_MAX);
     std::vector<int> padre(graph->getVertex(), -1);
@@ -64,14 +64,10 @@ TreeGraph * PrimAlgorithm::makeMst(Graph *graph){
         }
     }
     TreeGraph* tree = new TreeGraph(graph->getVertex());
-    for (int i=1; i<graph->getVertex(); i++) {
+    for (int i=1; i< graph->getVertex(); i++) {
         tree->addEdge(Edge(i,padre[i],graph->distance(i, padre[i])));
     }
 
 
     return tree;
-}
-
-PrimAlgorithm::~PrimAlgorithm() {
-
 }

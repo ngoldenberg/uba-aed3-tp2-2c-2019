@@ -55,15 +55,17 @@ public:
     void
     splitSegments(std::vector<int> *segments, TreeGraph *forest, int nextSegmentNumber, int beginVertex, int excludeVertex);
 
-private:
-    std::string mstStrategy;
-    std::string poda;
-public:
     const std::string &getPoda() const;
 
     void setPoda(const std::string &poda);
 
+    const std::string &getMstStrategy() const;
+
+    void setMstStrategy(const std::string &mstStrategy);
+
 private:
+    std::string mstStrategy;
+    std::string poda;
     MSTAlgorithm* mstAlgorithm;
 
 
