@@ -1,7 +1,7 @@
 # IDE
 .idea/
 .idea/*
-
+.idea/workspace.xml
 
 # Compilation
 bin/
@@ -9,7 +9,6 @@ build/
 
 # CMake
 cmake-build-debug/
-cmake-build-debug/*
 CMakeFiles/
 CMakeCache.txt
 Makefile
@@ -24,3 +23,4 @@ __pycache__/
 
 CTestTestfile.cmake
 knapsack_test[1]_include.cmake
+experimentacion/ejercicio-1/instancias/corridas/
