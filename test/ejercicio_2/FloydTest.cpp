@@ -16,7 +16,7 @@ TEST(Floyd, 3_n_matrix) {
   FloydAlgorithm fa;
   vector<int> cycle = fa.Solve(input.GetCurrenciesQuantity(), input.GetMultipliersMatrix());
 
-  vector<int> expected_cycle = {2, 3, 6};
+  vector<int> expected_cycle = {0, 2, 6, 3};
 
   for (int i = 0; i < input.GetCurrenciesQuantity(); i++) {
     ASSERT_EQ(cycle[i], expected_cycle[i]);
@@ -42,9 +42,9 @@ TEST(Floyd, 2_int_cycle) {
   FloydAlgorithm fa;
   vector<int> cycle = fa.Solve(input.GetCurrenciesQuantity(), input.GetMultipliersMatrix());
 
-  vector<int> expected_cycle = {1, 2};
+  vector<int> expected_cycle = {0, 1, 2};
 
-  for (int i = 0; i < input.GetCurrenciesQuantity(); i++) {
+  for (int i = 0; i < cycle.size(); i++) {
     ASSERT_EQ(cycle[i], expected_cycle[i]);
   }
 }
@@ -55,9 +55,9 @@ TEST(Floyd, div_1) {
   FloydAlgorithm fa;
   vector<int> cycle = fa.Solve(input.GetCurrenciesQuantity(), input.GetMultipliersMatrix());
 
-  vector<int> expected_cycle = {1, 4, 5};
+  vector<int> expected_cycle = {0,1, 4, 5};
 
-  for (int i = 0; i < input.GetCurrenciesQuantity(); i++) {
+  for (int i = 0; i < cycle.size(); i++) {
     ASSERT_EQ(cycle[i], expected_cycle[i]);
   }
 }
