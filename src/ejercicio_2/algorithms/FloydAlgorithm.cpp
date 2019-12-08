@@ -35,7 +35,7 @@ vector<int> FloydAlgorithm::Solve(int const n, FloatMatrix const &matrix) {
   do{
       int t = next[s][0];
       cycle.push_back(GetEdgeNumberByAxis(matrix, s, t));
-      t = s;
+      s = t;
     }while(s != 0);
   
   return cycle;
