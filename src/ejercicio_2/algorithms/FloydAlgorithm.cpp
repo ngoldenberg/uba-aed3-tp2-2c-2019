@@ -6,20 +6,12 @@ vector<int> FloydAlgorithm::Solve(int const n, FloatMatrix const &matrix) {
   memset(next, 0, sizeof(next));
 
   for (uint i = 0; i < n; i++) {
-    for (uint j = 0; j < n; j++) {
-<<<<<<< HEAD
- 
-      dist[i][j] = log(1/matrix[i][j]);
-      next[i][j] = j;
-=======
-      if (i == j) {
-        continue;
-      }
+    for (uint j = 0; j < n; j++) 
+    { 
       dist[i][j] = -log(matrix[i][j]);
-      pred[i][j] = i;
->>>>>>> 1b36c7523dec0c889abd151c86da6a5cc1d51f15
-    }
-  }
+      next[i][j] = j;
+     }
+   }
 
   for (uint k = 0; k < n; k++) {
     for (uint i = 0; i < n; i++) {
@@ -39,16 +31,16 @@ vector<int> FloydAlgorithm::Solve(int const n, FloatMatrix const &matrix) {
 
   vector<int> cycle;
   cycle.push_back(0);
-  uint i = 0;
+  int s = 0;
   do{
-      uint j = next[next_node][0];
-        cycle.push_back(GetEdgeNumberByAxis(matrix, i, j));
-      i = j;
-    }while(i != 0);
-  }
-
+      int t = next[s][0];
+      cycle.push_back(GetEdgeNumberByAxis(matrix, s, t));
+      t = s;
+    }while(s != 0);
+  
   return cycle;
 }
+
 
 int FloydAlgorithm::GetEdgeNumberByAxis(const FloatMatrix &matrix, int r, int c) {
   if (r == c) return 0;
