@@ -1,26 +1,35 @@
 #include "BellmanFordAlgorithm.h"
 #include "../config/constants.h"
+#include "common/graph.h"
+#include <vector>
 
 vector<int> BellmanFordAlgorithm::Solve(int const currencies_quantity, const FloatMatrix &matrix) {
-  FloatMatrix tmp_matrix = matrix;
+//  for (int i = 0; i < currencies_quantity; i++) {
+//    for (int j = 0; j < currencies_quantity; j++) {
+//      if (j != i && matrix[i][j] > 1 && matrix[j][i] > 1) {
+//        return vector<int>{GetEdgeNumberByAxis(matrix, i, j), GetEdgeNumberByAxis(matrix, j, i)};
+//      }
+//    }
+//  } // O(n^2)
+
+
+  struct Graph
+      *graph = createGraph(currencies_quantity, currencies_quantity * currencies_quantity - currencies_quantity);
+  vector<vector<int>> recorder;
+
   for (uint i = 0; i < currencies_quantity; i++) {
     for (uint j = 0; j < currencies_quantity; j++) {
       if (i == j) {
         continue;
       }
-      tmp_matrix[i][j] = log(matrix[i][j]);
+      graph->edge[GetEdgeNumberByAxis(matrix, i, j) - 1].src = i;
+      graph->edge[GetEdgeNumberByAxis(matrix, i, j) - 1].dest = j;
+      graph->edge[GetEdgeNumberByAxis(matrix, i, j) - 1].weight = -log(matrix[i][j]);
+//      cout << "PRINT src: " << i << " | dest: " << j <<" | w: " << matrix[i][j] << endl;
     }
   }
 
-  for (int i = 0; i < currencies_quantity; i++) {
-    for (int j = 0; j < currencies_quantity; j++) {
-      if (j != i && matrix[i][j] > 1 && matrix[j][i] > 1) {
-        return vector<int>{GetEdgeNumberByAxis(matrix, i, j), GetEdgeNumberByAxis(matrix, j, i)};
-      }
-    }
-  } // O(n^2)
-
-  return this->GetCycle(currencies_quantity, matrix, 1);
+  return this->GetCycle(graph, 0, matrix);;
 }
 
 tuple<int, int, float> BellmanFordAlgorithm::GetEdgeByNumber(FloatMatrix matrix, int n) {
@@ -60,77 +69,57 @@ AdjList BellmanFordAlgorithm::GetAdjacencyList(const FloatMatrix matrix) {
   return adj_list;
 }
 
-vector<int> BellmanFordAlgorithm::GetCycle(int const currencies_quantity,
-                                           const FloatMatrix &matrix,
-                                           int src_vertex) {
-  int vertices = currencies_quantity;
-  int edges = vertices * (vertices - 1);
+vector<int> BellmanFordAlgorithm::GetCycle(struct Graph *graph, int src, const FloatMatrix &matrix) {
+  int V = graph->V;
+  int E = graph->E;
+  float dist[V];
 
-  AdjList adj_list = this->GetAdjacencyList(matrix);
-  vector<pair<float, int>> shortest_distances(vertices + 1);
-  // shortest_distances is a vector of pairs
-  // pair.first -> the shortest distance from start vertex
-  // pair.second -> parent vertex in the shortest path
+  // Step 1: Initialize distances from src to all other vertices
+  // as INFINITE
+  for (int i = 0; i < V; i++)
+    dist[i] = INT_MAX;
+  dist[src] = 0;
 
-  list<pair<int, float> >::iterator
-      traverse;
-  int i, j;
+  vector<int> pre(V, -1);
 
-  // Initialisation
-  for (i = 0; i <= vertices; ++i) {
-    shortest_distances[i].first = INT_MAX;
-    shortest_distances[i].second = 0;
-  }
-
-  // Setting distance to source = 0
-  shortest_distances[src_vertex].first = 0;
-  shortest_distances[src_vertex].second = 0;
-
-  // The Algorithm that computes Shortest Distances
-  for (i = 1; i <= vertices - 1; ++i) {    // Runs 'vertices - 1' times = O(|V|)
-    for (j = 1; j <= vertices; ++j) {    // Runs as many times as the edges = O(|E|)
-      // The code ahead basically explores the whole of Adjacency List,
-      // covering one edge once, so the runtime of the code in this
-      // block is O(|E|)
-
-      traverse = adj_list[j].begin();
-
-      while (traverse != adj_list[j].end()) {
-
-        if (shortest_distances[j].first == INT_MAX) {
-          // Important...!
-          //traverse = traverse->next;
-          ++traverse;
-          continue;
-        }
-
-        // Checking for Relaxation
-        if ((*traverse).second + shortest_distances[j].first < shortest_distances[(*traverse).first].first) {
-          // Relaxation
-          shortest_distances[(*traverse).first].first = (*traverse).second + shortest_distances[j].first;
-          shortest_distances[(*traverse).first].second = j;
-        }
-
-        ++traverse;
+  // Step 2: Relax all edges |V| - 1 times. A simple shortest
+  // path from src to any other vertex can have at-most |V| - 1
+  // edges
+  for (int i = 1; i <= V - 1; i++) {
+    for (int j = 0; j < E; j++) {
+      int v = graph->edge[j].src;
+      int u = graph->edge[j].dest;
+      float weight = graph->edge[j].weight;
+      if (dist[u] != INT_MAX && dist[u] + weight < dist[v]) {
+        dist[v] = dist[u] + weight;
+        pre[v] = u;
       }
     }
   }
 
-  // Checking for Negative Cycles
-  for (j = 1; j <= vertices; ++j) {
-    traverse = adj_list[j].begin();
-    while (traverse != adj_list[j].end()) {
-      // Checking for further relaxation
-      if ((*traverse).second + shortest_distances[j].first < shortest_distances[(*traverse).first].first) {
-        // Negative Cycle found as further relaxation is possible
-        vector<int> negative_cycle;
-        this->GetNegativeCycle(shortest_distances, shortest_distances[j].second, j, negative_cycle);
-        return negative_cycle;
+  vector<int> cycle;
+  // Step 3: check for negative-weight cycles.  The above step
+  // guarantees shortest distances if graph doesn't contain
+  // negative weight cycle.  If we get a shorter path, then there
+  // is a cycle.
+  for (int i = 0; i < E; i++) {
+    int v = graph->edge[i].src;
+    int u = graph->edge[i].dest;
+    float weight = graph->edge[i].weight;
+    if (dist[u] != INT_MAX && dist[u] + weight < dist[v]) {
+      cycle.push_back(v);
+      cycle.push_back(u);
+      while (!this->In(pre[u], cycle)) {
+        cycle.push_back(pre[u]);
       }
-
-      ++traverse;
+      vector<int> tmp;
+      for (int k = 0; k < cycle.size(); k++) {
+        tmp.push_back(this->GetEdgeNumberByAxis(matrix, cycle[k], cycle[k+1]));
+      }
+      return tmp; // If negative cycle is detected, simply return
     }
   }
+
   throw logic_error("No negative cycle detected");
 }
 
@@ -152,3 +141,9 @@ void BellmanFordAlgorithm::GetNegativeCycle(vector<pair<float, int>> const &shor
   }
 }
 
+bool BellmanFordAlgorithm::In(int n, vector<int> list) {
+  for (int i = 0; i < list.size(); i++) {
+    if (list[i] == n) return true;
+  }
+  return false;
+}

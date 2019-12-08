@@ -32,7 +32,7 @@ TEST(BellmanFord, 3_n_matrix) {
   BellmanFordAlgorithm bfa;
   vector<int> cycle = bfa.Solve(input.GetCurrenciesQuantity(), input.GetMultipliersMatrix());
 
-  vector<int> expected_cycle = {2, 3, 1};
+  vector<int> expected_cycle = {2, 6, 3};
 
   for (int i = 0; i < input.GetCurrenciesQuantity(); i++) {
     ASSERT_EQ(cycle[i], expected_cycle[i]);
@@ -58,7 +58,7 @@ TEST(BellmanFord, complex_samplex_1) {
   BellmanFordAlgorithm bfa;
   vector<int> cycle = bfa.Solve(input.GetCurrenciesQuantity(), input.GetMultipliersMatrix());
 
-  vector<int> expected_cycle = {17, 4};
+  vector<int> expected_cycle = {1, 5};
   for (int i = 0; i < cycle.size(); i++) {
     ASSERT_EQ(cycle[i], expected_cycle[i]);
   }
