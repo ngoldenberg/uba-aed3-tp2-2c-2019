@@ -13,7 +13,7 @@ vector<int> FloydAlgorithm::Solve(int const n, FloatMatrix const &matrix) {
       if (i == j) {
         continue;
       }
-      dist[i][j] = log(matrix[i][j]);
+      dist[i][j] = -log(matrix[i][j]);
       pred[i][j] = i;
     }
   }
