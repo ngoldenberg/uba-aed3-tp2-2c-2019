@@ -14,13 +14,6 @@ bool estanTodosVisitados(std::vector<bool>* visitado) {
 }
 
 int nodoDeMenorDistanciaNovisitadoAun(std::vector<int> distancia, std::vector<bool> visitado){
-//    while (true) {
-//        //int minIndex = std::min_element(distancia.begin(), distancia.end() - distancia.begin());
-//        auto minIndex = std::min_element(distancia.begin(), distancia.end());
-////        auto test = distancia.begin();
-//        if (!visitado[minIndex - distancia.begin()]) return minIndex - distancia.begin();
-//        distancia[minIndex-distancia.begin()] = INT_MAX;
-//    }
     int min;
     for (int j = 0; j < visitado.size(); ++j) {
         if (!visitado[j]) {

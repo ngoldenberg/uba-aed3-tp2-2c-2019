@@ -11,10 +11,12 @@ include_directories(lib/googletest/googletest/include)
 include_directories(lib/googletest/googlemock/include)
 
 # ========== Main variables ==========
-set(SRC_DIR ${CMAKE_SOURCE_DIR}/src/ejercicio_2)
-set(MAIN ${SRC_DIR}/main.cpp)
-set(TEST_DIR ${CMAKE_SOURCE_DIR}/test/ejercicio_2)
-#set(EXTERNAL_INCLUDE_DIR ${CMAKE_SOURCE_DIR}/include)
+set(SRC_DIR ${CMAKE_SOURCE_DIR}/src)
+# acá nombro los 3 mains que hay en el proyecto (borrar)
+set(MAIN_2 ${SRC_DIR}/ejercicio-2/main.cpp)
+set(MAIN_1 ${SRC_DIR}/ejercicio-1/executables/segmentation-main.cpp )
+set(MAIN_1_time ${SRC_DIR}/ejercicio-1/executables/segmentation-main-time.cpp )
+set(TEST_DIR ${CMAKE_SOURCE_DIR}/test)
 
 # ======= Include directories ========
 include_directories(${SRC_DIR})
@@ -22,29 +24,32 @@ include_directories(${SRC_DIR})
 # =========== Executables ============
 # ===== SOURCES =====
 file(GLOB_RECURSE SOURCE_FILES ${SRC_DIR}/*.cpp ${SRC_DIR}/*.h ${SRC_DIR}/*.hpp)
-list(REMOVE_ITEM SOURCE_FILES ${MAIN})
+# acá quiero omitir los mains de las fuentes del proyecto (borrar)
+list(REMOVE_ITEM SOURCE_FILES ${MAIN_2} ${MAIN_1} ${MAIN_1_time})
 
-add_library(arbitraje_src ${SOURCE_FILES})
+add_library(sources ${SOURCE_FILES})
 
-target_link_libraries (arbitraje_src)
+target_link_libraries (sources)
 
 # ====== MAIN =======
 include(GoogleTest)
-add_executable(arbitraje ${MAIN})
-target_link_libraries(arbitraje LINK_PUBLIC arbitraje_src)
+# acá agrego todas las fuentes del proyecto y dejo los ejecutables (borrar)
+add_executable(arbitraje ${MAIN_2})
+target_link_libraries(arbitraje LINK_PUBLIC sources)
+
+add_executable(ejercicio-1-main ${MAIN_1})
+target_link_libraries(ejercicio-1-main LINK_PUBLIC sources)
+
+add_executable(ejercicio-1-main-time ${MAIN_1_time})
+target_link_libraries(ejercicio-1-main-time LINK_PUBLIC sources)
 
 # ====== TESTS ======
 enable_testing()
 
 file(GLOB_RECURSE TEST_FILES ${TEST_DIR}/*.cpp ${TEST_DIR}/*.h ${TEST_DIR}/*.hpp)
 
-#add_executable(arbitraje_test ${TEST_FILES})
-#target_include_directories(arbitraje_test PUBLIC ${TEST_DIR})
-#target_link_libraries(arbitraje_test LINK_PUBLIC arbitraje_src gtest gmock)
-#gtest_discover_tests(arbitraje_test)
-
-
-set(FILES src/ejercicio-1/algoritmos/Segmentation.cpp src/ejercicio-1/algoritmos/Segmentation.h src/ejercicio-1/entities/Graph.h src/ejercicio-1/entities/AdyacencyMatrixGraph.cpp src/ejercicio-1/entities/AdyacencyMatrixGraph.h src/ejercicio-1/entities/TreeGraph.cpp src/ejercicio-1/entities/TreeGraph.h src/ejercicio-1/entities/KruskalKindOfGraph.cpp src/ejercicio-1/entities/KruskalKindOfGraph.h src/ejercicio-1/algoritmos/MSTAlgorithm.h src/ejercicio-1/algoritmos/KruskalAlgorithm.cpp src/ejercicio-1/algoritmos/KruskalAlgorithm.h src/ejercicio-1/algoritmos/PrimAlgorithm.cpp src/ejercicio-1/algoritmos/PrimAlgorithm.h src/ejercicio-1/algoritmos/Segmentation.cpp src/ejercicio-1/algoritmos/Segmentation.h src/ejercicio-1/entities/Graph.h src/ejercicio-1/entities/TreeGraph.cpp src/ejercicio-1/entities/TreeGraph.h src/ejercicio-1/entities/Edge.cpp src/ejercicio-1/entities/Edge.h src/ejercicio-1/entities/Utils.h src/ejercicio-1/algoritmos/estructuras-auxiliares/DisjoinSet.h src/ejercicio-1/algoritmos/estructuras-auxiliares/ArrayDisjoinSet.cpp src/ejercicio-1/algoritmos/estructuras-auxiliares/ArrayDisjoinSet.h src/ejercicio-1/algoritmos/estructuras-auxiliares/ArrayCompressedDisjoinSet.cpp src/ejercicio-1/algoritmos/estructuras-auxiliares/ArrayCompressedDisjoinSet.h)
-add_executable(run_test ${FILES} test/ejercicio-1/algoritmos/KruskalAlgorithmTest.cpp test/ejercicio-1/entities/KruskalKindOfGraphTest.cpp test/ejercicio-1/entities/AdyacencyMatrixGraphTest.cpp test/ejercicio-1/algoritmos/estructuras-auxiliares/DisjoinSetTest.cpp test/ejercicio-1/algoritmos/SegmentationTest.cpp test/ejercicio-1/algoritmos/PrimAlgorithmTest.cpp)
-add_executable(ejercicio-1-main src/ejercicio-1/executables/segmentation-main.cpp ${FILES})
-target_link_libraries(run_test gtest gtest_main)
+# acá quiero correr todos los tests del proyecto (borrar)
+add_executable(tests ${TEST_FILES})
+target_include_directories(tests PUBLIC ${TEST_DIR})
+target_link_libraries(tests LINK_PUBLIC sources gtest gmock)
+gtest_discover_tests(tests)

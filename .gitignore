@@ -1,6 +1,7 @@
 # IDE
 .idea/
 .idea/*
+.idea/workspace.xml
 
 # Compilation
 bin/
