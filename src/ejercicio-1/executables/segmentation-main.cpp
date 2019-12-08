@@ -29,8 +29,8 @@ int main(){
     std::cin >> sigmaT;
     double fT;
     std::cin >> fT;
-
-    std::string poda = "ft";
+    std::string poda;
+    std::cin >> poda;
 
     std::vector<std::pair<int,int>>* dots = input();
 
