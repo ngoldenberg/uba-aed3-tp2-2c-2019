@@ -3,8 +3,8 @@
 #include <string>
 #include <vector>
 
-#include "algorithms/BellmanFordAlgorithm.h"
-#include "parsing/arbitration_input.h"
+#include "ejercicio_2/algorithms/BellmanFordAlgorithm.h"
+#include "ejercicio_2/parsing/arbitration_input.h"
 #include "config/constants.h"
 
 using ::testing::Contains;
@@ -21,7 +21,7 @@ TEST(BellmanFord, 2_int_cycle) {
   vector<int> expected_cycle = {1, 2};
 
   for (int i = 0; i < input.GetCurrenciesQuantity(); i++) {
-    std::cout << "EECTED CYCLE: " << expected_cycle[i] << " | cycle: " << cycle[i] << endl;
+    std::cout << "DETECTED CYCLE: " << expected_cycle[i] << " | cycle: " << cycle[i] << endl;
     ASSERT_EQ(cycle[i], expected_cycle[i]);
   }
 }
