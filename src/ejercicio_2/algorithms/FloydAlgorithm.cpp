@@ -33,7 +33,7 @@ vector<int> FloydAlgorithm::Solve(int const n, FloatMatrix const &matrix) {
   cycle.push_back(0);
   uint i = 0;
   do{
-      uint j = next[next_node][0];
+      uint j = next[i][0];
         cycle.push_back(GetEdgeNumberByAxis(matrix, i, j));
       i = j;
     }while(i != 0);
