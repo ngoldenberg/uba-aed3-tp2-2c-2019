@@ -1,4 +1,4 @@
-#include "parsing/word.h"
+#include "word.h"
 
 using namespace std;
 

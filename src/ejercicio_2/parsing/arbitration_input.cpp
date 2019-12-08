@@ -3,10 +3,10 @@
 #include <tuple>
 
 #include "arbitration_input.h"
-#include "common/string_format.h"
+#include "ejercicio_2/common/string_format.h"
 #include "line.h"
 #include "word.h"
-#include "../config/constants.h"
+#include "ejercicio_2/config/constants.h"
 
 using namespace std;
 

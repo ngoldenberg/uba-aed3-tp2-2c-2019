@@ -1,5 +1,5 @@
 #include "BellmanFordAlgorithm.h"
-#include "common/graph.h"
+#include "ejercicio_2/common/graph.h"
 #include <vector>
 
 vector<int> BellmanFordAlgorithm::Solve(int const currencies_quantity, const FloatMatrix &matrix) {
