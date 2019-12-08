@@ -5,6 +5,7 @@
 
 #include "Algorithm.h"
 #include "config/constants.h"
+#include <cmath>
 
 class BellmanFordAlgorithm : public Algorithm {
  private:

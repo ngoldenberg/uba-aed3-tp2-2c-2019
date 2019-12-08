@@ -2,8 +2,18 @@
 #include "../config/constants.h"
 
 vector<int> BellmanFordAlgorithm::Solve(int const currencies_quantity, const FloatMatrix &matrix) {
+  FloatMatrix tmp_matrix = matrix;
+  for (uint i = 0; i < currencies_quantity; i++) {
+    for (uint j = 0; j < currencies_quantity; j++) {
+      if (i == j) {
+        continue;
+      }
+      tmp_matrix[i][j] = log(matrix[i][j]);
+    }
+  }
+
   for (int i = 0; i < currencies_quantity; i++) {
-    for (int j = 0; i < currencies_quantity; i++) {
+    for (int j = 0; j < currencies_quantity; j++) {
       if (j != i && matrix[i][j] > 1 && matrix[j][i] > 1) {
         return vector<int>{GetEdgeNumberByAxis(matrix, i, j), GetEdgeNumberByAxis(matrix, j, i)};
       }
@@ -68,12 +78,12 @@ vector<int> BellmanFordAlgorithm::GetCycle(int const currencies_quantity,
 
   // Initialisation
   for (i = 0; i <= vertices; ++i) {
-    shortest_distances[i].first = INT_MIN;
-    shortest_distances[i].second = -1;
+    shortest_distances[i].first = INT_MAX;
+    shortest_distances[i].second = 0;
   }
 
   // Setting distance to source = 0
-  shortest_distances[src_vertex].first = 1;
+  shortest_distances[src_vertex].first = 0;
   shortest_distances[src_vertex].second = 0;
 
   // The Algorithm that computes Shortest Distances
@@ -87,7 +97,7 @@ vector<int> BellmanFordAlgorithm::GetCycle(int const currencies_quantity,
 
       while (traverse != adj_list[j].end()) {
 
-        if (shortest_distances[j].first == INT_MIN) {
+        if (shortest_distances[j].first == INT_MAX) {
           // Important...!
           //traverse = traverse->next;
           ++traverse;
@@ -95,11 +105,9 @@ vector<int> BellmanFordAlgorithm::GetCycle(int const currencies_quantity,
         }
 
         // Checking for Relaxation
-        if ((*traverse).second * shortest_distances[j].first >
-            shortest_distances[(*traverse).first].first) {
+        if ((*traverse).second + shortest_distances[j].first < shortest_distances[(*traverse).first].first) {
           // Relaxation
-          shortest_distances[(*traverse).first].first = (*traverse).second
-              * shortest_distances[j].first;
+          shortest_distances[(*traverse).first].first = (*traverse).second + shortest_distances[j].first;
           shortest_distances[(*traverse).first].second = j;
         }
 
@@ -113,8 +121,7 @@ vector<int> BellmanFordAlgorithm::GetCycle(int const currencies_quantity,
     traverse = adj_list[j].begin();
     while (traverse != adj_list[j].end()) {
       // Checking for further relaxation
-      if ((*traverse).second * shortest_distances[j].first >
-          shortest_distances[(*traverse).first].first) {
+      if ((*traverse).second + shortest_distances[j].first < shortest_distances[(*traverse).first].first) {
         // Negative Cycle found as further relaxation is possible
         vector<int> negative_cycle;
         this->GetNegativeCycle(shortest_distances, shortest_distances[j].second, j, negative_cycle);
