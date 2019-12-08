@@ -9,7 +9,7 @@
 #include <vector>
 
 #include "Algorithm.h"
-#include "ejercicio_2/config/constants.h"
+#include "config/constants.h"
 
 class FloydAlgorithm : public Algorithm {
  public:
