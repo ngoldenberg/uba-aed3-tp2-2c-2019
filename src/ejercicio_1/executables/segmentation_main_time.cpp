@@ -6,6 +6,7 @@
 #include <iostream>
 #include <vector>
 #include "../algoritmos/Segmentation.h"
+#include <chrono>
 
 std::vector<std::pair<int, int>> * input();
 

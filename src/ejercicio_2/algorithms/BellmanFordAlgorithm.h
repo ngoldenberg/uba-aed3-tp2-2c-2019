@@ -4,7 +4,7 @@
 #include <iostream>
 
 #include "Algorithm.h"
-#include "config/constants.h"
+#include "ejercicio_2/config/constants.h"
 
 class BellmanFordAlgorithm : public Algorithm {
  private:

@@ -1,6 +1,6 @@
 #pragma once
 
-#include "config/constants.h"
+#include "ejercicio_2/config/constants.h"
 
 class Algorithm {
  public:

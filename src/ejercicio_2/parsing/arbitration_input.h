@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <tuple>
-#include "config/constants.h"
+#include "ejercicio_2/config/constants.h"
 
 using namespace std;
 
