@@ -21,8 +21,21 @@ TEST(BellmanFord, 2_int_cycle) {
   vector<int> expected_cycle = {1, 2};
 
   for (int i = 0; i < input.GetCurrenciesQuantity(); i++) {
-    std::cout << "DETECTED CYCLE: " << expected_cycle[i] << " | cycle: " << cycle[i] << endl;
     ASSERT_EQ(cycle[i], expected_cycle[i]);
+  }
+}
+
+
+TEST(BellmanFord, all_1_matrix) {
+  std::ifstream input_file_stream(DATA_DIR + "ejercicio_2_-3_int_matrix__all_1.txt", ios::in);
+  ArbitrationInput input = ArbitrationInput::FromStreamParse(input_file_stream);
+  BellmanFordAlgorithm bfa;
+
+  vector<int> cycle;
+  try {
+    cycle = bfa.Solve(input.GetCurrenciesQuantity(), input.GetMultipliersMatrix());
+  } catch (logic_error) {
+    ASSERT_EQ(cycle.size(), 0);
   }
 }
 
@@ -39,18 +52,6 @@ TEST(BellmanFord, 3_n_matrix) {
   }
 }
 
-TEST(BellmanFord, all_1_matrix) {
-  std::ifstream input_file_stream(DATA_DIR + "ejercicio_2_-3_int_matrix__all_1.txt", ios::in);
-  ArbitrationInput input = ArbitrationInput::FromStreamParse(input_file_stream);
-  BellmanFordAlgorithm bfa;
-
-  vector<int> cycle;
-  try {
-    cycle = bfa.Solve(input.GetCurrenciesQuantity(), input.GetMultipliersMatrix());
-  } catch (logic_error) {
-    ASSERT_EQ(cycle.size(), 0);
-  }
-}
 
 TEST(BellmanFord, complex_samplex_1) {
   std::ifstream input_file_stream(DATA_DIR + "ejercicio_2_sample_1.txt", ios::in);
