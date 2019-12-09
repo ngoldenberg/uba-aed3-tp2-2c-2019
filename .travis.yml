@@ -19,4 +19,5 @@ before_install:
 compiler:
   - gcc
 
-script: cmake . && make && (cd bin && ./tests)
+#script: cmake . && make && (cd bin && ./tests)
+script:  cmake -S . -B build && make -C build && make -C build test
