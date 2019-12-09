@@ -47,7 +47,7 @@ TEST(BellmanFord, 3_n_matrix) {
 
   vector<int> expected_cycle = {2, 6, 3};
 
-  for (int i = 0; i < input.GetCurrenciesQuantity(); i++) {
+  for (int i = 0; i < 3; i++) {
     ASSERT_EQ(cycle[i], expected_cycle[i]);
   }
 }
