@@ -1,52 +1,46 @@
 #include "FloydAlgorithm.h"
 
 vector<int> FloydAlgorithm::Solve(int const n, FloatMatrix const &matrix) {
-  std::vector<std::vector<double>> dist;
-  for(int iter = 0; iter < n; iter ++){
-    dist.push_back(std::vector<double>(n));
-  }
-  int pred[n][n];
-  memset(pred, 0, sizeof(pred));
+  double dist[n][n] = {0};
+  int next[n][n];
+  memset(next, 0, sizeof(next));
 
   for (uint i = 0; i < n; i++) {
-    for (uint j = 0; j < n; j++) {
-      if (i == j) {
-        continue;
-      }
+    for (uint j = 0; j < n; j++) 
+    { 
       dist[i][j] = -log(matrix[i][j]);
-      pred[i][j] = i;
-    }
-  }
+      next[i][j] = j;
+     }
+   }
 
   for (uint k = 0; k < n; k++) {
     for (uint i = 0; i < n; i++) {
       for (uint j = 0; j < n; j++) {
-        if (k == j || k == i) {
-          continue;
-        }
         double d = dist[i][k] + dist[k][j];
-        if (d > dist[i][j]) {
+        if (dist[i][j] > d) {
           dist[i][j] = d;
-          pred[i][j] = pred[k][j];
+          next[i][j] = next[i][k];
         }
       }
     }
   }
 
-  if (dist[0][0] <= 0) {
+  if (dist[0][0] >= 0) {
     throw logic_error("No negative cycle detected");
   }
 
   vector<int> cycle;
-  for (int i = 0; i < n; i++) {
-    for (int j = 0; j < n; j++) {
-      if (i == pred[0][j])
-        cycle.push_back(GetEdgeNumberByAxis(matrix, i, j));
-    }
-  }
-
+  cycle.push_back(0);
+  int s = 0;
+  do{
+      int t = next[s][0];
+      cycle.push_back(GetEdgeNumberByAxis(matrix, s, t));
+      s = t;
+    }while(s != 0);
+  
   return cycle;
 }
+
 
 int FloydAlgorithm::GetEdgeNumberByAxis(const FloatMatrix &matrix, int r, int c) {
   if (r == c) return 0;
