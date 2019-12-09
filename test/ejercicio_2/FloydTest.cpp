@@ -5,13 +5,16 @@
 
 #include "ejercicio_2/algorithms/FloydAlgorithm.h"
 #include "ejercicio_2/parsing/arbitration_input.h"
+//#include "config/constants.h"
 
 using ::testing::Contains;
 using ::testing::AllOf;
 using ::testing::Property;
 
+std::string directory = "../test/ejercicio_2/data/input/";
+
 TEST(Floyd, 3_n_matrix) {
-  std::ifstream input_file_stream("samples/ejercicio_2_-3_int_matrix.txt", ios::in);
+  std::ifstream input_file_stream(directory + "ejercicio_2_-3_int_matrix.txt", ios::in);
   ArbitrationInput input = ArbitrationInput::FromStreamParse(input_file_stream);
   FloydAlgorithm fa;
   vector<int> cycle = fa.Solve(input.GetCurrenciesQuantity(), input.GetMultipliersMatrix());
@@ -24,7 +27,7 @@ TEST(Floyd, 3_n_matrix) {
 }
 
 TEST(Floyd, all_1_matrix) {
-  std::ifstream input_file_stream("samples/ejercicio_2_-3_int_matrix__all_1.txt", ios::in);
+  std::ifstream input_file_stream(directory + "ejercicio_2_-3_int_matrix__all_1.txt", ios::in);
   ArbitrationInput input = ArbitrationInput::FromStreamParse(input_file_stream);
   FloydAlgorithm fa;
 
@@ -37,7 +40,7 @@ TEST(Floyd, all_1_matrix) {
 }
 
 TEST(Floyd, 2_int_cycle) {
-  std::ifstream input_file_stream("samples/ejercicio_2_-2_int_cycle.txt", ios::in);
+  std::ifstream input_file_stream(directory +"ejercicio_2_-2_int_cycle.txt", ios::in);
   ArbitrationInput input = ArbitrationInput::FromStreamParse(input_file_stream);
   FloydAlgorithm fa;
   vector<int> cycle = fa.Solve(input.GetCurrenciesQuantity(), input.GetMultipliersMatrix());
@@ -50,7 +53,7 @@ TEST(Floyd, 2_int_cycle) {
 }
 
 TEST(Floyd, div_1) {
-  std::ifstream input_file_stream("samples/div_1.txt", ios::in);
+  std::ifstream input_file_stream(directory +"div_1.txt", ios::in);
   ArbitrationInput input = ArbitrationInput::FromStreamParse(input_file_stream);
   FloydAlgorithm fa;
   vector<int> cycle = fa.Solve(input.GetCurrenciesQuantity(), input.GetMultipliersMatrix());
