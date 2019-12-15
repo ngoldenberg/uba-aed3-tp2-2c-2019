@@ -25,18 +25,14 @@ int main(){
 
     int depth;
     std::cin >> depth;
-    double sigmaT;
-    std::cin >> sigmaT;
-    double fT;
-    std::cin >> fT;
-    std::string poda;
-    std::cin >> poda;
+    int C;
+    std::cin >> C;
 
     std::vector<std::pair<int,int>>* dots = input();
 
-    Segmentation segmentation = Segmentation(mstStrategy, poda);
+    Segmentation segmentation = Segmentation(mstStrategy);
 
-    std::vector<int> outputDots = segmentation.execute(dots, depth, sigmaT, fT);
+    std::vector<int> outputDots = segmentation.execute(dots, dots->size(), C);
 
     print(outputDots);
     return 0;

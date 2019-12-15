@@ -17,20 +17,16 @@ int main(){
 
     int depth;
     std::cin >> depth;
-    double sigmaT;
-    std::cin >> sigmaT;
-    double fT;
-    std::cin >> fT;
-    std::string poda;
-    std::cin >> poda;
+    int C;
+    std::cin >> C;
 
     std::vector<std::pair<int,int>>* dots = input();
 
-    Segmentation segmentation = Segmentation(mstStrategy, poda);
+    Segmentation segmentation = Segmentation(mstStrategy);
 
     // tomo tiempos
     auto start = std::chrono::steady_clock::now();
-    std::vector<int> outputDots = segmentation.execute(dots, depth, sigmaT, fT);
+    std::vector<int> outputDots = segmentation.execute(dots, depth, C);
     auto end = std::chrono::steady_clock::now();
 
     std::cout << std::chrono::duration_cast<std::chrono::nanoseconds>(end - start).count() << std::endl;

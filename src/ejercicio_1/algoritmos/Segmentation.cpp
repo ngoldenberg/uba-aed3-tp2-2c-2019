@@ -17,9 +17,8 @@
 #include <cmath>
 
 
-Segmentation::Segmentation(std::string mstAlgorithm, std::string poda) {
+Segmentation::Segmentation(std::string mstAlgorithm) {
     assert(mstAlgorithm == "prim" || mstAlgorithm == "kruskal" || mstAlgorithm == "kruskal-compressed");
-    assert(poda == "ambas" || poda == "ft" || poda == "sigmat");
 
     this->mstStrategy = mstAlgorithm;
 
@@ -31,8 +30,6 @@ Segmentation::Segmentation(std::string mstAlgorithm, std::string poda) {
         this->mstAlgorithm = new KruskalAlgorithm(new ArrayCompressedDisjoinSet());
     }
 
-
-    this->poda = poda;
 }
 
 Graph* Segmentation::makeGraph(std::vector<std::pair<int, int>> *dots) {
@@ -47,7 +44,7 @@ Segmentation::~Segmentation() {
     delete mstAlgorithm;
 }
 
-std::vector<int> Segmentation::execute(std::vector<std::pair<int, int>> *dots, int depth, double sigmaT, double fT) {
+std::vector<int> Segmentation::execute(std::vector<std::pair<int, int>> *dots, int depth, int C) {
     Graph *graph = makeGraph(dots);
 
     TreeGraph *mst = mstAlgorithm->makeMst(graph);
@@ -59,7 +56,7 @@ std::vector<int> Segmentation::execute(std::vector<std::pair<int, int>> *dots, i
         std::vector<Edge> *leftSubTree = getSubTree(edge.getFromVertex(), mst, depth, edge.getToVertex());
         std::vector<Edge> *rigthSubTree = getSubTree(edge.getToVertex(), mst, depth, edge.getFromVertex());
 
-        if( isInconsistent(edge, leftSubTree, rigthSubTree, sigmaT, fT) ){
+        if( isInconsistent(edge, leftSubTree, rigthSubTree, C) ){
             mst->deleteEdge(edge);
             splitSegments(segments, mst, nextSegmentNumber, edge.getToVertex(), edge.getFromVertex());
             nextSegmentNumber++;
@@ -96,18 +93,8 @@ std::vector<Edge> * Segmentation::getSubTree(int fromVertex, TreeGraph *graph, d
 }
 
 bool
-Segmentation::isInconsistent(Edge edge, std::vector<Edge> *leftSubTree, std::vector<Edge> *rigthSubTree, double sigmaT,
-                             double fT) {
-    double leftMean = mean(leftSubTree);
-    double leftDeviation = desviation(leftSubTree, leftMean);
-    double rightMean = mean(rigthSubTree);
-    double rightDeviation = desviation(rigthSubTree, rightMean);
-    Distancia W = edge.getWeight();
-
-    return isInconsistent(leftMean, W, fT, sigmaT, leftDeviation) and
-           isInconsistent(rightMean, W, fT, sigmaT, rightDeviation);
-
-
+Segmentation::isInconsistent(Edge edge, std::vector<Edge> *leftSubTree, std::vector<Edge> *rigthSubTree, int C) {
+    return demanda(leftSubTree) + demanda(rigthSubTree) > C;
 }
 
 void Segmentation::splitSegments(std::vector<int> *segments, TreeGraph *forest, int nextSegmentNumber, int beginVertex,
@@ -157,18 +144,18 @@ double Segmentation::mean(std::vector<Edge> *edges) {
     return sum / edges->size();
 }
 
-bool Segmentation::isInconsistent(double subTreeMean, Distancia W, double fT, double sigmaT, double standardDeviation) {
-     if(getPoda() == "ambos"){
-        return (W >  (sigmaT * standardDeviation + subTreeMean )) && (W / subTreeMean > fT);
-
-    } else if(getPoda() == "ft"){
-        return (W / subTreeMean > fT);
-
-    } else{
-        return W >  (sigmaT * standardDeviation +subTreeMean);
-
-    }
-}
+//bool Segmentation::isInconsistent(double subTreeMean, Distancia W, double fT, double sigmaT, double standardDeviation) {
+//     if(getPoda() == "ambos"){
+//        return (W >  (sigmaT * standardDeviation + subTreeMean )) && (W / subTreeMean > fT);
+//
+//    } else if(getPoda() == "ft"){
+//        return (W / subTreeMean > fT);
+//
+//    } else{
+//        return W >  (sigmaT * standardDeviation +subTreeMean);
+//
+//    }
+//}
 
 double Segmentation::desviation(std::vector<Edge> *tree, double mean) {
     double sigma_cuadrado = 0;
@@ -195,3 +182,6 @@ void Segmentation::setMstStrategy(const std::string &mstStrategy) {
     Segmentation::mstStrategy = mstStrategy;
 }
 
+int Segmentation::demanda(std::vector <Edge> *tree){
+    return 0;
+}

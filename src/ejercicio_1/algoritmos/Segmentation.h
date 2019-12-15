@@ -14,11 +14,11 @@
 
 class Segmentation {
 public:
-    Segmentation(std::string mstAlgorithm, std::string poda);
+    Segmentation(std::string mstAlgorithm);
 
     ~Segmentation();
 
-    std::vector<int> execute(std::vector<std::pair<int, int>> *dots, int depth, double sigmaT, double fT);
+    std::vector<int> execute(std::vector<std::pair<int, int>> *dots, int depth, int C);
 
     /*
      * @params:
@@ -44,8 +44,7 @@ public:
     /*
      * Responde si edge es "inconsistente" según los principios del paper.
      */
-    bool isInconsistent(Edge edge, std::vector<Edge> *leftSubTree, std::vector<Edge> *rigthSubTree, double sigmaT,
-                        double fT);
+    bool isInconsistent(Edge edge, std::vector<Edge> *leftSubTree, std::vector<Edge> *rigthSubTree, int C);
 
     /*
      * modifica a @segments.
@@ -74,6 +73,7 @@ private:
     bool isInconsistent(double subTreeMean, Distancia W, double fT, double sigmaT, double standardDeviation);
 
     double desviation(std::vector<Edge> *tree, double mean);
+    int demanda(std::vector<Edge> *tree);
 };
 
 

@@ -11,7 +11,7 @@ struct SegmentationTest : testing::Test{
     Segmentation *segmentation;
 
     SegmentationTest(){
-        segmentation = new Segmentation("kruskal-compressed", "ambas");
+        segmentation = new Segmentation("kruskal-compressed");
     }
 
     ~SegmentationTest(){
@@ -220,7 +220,7 @@ TEST_F(SegmentationTest, splitSegments_test3){
 }
 
 TEST_F(SegmentationTest, segmentation_test1){
-    segmentation = new Segmentation("kruskal-compressed", "ambas");
+    segmentation = new Segmentation("kruskal-compressed");
 
     std::vector<std::pair<int,int>> dots;
     dots.push_back(std::make_pair(1,3));
@@ -234,7 +234,7 @@ TEST_F(SegmentationTest, segmentation_test1){
     dots.push_back(std::make_pair(8,5));
     dots.push_back(std::make_pair(9,5));
 
-    std::vector<int> segments = segmentation->execute(&dots,3,2,2);
+    std::vector<int> segments = segmentation->execute(&dots,dots.size(),2);
 
     ASSERT_EQ(1, segments.at(1));
     ASSERT_EQ(1, segments.at(0));
@@ -249,7 +249,7 @@ TEST_F(SegmentationTest, segmentation_test1){
 }
 
 TEST_F(SegmentationTest, segmentation_test2) {
-    segmentation = new Segmentation("prim", "ft");
+    segmentation = new Segmentation("prim");
 
     std::vector<std::pair<int,int>> dots;
     dots.push_back(std::make_pair(1,3));
@@ -263,7 +263,7 @@ TEST_F(SegmentationTest, segmentation_test2) {
     dots.push_back(std::make_pair(8,5));
     dots.push_back(std::make_pair(9,5));
 
-    std::vector<int> segments = segmentation->execute(&dots,3,1.5,1.5);
+    std::vector<int> segments = segmentation->execute(&dots,dots.size(),1);
 
     ASSERT_EQ(1, segments.at(1));
     ASSERT_EQ(1, segments.at(0));
